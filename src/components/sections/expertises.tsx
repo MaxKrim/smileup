@@ -51,7 +51,7 @@ const expertisesData = [
   cardClass: "bg-[#10B981] text-black",
   buttonClass: "bg-white text-black hover:bg-gray-100",
   labelBgClass: "bg-white/90",
-  icon: "✨",
+  icon: "",
   imageClass: "thermoforming-image-container"
 },
 {
