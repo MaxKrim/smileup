@@ -16,7 +16,7 @@ const CtaFinal = () => {
 
           <div className="flex w-full flex-col items-center justify-center gap-4 sm:w-auto sm:flex-row">
             <a
-              href="mailto:contact@smileup-ortho.fr"
+              href="mailto:jessica.lerandyestevez@gmail.com"
               className="group inline-flex w-full items-center justify-center gap-2 rounded-full border-2 border-black bg-transparent px-[30px] py-[14px] text-base font-medium text-black transition-colors hover:bg-black hover:text-white sm:w-auto"
             >
               <Mail className="h-4 w-4" />
@@ -24,7 +24,7 @@ const CtaFinal = () => {
             </a>
 
             <a
-              href="tel:+33000000000"
+              href="tel:+33777995315"
               className="group inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#0EA5E9] px-8 py-4 text-base font-medium text-white transition-colors hover:bg-[#0085FF] sm:w-auto"
             >
               <Phone className="h-5 w-5" />
