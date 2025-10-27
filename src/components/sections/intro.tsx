@@ -8,7 +8,7 @@ const Intro = () => {
     <section id="intro-home" className="bg-background text-foreground py-24">
       <div className="max-w-[1440px] mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 lg:gap-x-8 gap-y-12 lg:gap-y-0">
-          <div className="lg:col-span-7">
+          <div className="lg:col-span-7 !w-[771px] !h-[72px]">
             <h2 className="font-display text-[40px] leading-[1.1] font-medium -tracking-[0.06em] text-foreground whitespace-pre-line">
               Une expertise technique pointue.
             </h2>
@@ -59,8 +59,8 @@ const Intro = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default Intro;
