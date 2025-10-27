@@ -128,7 +128,7 @@ const ExpertisesSection = () => {
                       {(card.icon || card.title) &&
                 <div className="absolute inset-0 flex items-center justify-center bg-black/20">
                           <div className="text-center p-8">
-                            {card.icon && <div className="text-9xl mb-4">{card.icon}</div>}
+                            {card.icon && <div className="text-9xl mb-4 !whitespace-pre-line">{card.icon}</div>}
                             {card.title && <div className="text-2xl font-medium opacity-80">{card.title}</div>}
                           </div>
                         </div>
