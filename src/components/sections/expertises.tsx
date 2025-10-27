@@ -66,7 +66,7 @@ const expertisesData = [
   cardClass: "bg-[#0EA5E9] text-white",
   buttonClass: "bg-white text-black hover:bg-gray-100",
   labelBgClass: "bg-white/90 text-black",
-  icon: "💻",
+  icon: "",
   imageClass: "cfao-modeling-image-container"
 }];
 
