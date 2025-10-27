@@ -7,7 +7,7 @@ const WaveSvg = () =>
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 1440 160"
     preserveAspectRatio="none"
-    className="relative block w-full h-[160px]"
+    className="relative block w-full h-[80px] md:h-[120px] lg:h-[160px]"
     fill="#F4EFE6">
 
       <path d="M0,80 C400,160 800,0 1440,50 V0 H0 Z" />
@@ -20,7 +20,7 @@ const Logo = () =>
   width="180"
   height="50"
   viewBox="0 0 982.52 270.95"
-  className="text-black !w-full !h-full"
+  className="text-black w-full h-full"
   fill="none"
   xmlns="http://www.w3.org/2000/svg"
   role="img"
@@ -56,19 +56,18 @@ const SocialLink = ({ href, children }: {href: string;children: React.ReactNode;
 
 export default function Footer() {
   return (
-    <footer className="relative bg-[#F5F1ED] text-[#1A1A1A] overflow-hidden pt-40 lg:pt-48 pb-12">
+    <footer className="relative bg-[#F5F1ED] text-[#1A1A1A] overflow-hidden pt-32 md:pt-40 lg:pt-48 pb-12 w-full">
       <WaveSvg />
-      <div className="relative container mx-auto px-6 md:px-12">
+      <div className="relative max-w-7xl mx-auto px-6 md:px-12 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-12 lg:gap-x-8 mb-16">
           {/* Column 1: Brand */}
           <div className="lg:justify-self-start">
             <Link href="/">
               <div className="flex flex-col gap-2">
-                <span className="text-6xl !whitespace-pre-line"></span>
-                <div className="w-[180px] h-[50px]">
+                <div className="w-[140px] md:w-[180px] h-[40px] md:h-[50px]">
                   <Logo />
                 </div>
-                <span className="text-sm text-black/60">Laboratoire d'Orthodontie</span>
+                <span className="text-xs md:text-sm text-black/60">Laboratoire d'Orthodontie</span>
               </div>
             </Link>
           </div>
@@ -76,30 +75,30 @@ export default function Footer() {
           {/* Column 2: Navigation */}
           <div className="lg:justify-self-center">
             <nav className="flex flex-col gap-3 text-center lg:text-left">
-              <Link href="/#intro-home" className="text-lg text-black/80 hover:text-black transition-colors">À propos</Link>
-              <Link href="/#expertises" className="text-lg text-black/80 hover:text-black transition-colors">Expertises</Link>
-              <Link href="/#work" className="text-lg text-black/80 hover:text-black transition-colors">Réalisations</Link>
-              <Link href="/#contact" className="text-lg text-black/80 hover:text-black transition-colors">Contact</Link>
+              <Link href="/#intro-home" className="text-base md:text-lg text-black/80 hover:text-black transition-colors">À propos</Link>
+              <Link href="/#expertises" className="text-base md:text-lg text-black/80 hover:text-black transition-colors">Expertises</Link>
+              <Link href="/#work" className="text-base md:text-lg text-black/80 hover:text-black transition-colors">Réalisations</Link>
+              <Link href="/#contact" className="text-base md:text-lg text-black/80 hover:text-black transition-colors">Contact</Link>
             </nav>
           </div>
 
           {/* Column 3: Contact */}
-          <div className="lg:justify-self-end flex flex-col gap-6 text-base text-center lg:text-right">
+          <div className="lg:justify-self-end flex flex-col gap-6 text-sm md:text-base text-center lg:text-right">
             <div>
-              <p className="font-bold text-black mb-3 text-lg">Jessica Lerandy-Estevez</p>
+              <p className="font-bold text-black mb-3 text-base md:text-lg">Jessica Lerandy-Estevez</p>
               <a
                 href="mailto:jessica.lerandyestevez@gmail.com"
-                className="flex items-center justify-center lg:justify-end gap-2 text-black/80 hover:text-[#0EA5E9] transition-colors mb-2">
+                className="flex items-center justify-center lg:justify-end gap-2 text-black/80 hover:text-[#0EA5E9] transition-colors mb-2 break-all">
 
-                <Mail size={18} />
-                <span>jessica.lerandyestevez@gmail.com</span>
+                <Mail size={18} className="flex-shrink-0" />
+                <span className="text-xs md:text-sm lg:text-base">jessica.lerandyestevez@gmail.com</span>
               </a>
               <a
                 href="tel:+33777995315"
                 className="flex items-center justify-center lg:justify-end gap-2 text-black/80 hover:text-[#0EA5E9] transition-colors">
 
-                <Phone size={18} />
-                <span>+33 7 77 99 53 15</span>
+                <Phone size={18} className="flex-shrink-0" />
+                <span className="text-sm md:text-base">+33 7 77 99 53 15</span>
               </a>
             </div>
             
@@ -113,7 +112,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-black/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-black/60 gap-4">
+        <div className="border-t border-black/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs md:text-sm text-black/60 gap-4 text-center">
           <p>© {new Date().getFullYear()} Smile UP Orthodontie - Jessica Lerandy-Estevez</p>
           <Link href="#" className="hover:text-black transition-colors">Mentions légales</Link>
         </div>
