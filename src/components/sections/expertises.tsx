@@ -11,7 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
 const expertisesData = [
 {
   id: "01",
-  title: "Appareils fixes",
+  title: "",
   subtitle: "Précision et fiabilité scellées.",
   description: "Appareils orthodontiques fixés de manière permanente en bouche. Conçus pour des corrections précises et continues, ils offrent un contrôle optimal des mouvements dentaires selon vos prescriptions.",
   videoSrc: "",
