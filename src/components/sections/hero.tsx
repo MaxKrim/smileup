@@ -5,18 +5,18 @@ const StatCard = ({
   stat,
   title,
   description,
-  className,
-}: {
-  bgColor: string;
-  stat: string;
-  title: string;
-  description: string;
-  className?: string;
-}) => (
-  <div
-    className={`flex flex-col justify-between p-8 text-black rounded-[32px] min-h-[450px] transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-xl cursor-pointer ${bgColor} ${className}`}
-  >
-    <div className="font-display font-medium text-8xl tracking-tighter leading-none">
+  className
+
+
+
+
+
+
+}: {bgColor: string;stat: string;title: string;description: string;className?: string;}) =>
+<div
+  className={`flex flex-col justify-between p-8 text-black rounded-[32px] min-h-[450px] transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-xl cursor-pointer ${bgColor} ${className}`}>
+
+    <div className="font-display font-medium tracking-tighter leading-none !text-[69px]">
       {stat}
     </div>
     <div className="mt-8">
@@ -26,28 +26,28 @@ const StatCard = ({
       <div className="h-px w-full bg-black my-3"></div>
       <p className="text-base font-body">{description}</p>
     </div>
-  </div>
-);
+  </div>;
+
 
 const ImageCard = ({
   imageSrc,
   alt,
-  className,
-}: {
-  imageSrc: string;
-  alt: string;
-  className?: string;
-}) => (
-  <div
-    className={`relative w-full rounded-[32px] overflow-hidden min-h-[450px] transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-xl cursor-pointer ${className}`}
-  >
+  className
+
+
+
+
+}: {imageSrc: string;alt: string;className?: string;}) =>
+<div
+  className={`relative w-full rounded-[32px] overflow-hidden min-h-[450px] transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-xl cursor-pointer ${className}`}>
+
     <img
-      src={imageSrc}
-      alt={alt}
-      className="absolute top-0 left-0 w-full h-full object-cover"
-    />
-  </div>
-);
+    src={imageSrc}
+    alt={alt}
+    className="absolute top-0 left-0 w-full h-full object-cover" />
+
+  </div>;
+
 
 const Hero = () => {
   return (
@@ -69,29 +69,29 @@ const Hero = () => {
               bgColor="bg-[#0EA5E9]"
               stat="100%"
               title="Orthodontie exclusive"
-              description="Spécialisation complète en appareils orthodontiques"
-            />
+              description="Spécialisation complète en appareils orthodontiques" />
+
             <ImageCard
               imageSrc="/placeholder-ortho-1.jpg"
               alt="Appareil orthodontique de précision"
-              className="hidden lg:block"
-            />
+              className="hidden lg:block" />
+
             <StatCard
               bgColor="bg-[#10B981]"
               stat="Enfants & Adultes"
               title="Pour tous les âges"
-              description="Solutions adaptées à chaque patient"
-            />
+              description="Solutions adaptées à chaque patient" />
+
             <ImageCard
               imageSrc="/placeholder-ortho-2.jpg"
               alt="Laboratoire orthodontique moderne"
-              className="hidden lg:block"
-            />
+              className="hidden lg:block" />
+
           </div>
         </div>
       </div>
-    </header>
-  );
+    </header>);
+
 };
 
 export default Hero;
