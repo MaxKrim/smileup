@@ -67,7 +67,7 @@ const ExpertisesSection = () => {
 
         mm.add("(min-width: 1024px)", () => {
             const panels = gsap.utils.toArray<HTMLElement>(".expertise-panel");
-            panels.forEach((panel, index) => {
+            panels.forEach((panel) => {
                 ScrollTrigger.create({
                     trigger: panel,
                     start: "top top",
@@ -75,8 +75,6 @@ const ExpertisesSection = () => {
                     pinSpacing: false,
                     end: "+=100%",
                 });
-                // Set z-index dynamically to ensure proper stacking
-                gsap.set(panel, { zIndex: panels.length - index });
             });
         });
         
@@ -87,8 +85,8 @@ const ExpertisesSection = () => {
 
     return (
       <section id="expertises" ref={componentRef} className="bg-background relative">
-        {expertisesData.map((card, index) => (
-            <div key={card.id} className="expertise-panel h-auto lg:h-screen w-full lg:p-8 relative" style={{ zIndex: expertisesData.length - index }}>
+        {expertisesData.map((card) => (
+            <div key={card.id} className="expertise-panel h-auto lg:h-screen w-full lg:p-8 relative">
               <div className={`h-full w-full rounded-none lg:rounded-[32px] p-8 lg:p-0 ${card.cardClass}`}>
                 <div className="h-full w-full lg:p-8 grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-[auto_1fr_auto] gap-x-8 gap-y-8 lg:gap-y-0">
                   
