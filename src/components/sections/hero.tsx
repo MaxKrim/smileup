@@ -59,7 +59,7 @@ const Hero = () => {
               Votre Laboratoire d'Orthodontie Exclusive.
             </h1>
             <div className="mt-6 max-w-[60ch]">
-              <p className="text-xl text-secondary-foreground leading-relaxed tracking-[-0.01em] !w-[676px] !h-full">
+              <p className="text-xl text-secondary-foreground leading-relaxed tracking-[-0.01em] !w-[673px] !h-full">
                 Orthésiste dentaire diplômée, spécialisée en orthopédie dento-faciale. Une expertise technique au service des praticiens exigeants.
               </p>
             </div>
