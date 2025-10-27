@@ -14,7 +14,7 @@ const expertisesData = [
   title: "",
   subtitle: "Précision et fiabilité scellées.",
   description: "Appareils orthodontiques fixés de manière permanente en bouche. Conçus pour des corrections précises et continues, ils offrent un contrôle optimal des mouvements dentaires selon vos prescriptions.",
-  imageSrc: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/1b2e0205-1fa2-45bd-8c45-4d4c1200c30e/visual-edit-uploads/expertise-01.png",
+  imageSrc: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/1b2e0205-1fa2-45bd-8c45-4d4c1200c30e/visual-edit-uploads/1761572157257-djj0abt6q6q.png",
   videoSrc: "",
   buttonText: "En savoir plus",
   buttonLink: "#contact",
