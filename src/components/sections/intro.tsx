@@ -45,14 +45,14 @@ const Intro = () => {
           <div className="flex lg:col-start-12 lg:row-start-2 justify-self-end self-end mt-8 lg:mt-0">
             <Link
               href="#expertises"
-              className="group relative w-14 h-14 bg-black rounded-full flex items-center justify-center overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
+              className="group relative w-14 h-14 bg-black rounded-full flex items-center justify-center overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
               aria-label="Scroll to expertises">
-              <div className="transition-transform duration-500 ease-in-out group-hover:-translate-y-14">
-                <div className="w-14 h-14 flex items-center justify-center">
-                  <ArrowDown className="text-white" size={24} />
+              <div className="absolute inset-0 flex flex-col items-center transition-transform duration-500 ease-out group-hover:-translate-y-14">
+                <div className="w-14 h-14 flex items-center justify-center flex-shrink-0">
+                  <ArrowDown className="text-white" size={24} strokeWidth={2} />
                 </div>
-                <div className="w-14 h-14 flex items-center justify-center">
-                  <ArrowDown className="text-white" size={24} />
+                <div className="w-14 h-14 flex items-center justify-center flex-shrink-0">
+                  <ArrowDown className="text-white" size={24} strokeWidth={2} />
                 </div>
               </div>
             </Link>
