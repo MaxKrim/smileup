@@ -119,7 +119,7 @@ const ExpertisesSection = () => {
                  
                       <div className="text-center p-8">
                         <div className="text-9xl mb-4 !whitespace-pre-line !whitespace-pre-line">{card.icon}</div>
-                        <div className="text-2xl font-medium opacity-80 !whitespace-pre-line">{card.title}</div>
+                        <div className="text-2xl font-medium opacity-80 !whitespace-pre-line !whitespace-pre-line">{card.title}</div>
                       </div>
                     </div>
                   </div>
