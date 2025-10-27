@@ -2,58 +2,29 @@
 
 import React, { useRef } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { ArrowUpRight, ArrowRight } from 'lucide-react';
 
 type WorkCardProps = {
   title: string;
   label: string;
-  videoSrc: string;
-  imageSrc: string;
+  icon: string;
   borderColor: string;
   bgColor: string;
   href: string;
 };
 
-const WorkCard = ({ title, label, videoSrc, imageSrc, borderColor, bgColor, href }: WorkCardProps) => {
-  const videoRef = useRef<HTMLVideoElement>(null);
-
-  const handleMouseEnter = () => {
-    videoRef.current?.play().catch(error => console.error("Video play failed:", error));
-  };
-
-  const handleMouseLeave = () => {
-    if (videoRef.current) {
-      videoRef.current.pause();
-    }
-  };
-
+const WorkCard = ({ title, label, icon, borderColor, bgColor, href }: WorkCardProps) => {
   return (
     <Link href={href} legacyBehavior>
       <a
         className="group flex flex-col overflow-hidden rounded-2xl bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
         style={{ borderWidth: '3px', borderColor }}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
       >
-        <div className="relative aspect-[3/4] w-full">
-          <Image
-            src={imageSrc}
-            alt={title}
-            fill
-            className="object-cover transition-opacity duration-300 ease-in-out group-hover:opacity-0"
-            sizes="(max-width: 768px) 100vw, 50vw"
-            priority
-          />
-          <video
-            ref={videoRef}
-            src={videoSrc}
-            loop
-            muted
-            playsInline
-            className="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
-            preload="auto"
-          />
+        <div className="relative aspect-[3/4] w-full bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center">
+          <div className="text-center p-8">
+            <div className="text-8xl mb-4">{icon}</div>
+            <div className="text-2xl font-medium text-gray-800">{label}</div>
+          </div>
           <div className="absolute top-5 right-5 z-10 flex size-12 items-center justify-center rounded-full bg-white text-black transition-transform duration-300 group-hover:scale-110">
             <ArrowUpRight strokeWidth={2.5} className="size-6" />
           </div>
@@ -71,39 +42,37 @@ const WorkCard = ({ title, label, videoSrc, imageSrc, borderColor, bgColor, href
 
 const worksData: WorkCardProps[] = [
   {
-    title: "Zacht in smaak, sterk in beeld",
-    label: "Roasta",
-    videoSrc: "https://gethyped.b-cdn.net/Roasta/roasta-loop.mp4",
-    imageSrc: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/1b2e0205-1fa2-45bd-8c45-4d4c1200c30e-gethyped-nl/assets/images/68716a54a3bf63bf25c2ae92_roasta-placeholder-3.avif",
+    title: "Précision technique pour résultats optimaux",
+    label: "Appareils Fonctionnels",
+    icon: "⚙️",
     borderColor: "var(--color-brand-orange)",
     bgColor: "var(--color-brand-orange)",
-    href: "/work/roasta-koffie"
+    href: "#contact"
   },
   {
-    title: "Content die écht smaakt (en raakt)",
-    label: "Loco",
-    videoSrc: "https://gethyped.b-cdn.net/Loco/loco-bites-loop.mp4",
-    imageSrc: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/1b2e0205-1fa2-45bd-8c45-4d4c1200c30e-gethyped-nl/assets/images/68716b4e8982337b1d3d1bd7_loco-loco-placeholder-4.avif",
+    title: "Innovation numérique et expertise artisanale",
+    label: "Gamme PUL",
+    icon: "🔬",
     borderColor: "var(--color-brand-blue)",
     bgColor: "var(--color-brand-blue)",
-    href: "/work/loco"
+    href: "#contact"
   }
 ];
 
 const PortfolioShowcase = () => {
     return (
-      <section className="bg-background py-16 md:py-24">
+      <section id="work" className="bg-background py-16 md:py-24">
         <div className="container">
           <div className="max-w-[60ch]">
-            <h2 className="font-display text-6xl font-medium leading-none tracking-[-0.06em] md:text-7xl">Content dat scoort.</h2>
+            <h2 className="font-display text-6xl font-medium leading-none tracking-[-0.06em] md:text-7xl">Des réalisations qui font sourire.</h2>
             <p className="mt-6 text-lg text-text-secondary">
-              Wij vertellen jouw verhaal. Op een manier die écht past bij jouw doelgroep. Met creatieve content die werkt en het verschil maakt.
+              Chaque appareil est conçu sur mesure selon vos prescriptions. De l'appareil fonctionnel complexe à la gouttière thermoformée, je maîtrise toutes les techniques pour des résultats qui répondent à vos exigences.
             </p>
           </div>
           <div className="mt-8 mb-12">
-              <Link href="/work" legacyBehavior>
+              <Link href="#contact" legacyBehavior>
                   <a className="group inline-flex items-center gap-3 rounded-full border-2 border-primary bg-transparent px-7 py-3 text-base font-medium text-primary transition-colors duration-300 hover:bg-primary hover:text-primary-foreground">
-                      <span>Bekijk al ons werk</span>
+                      <span>Discutons de vos besoins</span>
                       <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
                   </a>
               </Link>
