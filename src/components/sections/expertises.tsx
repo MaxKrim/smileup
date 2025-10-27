@@ -21,7 +21,8 @@ const expertisesData = [
   cardClass: "bg-[#FF6644] text-white",
   buttonClass: "bg-white text-black hover:bg-gray-100",
   labelBgClass: "bg-white/90 text-black",
-  icon: ""
+  icon: "",
+  imageClass: "fixed-device-image-container"
 },
 {
   id: "02",
@@ -35,7 +36,8 @@ const expertisesData = [
   cardClass: "bg-[#F0ABFC] text-black",
   buttonClass: "bg-white text-black hover:bg-gray-100",
   labelBgClass: "bg-white/90",
-  icon: ""
+  icon: "",
+  imageClass: "removable-device-image-container"
 },
 {
   id: "03",
@@ -49,7 +51,8 @@ const expertisesData = [
   cardClass: "bg-[#10B981] text-black",
   buttonClass: "bg-white text-black hover:bg-gray-100",
   labelBgClass: "bg-white/90",
-  icon: "✨"
+  icon: "✨",
+  imageClass: "thermoforming-image-container"
 },
 {
   id: "04",
@@ -63,7 +66,8 @@ const expertisesData = [
   cardClass: "bg-[#0EA5E9] text-white",
   buttonClass: "bg-white text-black hover:bg-gray-100",
   labelBgClass: "bg-white/90 text-black",
-  icon: "💻"
+  icon: "💻",
+  imageClass: "cfao-modeling-image-container"
 }];
 
 
@@ -116,7 +120,7 @@ const ExpertisesSection = () => {
                     <div
                 id={`expertise-image-${card.id}`}
                 data-card-id={card.id}
-                className={`expertise-image-${card.id} w-full h-full aspect-square lg:aspect-auto rounded-3xl flex items-center justify-center bg-cover bg-center`}
+                className={`${card.imageClass} w-full h-full aspect-square lg:aspect-auto rounded-3xl flex items-center justify-center bg-cover bg-center`}
                 style={{ backgroundImage: `url(${card.imageSrc})` }}>
                  
                       <div className="text-center p-8">
