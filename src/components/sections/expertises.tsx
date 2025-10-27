@@ -59,7 +59,7 @@ const expertisesData = [
   title: "",
   subtitle: "Innovation numérique au service de l'orthodontie.",
   description: "Conception et Fabrication Assistées par Ordinateur. Modélisation numérique 3D pour des appareils ultra-précis. La technologie de demain, disponible aujourd'hui pour vos patients.",
-  imageSrc: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/1b2e0205-1fa2-45bd-8c45-4d4c1200c30e/visual-edit-uploads/expertise-04.png",
+  imageSrc: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/IMG_7183-1761572553570.jpeg?width=8000&height=8000&resize=contain",
   videoSrc: "",
   buttonText: "En savoir plus",
   buttonLink: "#contact",
