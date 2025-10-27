@@ -21,8 +21,8 @@ export default function AboutPage() {
                   <h1 className="font-display text-5xl md:text-7xl lg:text-[80px] font-black leading-[1.0] tracking-[-0.06em] mb-6">
                     Qui suis-je ?
                   </h1>
-                  <p className="text-xl text-secondary-foreground leading-relaxed tracking-[-0.01em] mb-8">
-                    Prothésiste dentaire diplômée, spécialisée en orthopédie dento-faciale. Je crée un laboratoire d'orthodontie exclusive dédié aux professionnels de santé.
+                  <p className="text-xl text-secondary-foreground leading-relaxed tracking-[-0.01em] mb-8">Prothésiste dentaire diplômée, spécialisée en orthopédie dento-faciale. 
+
                   </p>
                 </div>
                 
@@ -112,8 +112,8 @@ export default function AboutPage() {
 
                 <Link
                   href="#contact"
-                  className="group inline-flex items-center gap-3 rounded-full bg-[#0EA5E9] text-white px-8 py-4 text-base font-medium transition-transform hover:scale-105"
-                >
+                  className="group inline-flex items-center gap-3 rounded-full bg-[#0EA5E9] text-white px-8 py-4 text-base font-medium transition-transform hover:scale-105">
+
                   <span>Discutons de vos besoins</span>
                   <ArrowRight className="size-5 transition-transform group-hover:translate-x-1" />
                 </Link>
@@ -180,14 +180,14 @@ export default function AboutPage() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <Link
                   href="mailto:contact@smileup-ortho.fr"
-                  className="inline-flex items-center gap-2 rounded-full border-2 border-black bg-transparent px-8 py-4 text-base font-medium text-black transition-colors hover:bg-black hover:text-white"
-                >
+                  className="inline-flex items-center gap-2 rounded-full border-2 border-black bg-transparent px-8 py-4 text-base font-medium text-black transition-colors hover:bg-black hover:text-white">
+
                   <span>M'envoyer un email</span>
                 </Link>
                 <Link
                   href="/"
-                  className="inline-flex items-center gap-2 rounded-full bg-[#0EA5E9] px-8 py-4 text-base font-medium text-white transition-transform hover:scale-105"
-                >
+                  className="inline-flex items-center gap-2 rounded-full bg-[#0EA5E9] px-8 py-4 text-base font-medium text-white transition-transform hover:scale-105">
+
                   <span>Retour à l'accueil</span>
                 </Link>
               </div>
@@ -197,6 +197,6 @@ export default function AboutPage() {
 
         <Footer />
       </div>
-    </>
-  );
+    </>);
+
 }
