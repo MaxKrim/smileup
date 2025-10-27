@@ -1,23 +1,11 @@
 import React from 'react';
 
-// Image sources - Update these URLs when changing images
-const HERO_IMAGES = {
-  orthodonticDevice: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/1b2e0205-1fa2-45bd-8c45-4d4c1200c30e/visual-edit-uploads/1761570089254-k4zcchufz1l.jpeg",
-  modernLab: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/1b2e0205-1fa2-45bd-8c45-4d4c1200c30e/visual-edit-uploads/1761569985153-11q58kayx5t.png"
-};
-
 const StatCard = ({
   bgColor,
   stat,
   title,
   description,
   className
-
-
-
-
-
-
 }: {bgColor: string;stat: string;title: string;description: string;className?: string;}) =>
 <div
   className={`flex flex-col justify-between p-8 text-black rounded-[32px] min-h-[450px] transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-xl cursor-pointer ${bgColor} ${className}`}>
@@ -74,7 +62,7 @@ const Hero = () => {
               description="Spécialisation complète en appareils orthodontiques" />
 
             <ImageCard
-              imageSrc={HERO_IMAGES.orthodonticDevice}
+              imageSrc="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/1b2e0205-1fa2-45bd-8c45-4d4c1200c30e/visual-edit-uploads/1761570318948-74luo92m0o5.png"
               alt="Appareil orthodontique de précision"
               className="hidden lg:block" />
 
@@ -85,7 +73,7 @@ const Hero = () => {
               description="Solutions adaptées à chaque patient" />
 
             <ImageCard
-              imageSrc={HERO_IMAGES.modernLab}
+              imageSrc="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/1b2e0205-1fa2-45bd-8c45-4d4c1200c30e/visual-edit-uploads/1761569985153-11q58kayx5t.png"
               alt="Laboratoire orthodontique moderne"
               className="hidden lg:block" />
 
