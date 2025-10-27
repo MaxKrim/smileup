@@ -21,7 +21,7 @@ export default function AboutPage() {
                   <h1 className="font-display text-5xl md:text-7xl lg:text-[80px] font-black leading-[1.0] tracking-[-0.06em] mb-6">
                     Qui suis-je ?
                   </h1>
-                  <p className="text-xl text-secondary-foreground leading-relaxed tracking-[-0.01em] mb-8 !whitespace-pre-line !w-[103%] !h-[104px]">{`Prothésiste dentaire diplômée, spécialisée en orthopédie dento-faciale. \n\n`}
+                  <p className="text-xl text-secondary-foreground leading-relaxed tracking-[-0.01em] mb-8 !whitespace-pre-line !w-[103%] !h-[104px] !whitespace-pre-line">{`Prothésiste dentaire diplômée, spécialisée en orthopédie dento-faciale. \n\n`}
 
                   </p>
                 </div>
