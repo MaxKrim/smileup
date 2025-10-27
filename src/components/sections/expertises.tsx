@@ -41,7 +41,7 @@ const expertisesData = [
 },
 {
   id: "03",
-  title: "Thermoformage",
+  title: "",
   subtitle: "Technologie de pointe pour vos patients.",
   description: "Gouttières thermoformées et appareils spécifiques réalisés avec précision. Solutions modernes et esthétiques pour un traitement orthodontique discret et efficace.",
   imageSrc: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/8A1B1AAB-82BF-4721-929A-E6D1ADCCE6A8-1761572496300.jpeg?width=8000&height=8000&resize=contain",
