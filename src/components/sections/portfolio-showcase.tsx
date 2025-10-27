@@ -8,22 +8,31 @@ type WorkCardProps = {
   title: string;
   label: string;
   icon: string;
+  image: string;
   borderColor: string;
   bgColor: string;
   href: string;
 };
 
-const WorkCard = ({ title, label, icon, borderColor, bgColor, href }: WorkCardProps) => {
+const WorkCard = ({ title, label, icon, image, borderColor, bgColor, href }: WorkCardProps) => {
   return (
     <Link href={href} legacyBehavior>
       <a
         className="group flex flex-col overflow-hidden rounded-2xl bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
         style={{ borderWidth: '3px', borderColor }}
       >
-        <div className="relative aspect-[3/4] w-full bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center">
-          <div className="text-center p-8">
-            <div className="text-8xl mb-4">{icon}</div>
-            <div className="text-2xl font-medium text-gray-800">{label}</div>
+        <div className="relative aspect-[3/4] w-full overflow-hidden">
+          <img 
+            src={image} 
+            alt={label}
+            className="absolute inset-0 h-full w-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="text-center p-8 relative z-10">
+              <div className="text-8xl mb-4 drop-shadow-lg">{icon}</div>
+              <div className="text-2xl font-medium text-white drop-shadow-md">{label}</div>
+            </div>
           </div>
           <div className="absolute top-5 right-5 z-10 flex size-12 items-center justify-center rounded-full bg-white text-black transition-transform duration-300 group-hover:scale-110">
             <ArrowUpRight strokeWidth={2.5} className="size-6" />
@@ -45,6 +54,7 @@ const worksData: WorkCardProps[] = [
     title: "Précision technique pour résultats optimaux",
     label: "Appareils Fonctionnels",
     icon: "⚙️",
+    image: "/images/work1.jpg",
     borderColor: "var(--color-brand-orange)",
     bgColor: "var(--color-brand-orange)",
     href: "#contact"
@@ -53,6 +63,7 @@ const worksData: WorkCardProps[] = [
     title: "Innovation numérique et expertise artisanale",
     label: "Gamme PUL",
     icon: "🔬",
+    image: "/images/work2.jpg",
     borderColor: "var(--color-brand-blue)",
     bgColor: "var(--color-brand-blue)",
     href: "#contact"
