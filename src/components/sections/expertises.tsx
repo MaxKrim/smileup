@@ -20,7 +20,7 @@ const expertisesData = [
   cardClass: "bg-[#FF6644] text-white",
   buttonClass: "bg-white text-black hover:bg-gray-100",
   labelBgClass: "bg-white/90 text-black",
-  icon: "🔒"
+  icon: ""
 },
 {
   id: "02",
