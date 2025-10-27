@@ -92,7 +92,7 @@ const worksData: WorkCardProps[] = [
 
 const PortfolioShowcase = () => {
     return (
-      <section className="bg-background py-16 md:py-24 relative z-0">
+      <section className="bg-background py-16 md:py-24">
         <div className="container">
           <div className="max-w-[60ch]">
             <h2 className="font-display text-6xl font-medium leading-none tracking-[-0.06em] md:text-7xl">Content dat scoort.</h2>
