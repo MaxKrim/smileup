@@ -14,6 +14,7 @@ const expertisesData = [
   title: "",
   subtitle: "Précision et fiabilité scellées.",
   description: "Appareils orthodontiques fixés de manière permanente en bouche. Conçus pour des corrections précises et continues, ils offrent un contrôle optimal des mouvements dentaires selon vos prescriptions.",
+  imageSrc: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/1b2e0205-1fa2-45bd-8c45-4d4c1200c30e/visual-edit-uploads/1761570873793-920do5hjs0i.png",
   videoSrc: "",
   buttonText: "En savoir plus",
   buttonLink: "#contact",
@@ -27,6 +28,7 @@ const expertisesData = [
   title: "Appareils mobiles",
   subtitle: "Flexibilité et confort au quotidien.",
   description: "Appareils amovibles que vos patients peuvent retirer et remettre eux-mêmes. Idéaux pour certaines corrections orthodontiques tout en offrant confort et facilité d'hygiène bucco-dentaire.",
+  imageSrc: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/1b2e0205-1fa2-45bd-8c45-4d4c1200c30e/visual-edit-uploads/1761570873793-920do5hjs0i.png",
   videoSrc: "",
   buttonText: "En savoir plus",
   buttonLink: "#contact",
@@ -40,6 +42,7 @@ const expertisesData = [
   title: "Thermoformage",
   subtitle: "Technologie de pointe pour vos patients.",
   description: "Gouttières thermoformées et appareils spécifiques réalisés avec précision. Solutions modernes et esthétiques pour un traitement orthodontique discret et efficace.",
+  imageSrc: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/1b2e0205-1fa2-45bd-8c45-4d4c1200c30e/visual-edit-uploads/1761570873793-920do5hjs0i.png",
   videoSrc: "",
   buttonText: "En savoir plus",
   buttonLink: "#contact",
@@ -53,6 +56,7 @@ const expertisesData = [
   title: "CFAO & Modélisation",
   subtitle: "Innovation numérique au service de l'orthodontie.",
   description: "Conception et Fabrication Assistées par Ordinateur. Modélisation numérique 3D pour des appareils ultra-précis. La technologie de demain, disponible aujourd'hui pour vos patients.",
+  imageSrc: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/1b2e0205-1fa2-45bd-8c45-4d4c1200c30e/visual-edit-uploads/1761570873793-920do5hjs0i.png",
   videoSrc: "",
   buttonText: "En savoir plus",
   buttonLink: "#contact",
@@ -109,7 +113,10 @@ const ExpertisesSection = () => {
                   </div>
 
                   <div className="lg:col-start-2 lg:row-start-2 lg:row-span-2 flex items-center justify-center min-h-[300px] sm:min-h-[400px]">
-                    <div className="w-full h-full aspect-square lg:aspect-auto rounded-3xl flex items-center justify-center !bg-cover !bg-center !bg-[url(https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/1b2e0205-1fa2-45bd-8c45-4d4c1200c30e/visual-edit-uploads/1761570873793-920do5hjs0i.png)] !bg-cover !bg-center"> 
+                    <div 
+                      className="w-full h-full aspect-square lg:aspect-auto rounded-3xl flex items-center justify-center bg-cover bg-center"
+                      style={{ backgroundImage: `url(${card.imageSrc})` }}
+                    > 
                       <div className="text-center p-8">
                         <div className="text-9xl mb-4 !whitespace-pre-line">{card.icon}</div>
                         <div className="text-2xl font-medium opacity-80 !whitespace-pre-line">{card.title}</div>
