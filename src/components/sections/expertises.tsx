@@ -114,7 +114,7 @@ const ExpertisesSection = () => {
 
                   <div className="lg:col-start-2 lg:row-start-2 lg:row-span-2 flex items-center justify-center min-h-[300px] sm:min-h-[400px]">
                     <div
-                className="w-full h-full aspect-square lg:aspect-auto rounded-3xl flex items-center justify-center bg-cover bg-center"
+                className="w-full h-full aspect-square lg:aspect-auto rounded-3xl flex items-center justify-center bg-cover bg-center !bg-[url(https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/1b2e0205-1fa2-45bd-8c45-4d4c1200c30e/visual-edit-uploads/1761571391583-kbhaceuk0w.png)] !bg-cover !bg-center"
                 style={{ backgroundImage: `url(${card.imageSrc})` }}>
                  
                       <div className="text-center p-8">
