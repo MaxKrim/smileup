@@ -11,51 +11,55 @@ gsap.registerPlugin(ScrollTrigger);
 const expertisesData = [
   {
     id: "01",
-    title: "Social strategy",
-    subtitle: "Slimme strategie. Sterke start.",
-    description: "We duiken diep in jouw merk, doelgroep en doelen. En vertalen data naar een duidelijk plan met formats die écht impact maken. Zo weet je precies waarom het werkt.",
-    videoSrc: "https://gethyped.b-cdn.net/MD/MD%20Loop%20Schaken.mp4",
-    buttonText: "Meer over social strategie",
-    buttonLink: "/expertises/social-strategie",
-    cardClass: "bg-[#F4EFE6] text-black",
-    buttonClass: "bg-[#FF6644] text-white hover:bg-brand-orange-dark",
-    labelBgClass: "bg-white",
+    title: "Appareils fixes",
+    subtitle: "Précision et fiabilité scellées.",
+    description: "Appareils orthodontiques fixés de manière permanente en bouche. Conçus pour des corrections précises et continues, ils offrent un contrôle optimal des mouvements dentaires selon vos prescriptions.",
+    videoSrc: "",
+    buttonText: "En savoir plus",
+    buttonLink: "#contact",
+    cardClass: "bg-[#FF6644] text-white",
+    buttonClass: "bg-white text-black hover:bg-gray-100",
+    labelBgClass: "bg-white/90 text-black",
+    icon: "🔒"
   },
   {
     id: "02",
-    title: "Content creation",
-    subtitle: "Content die opvalt en raakt.",
-    description: "We maken content die opvalt. Blijft hangen. En jouw doelgroep raakt. Creatief, snel en energiek. Altijd met het doel voor ogen.",
-    videoSrc: "https://gethyped.b-cdn.net/Expertises/Loop%20BTS%20comp.mp4",
-    buttonText: "Meer over content creatie",
-    buttonLink: "/expertises/content-creatie",
+    title: "Appareils mobiles",
+    subtitle: "Flexibilité et confort au quotidien.",
+    description: "Appareils amovibles que vos patients peuvent retirer et remettre eux-mêmes. Idéaux pour certaines corrections orthodontiques tout en offrant confort et facilité d'hygiène bucco-dentaire.",
+    videoSrc: "",
+    buttonText: "En savoir plus",
+    buttonLink: "#contact",
     cardClass: "bg-[#F0ABFC] text-black",
-    buttonClass: "bg-white text-black hover:bg-gray-200",
+    buttonClass: "bg-white text-black hover:bg-gray-100",
     labelBgClass: "bg-white/90",
+    icon: "🔄"
   },
   {
     id: "03",
-    title: "Activation",
-    subtitle: "Zichtbaar waar en wanneer het telt.",
-    description: "De juiste content verdient het om gezien te worden. We verspreiden de content waar jouw doelgroep is. Zo raakt jouw merk de juiste mensen, precies waar en wanneer het telt.",
-    videoSrc: "https://gethyped.b-cdn.net/Over%20de%20Top/overdetop-loop.mp4",
-    buttonText: "Meer over activatie",
-    buttonLink: "/expertises/activatie",
+    title: "Thermoformage",
+    subtitle: "Technologie de pointe pour vos patients.",
+    description: "Gouttières thermoformées et appareils spécifiques réalisés avec précision. Solutions modernes et esthétiques pour un traitement orthodontique discret et efficace.",
+    videoSrc: "",
+    buttonText: "En savoir plus",
+    buttonLink: "#contact",
     cardClass: "bg-[#10B981] text-black",
-    buttonClass: "bg-white text-black hover:bg-gray-200",
+    buttonClass: "bg-white text-black hover:bg-gray-100",
     labelBgClass: "bg-white/90",
+    icon: "✨"
   },
   {
     id: "04",
-    title: "Data",
-    subtitle: "Inzichten die impact maken.",
-    description: "We duiken in de cijfers om te snappen wat écht werkt. En sturen jouw content scherp bij.",
-    videoSrc: "https://gethyped.b-cdn.net/Expertises/Data%20comp.mp4",
-    buttonText: "Meer over data",
-    buttonLink: "/expertises/data",
-    cardClass: "bg-[#0EA5E9] text-black",
-    buttonClass: "bg-white text-black hover:bg-gray-200",
-    labelBgClass: "bg-white/90",
+    title: "CFAO & Modélisation",
+    subtitle: "Innovation numérique au service de l'orthodontie.",
+    description: "Conception et Fabrication Assistées par Ordinateur. Modélisation numérique 3D pour des appareils ultra-précis. La technologie de demain, disponible aujourd'hui pour vos patients.",
+    videoSrc: "",
+    buttonText: "En savoir plus",
+    buttonLink: "#contact",
+    cardClass: "bg-[#0EA5E9] text-white",
+    buttonClass: "bg-white text-black hover:bg-gray-100",
+    labelBgClass: "bg-white/90 text-black",
+    icon: "💻"
   },
 ];
 
@@ -93,27 +97,23 @@ const ExpertisesSection = () => {
                   <div className="lg:col-span-2 lg:row-start-1 flex justify-between items-start">
                     <div>
                       <div className={`${card.labelBgClass} text-sm font-medium leading-tight rounded-full px-4 py-1.5 inline-block mb-4`}>
-                        Expertise
+                        Gamme professionnelle
                       </div>
                       <h2 className="text-5xl sm:text-6xl lg:text-7xl font-medium tracking-[-0.06em] leading-none">
                         {card.title}
                       </h2>
                     </div>
-                    <div className="text-5xl sm:text-6xl lg:text-7xl font-medium tracking-[-0.06em] leading-none text-black/10">
+                    <div className="text-5xl sm:text-6xl lg:text-7xl font-medium tracking-[-0.06em] leading-none opacity-20">
                       {card.id}
                     </div>
                   </div>
 
                   <div className="lg:col-start-2 lg:row-start-2 lg:row-span-2 flex items-center justify-center min-h-[300px] sm:min-h-[400px]">
-                    <div className="w-full h-full aspect-square lg:aspect-auto"> 
-                      <video
-                        className="w-full h-full object-cover rounded-3xl"
-                        src={card.videoSrc}
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                      ></video>
+                    <div className="w-full h-full aspect-square lg:aspect-auto bg-white/10 rounded-3xl flex items-center justify-center"> 
+                      <div className="text-center p-8">
+                        <div className="text-9xl mb-4">{card.icon}</div>
+                        <div className="text-2xl font-medium opacity-80">{card.title}</div>
+                      </div>
                     </div>
                   </div>
 
@@ -121,7 +121,7 @@ const ExpertisesSection = () => {
                     <h3 className="text-2xl font-medium tracking-[-0.04em] leading-[1.2] mb-4">
                       {card.subtitle}
                     </h3>
-                    <p className="text-lg text-secondary-foreground/80 max-w-md mb-8">
+                    <p className="text-lg opacity-90 max-w-md mb-8">
                       {card.description}
                     </p>
                     <Link href={card.buttonLink} className={`inline-flex items-center gap-3 rounded-full text-base px-6 py-3 font-medium transition-colors ${card.buttonClass}`}>
