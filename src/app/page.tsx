@@ -18,9 +18,9 @@ export default function HomePage() {
   return (
     <>
       <Preloader />
-      <div className="flex flex-col min-h-screen bg-background">
+      <div className="flex flex-col min-h-screen bg-background w-full overflow-x-hidden">
         <Navigation />
-        <main className="flex-1">
+        <main className="flex-1 w-full">
           <Hero />
           <Intro />
           <ExpertisesSection />
