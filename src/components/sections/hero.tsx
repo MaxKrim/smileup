@@ -8,17 +8,17 @@ const StatCard = ({
   className
 }: {bgColor: string;stat: string;title: string;description: string;className?: string;}) =>
 <div
-  className={`flex flex-col justify-between p-8 text-black rounded-[32px] min-h-[450px] transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-xl cursor-pointer ${bgColor} ${className}`}>
+  className={`flex flex-col justify-between p-6 md:p-8 text-black rounded-2xl md:rounded-[32px] min-h-[300px] md:min-h-[400px] lg:min-h-[450px] transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-xl cursor-pointer ${bgColor} ${className}`}>
 
-    <div className="font-display font-medium tracking-tighter leading-none !text-[69px]">
+    <div className="font-display font-medium tracking-tighter leading-none text-5xl md:text-6xl lg:text-[69px]">
       {stat}
     </div>
-    <div className="mt-8">
-      <h2 className="font-display font-medium text-2xl tracking-tight leading-tight">
+    <div className="mt-6 md:mt-8">
+      <h2 className="font-display font-medium text-xl md:text-2xl tracking-tight leading-tight">
         {title}
       </h2>
-      <div className="h-px w-full bg-black my-3"></div>
-      <p className="text-base font-body">{description}</p>
+      <div className="h-px w-full bg-black my-2 md:my-3"></div>
+      <p className="text-sm md:text-base font-body">{description}</p>
     </div>
   </div>;
 
@@ -29,7 +29,7 @@ const ImageCard = ({
   className
 }: {imageSrc: string;alt: string;className?: string;}) =>
 <div
-  className={`relative w-full rounded-[32px] overflow-hidden min-h-[450px] transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-xl cursor-pointer ${className}`}>
+  className={`relative w-full rounded-2xl md:rounded-[32px] overflow-hidden min-h-[300px] md:min-h-[400px] lg:min-h-[450px] transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-xl cursor-pointer ${className}`}>
 
     <img
     src={imageSrc}
@@ -41,20 +41,20 @@ const ImageCard = ({
 
 const Hero = () => {
   return (
-    <header id="section_hero" className="bg-background">
-      <div className="px-6 md:px-12">
-        <div className="mx-auto max-w-[1440px] pt-32 pb-16 md:pb-24">
+    <header id="section_hero" className="bg-background w-full overflow-hidden">
+      <div className="px-6 md:px-12 w-full">
+        <div className="mx-auto max-w-7xl pt-24 md:pt-32 pb-12 md:pb-16 lg:pb-24 w-full">
           <div className="w-full">
-            <h1 className="font-display text-6xl md:text-8xl lg:text-[120px] font-black leading-[1.0] tracking-[-0.06em]">
+            <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[120px] font-black leading-[1.0] tracking-[-0.06em] break-words">
               Votre Laboratoire d'Orthodontie Exclusive.
             </h1>
-            <div className="mt-6 max-w-[60ch]">
-              <p className="text-xl text-secondary-foreground leading-relaxed tracking-[-0.01em] !whitespace-pre-line !w-[682px] !h-full">Orthésiste dentaire diplômée, spécialisée en orthopédie 
-
+            <div className="mt-6 max-w-full lg:max-w-[60ch]">
+              <p className="text-base md:text-lg lg:text-xl text-secondary-foreground leading-relaxed tracking-[-0.01em]">
+                Orthésiste dentaire diplômée, spécialisée en orthopédie dento-faciale. Je réalise tous vos appareils avec précision et passion.
               </p>
             </div>
           </div>
-          <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 w-full">
             <StatCard
               bgColor="bg-[#0EA5E9]"
               stat="100%"
