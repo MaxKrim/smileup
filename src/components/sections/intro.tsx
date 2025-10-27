@@ -7,7 +7,7 @@ const Intro = () => {
   return (
     <section id="intro-home" className="bg-background text-foreground py-24">
       <div className="mx-auto px-6 md:px-12 !w-[1440px] !h-full !max-w-[1440px]">
-        <div className="grid grid-cols-1 lg:grid-cols-12 lg:gap-x-8 gap-y-12 lg:gap-y-0 !w-full !h-full">
+        <div className="grid grid-cols-1 lg:grid-cols-12 lg:gap-x-8 gap-y-12 lg:gap-y-0 !w-full !h-60">
           <div className="lg:col-span-7 !w-[771px] !h-[72px]">
             <h2 className="font-display text-[40px] leading-[1.1] font-medium -tracking-[0.06em] text-foreground whitespace-pre-line">
               Une expertise technique pointue.
