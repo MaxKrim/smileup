@@ -54,7 +54,7 @@ const worksData: WorkCardProps[] = [
     title: "Précision technique pour résultats optimaux",
     label: "Appareils Fonctionnels",
     icon: "⚙️",
-    image: "/images/work1.jpg",
+    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/1b2e0205-1fa2-45bd-8c45-4d4c1200c30e/generated_images/professional-orthodontic-laboratory-work-00dbade2-20251027142027.jpg",
     borderColor: "var(--color-brand-orange)",
     bgColor: "var(--color-brand-orange)",
     href: "#contact"
@@ -63,7 +63,7 @@ const worksData: WorkCardProps[] = [
     title: "Innovation numérique et expertise artisanale",
     label: "Gamme PUL",
     icon: "🔬",
-    image: "/images/work2.jpg",
+    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/1b2e0205-1fa2-45bd-8c45-4d4c1200c30e/generated_images/modern-digital-orthodontic-cad-cam-syste-941a755d-20251027142027.jpg",
     borderColor: "var(--color-brand-blue)",
     bgColor: "var(--color-brand-blue)",
     href: "#contact"
