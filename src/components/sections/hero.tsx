@@ -29,22 +29,21 @@ const StatCard = ({
   </div>
 );
 
-const VideoCard = ({
-  videoSrc,
+const ImageCard = ({
+  imageSrc,
+  alt,
   className,
 }: {
-  videoSrc: string;
+  imageSrc: string;
+  alt: string;
   className?: string;
 }) => (
   <div
     className={`relative w-full rounded-[32px] overflow-hidden min-h-[450px] transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-xl cursor-pointer ${className}`}
   >
-    <video
-      src={videoSrc}
-      autoPlay
-      loop
-      muted
-      playsInline
+    <img
+      src={imageSrc}
+      alt={alt}
       className="absolute top-0 left-0 w-full h-full object-cover"
     />
   </div>
@@ -57,33 +56,35 @@ const Hero = () => {
         <div className="mx-auto max-w-[1440px] pt-32 pb-16 md:pb-24">
           <div className="w-full">
             <h1 className="font-display text-6xl md:text-8xl lg:text-[120px] font-black leading-[1.0] tracking-[-0.06em]">
-              Get Hyped. Get Noticed. Get Results.
+              Votre Laboratoire d'Orthodontie Exclusive.
             </h1>
             <div className="mt-6 max-w-[60ch]">
               <p className="text-xl text-secondary-foreground leading-relaxed tracking-[-0.01em]">
-                Klaar met gokken op content die niets oplevert?
+                Orthésiste dentaire diplômée, spécialisée en orthopédie dento-faciale. Une expertise technique au service des praticiens exigeants.
               </p>
             </div>
           </div>
           <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <StatCard
               bgColor="bg-[#0EA5E9]"
-              stat="10M+"
-              title="Organische views"
-              description="Groei door slimme content"
+              stat="100%"
+              title="Orthodontie exclusive"
+              description="Spécialisation complète en appareils orthodontiques"
             />
-            <VideoCard
-              videoSrc="https://gethyped.b-cdn.net/Salontopper/Loop%20Salontopper.mp4"
+            <ImageCard
+              imageSrc="/placeholder-ortho-1.jpg"
+              alt="Appareil orthodontique de précision"
               className="hidden lg:block"
             />
             <StatCard
               bgColor="bg-[#10B981]"
-              stat="30+"
-              title="Merken geholpen"
-              description="Van start-up tot multinational"
+              stat="Enfants & Adultes"
+              title="Pour tous les âges"
+              description="Solutions adaptées à chaque patient"
             />
-            <VideoCard
-              videoSrc="https://gethyped.b-cdn.net/Petrol%20Head/petrolhead-loop.mp4"
+            <ImageCard
+              imageSrc="/placeholder-ortho-2.jpg"
+              alt="Laboratoire orthodontique moderne"
               className="hidden lg:block"
             />
           </div>
