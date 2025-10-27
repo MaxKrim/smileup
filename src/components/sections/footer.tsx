@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Instagram, Linkedin, Mail, Phone } from 'lucide-react';
+import { Instagram, Mail, Phone } from 'lucide-react';
 
 const WaveSvg = () => (
   <div className="absolute top-0 left-0 w-full overflow-hidden leading-none -translate-y-px">
@@ -81,8 +81,7 @@ export default function Footer() {
             <div>
               <p className="font-medium text-black mb-3">Suivez-moi</p>
               <div className="flex gap-2.5 justify-center lg:justify-end">
-                <SocialLink href="#"><Linkedin size={20} /></SocialLink>
-                <SocialLink href="#"><Instagram size={20} /></SocialLink>
+                <SocialLink href="https://www.instagram.com/jessica_lrdy/"><Instagram size={20} /></SocialLink>
               </div>
             </div>
           </div>
