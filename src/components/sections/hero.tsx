@@ -83,7 +83,7 @@ const Hero = () => {
               description="Solutions adaptées à chaque patient" />
 
             <ImageCard
-              imageSrc="/placeholder-ortho-2.jpg"
+              imageSrc="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/1b2e0205-1fa2-45bd-8c45-4d4c1200c30e/visual-edit-uploads/1761569985153-11q58kayx5t.png"
               alt="Laboratoire orthodontique moderne"
               className="hidden lg:block" />
 
