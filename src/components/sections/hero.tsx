@@ -72,7 +72,7 @@ const Hero = () => {
               description="Spécialisation complète en appareils orthodontiques" />
 
             <ImageCard
-              imageSrc="/placeholder-ortho-1.jpg"
+              imageSrc="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/1b2e0205-1fa2-45bd-8c45-4d4c1200c30e/visual-edit-uploads/1761569903370-2vjbow1d47v.png"
               alt="Appareil orthodontique de précision"
               className="hidden lg:block" />
 
