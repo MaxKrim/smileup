@@ -115,7 +115,7 @@ const ExpertisesSection = () => {
                   <div className="lg:col-start-2 lg:row-start-2 lg:row-span-2 flex items-center justify-center min-h-[300px] sm:min-h-[400px]">
                     <div
                 data-card-id={card.id}
-                className="w-full h-full aspect-square lg:aspect-auto rounded-3xl flex items-center justify-center bg-cover bg-center"
+                className={`expertise-image-${card.id} w-full h-full aspect-square lg:aspect-auto rounded-3xl flex items-center justify-center bg-cover bg-center`}
                 style={{ backgroundImage: `url(${card.imageSrc})` }}>
                  
                       <div className="text-center p-8">
