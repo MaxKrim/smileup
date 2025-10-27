@@ -112,7 +112,7 @@ const ExpertisesSection = () => {
                     <div className="w-full h-full aspect-square lg:aspect-auto rounded-3xl flex items-center justify-center !bg-cover !bg-center !bg-[url(https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/1b2e0205-1fa2-45bd-8c45-4d4c1200c30e/visual-edit-uploads/1761570873793-920do5hjs0i.png)] !bg-cover !bg-center"> 
                       <div className="text-center p-8">
                         <div className="text-9xl mb-4 !whitespace-pre-line">{card.icon}</div>
-                        <div className="text-2xl font-medium opacity-80">{card.title}</div>
+                        <div className="text-2xl font-medium opacity-80 !whitespace-pre-line">{card.title}</div>
                       </div>
                     </div>
                   </div>
