@@ -35,7 +35,7 @@ const expertisesData = [
   cardClass: "bg-[#F0ABFC] text-black",
   buttonClass: "bg-white text-black hover:bg-gray-100",
   labelBgClass: "bg-white/90",
-  icon: "🔄"
+  icon: ""
 },
 {
   id: "03",
@@ -113,10 +113,10 @@ const ExpertisesSection = () => {
                   </div>
 
                   <div className="lg:col-start-2 lg:row-start-2 lg:row-span-2 flex items-center justify-center min-h-[300px] sm:min-h-[400px]">
-                    <div 
-                      className="w-full h-full aspect-square lg:aspect-auto rounded-3xl flex items-center justify-center bg-cover bg-center"
-                      style={{ backgroundImage: `url(${card.imageSrc})` }}
-                    > 
+                    <div
+                className="w-full h-full aspect-square lg:aspect-auto rounded-3xl flex items-center justify-center bg-cover bg-center"
+                style={{ backgroundImage: `url(${card.imageSrc})` }}>
+                 
                       <div className="text-center p-8">
                         <div className="text-9xl mb-4 !whitespace-pre-line">{card.icon}</div>
                         <div className="text-2xl font-medium opacity-80 !whitespace-pre-line">{card.title}</div>
