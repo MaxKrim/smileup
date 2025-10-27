@@ -121,7 +121,7 @@ const ExpertisesSection = () => {
                       <img
                   id={`expertise-image-${card.id}`}
                   data-card-id={card.id}
-                  className={`!bg-[url(https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/1b2e0205-1fa2-45bd-8c45-4d4c1200c30e/visual-edit-uploads/1761571983890-e1brem0l8zc.png)] !bg-cover !bg-center ${card.imageClass} w-full h-full object-cover`}
+                  className={`${card.imageClass} w-full h-full object-cover`}
                   src={card.imageSrc}
                   alt={card.subtitle} />
 
