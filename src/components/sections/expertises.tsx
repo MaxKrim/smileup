@@ -96,28 +96,28 @@ const ExpertisesSection = () => {
   }, []);
 
   return (
-    <section id="expertises" ref={componentRef} className="bg-background relative">
+    <section id="expertises" ref={componentRef} className="bg-background relative w-full overflow-hidden">
         {expertisesData.map((card) =>
       <div key={card.id} className="expertise-panel h-auto lg:h-screen w-full lg:p-8 relative">
-              <div className={`h-full w-full rounded-none lg:rounded-[32px] p-8 lg:p-0 ${card.cardClass}`}>
-                <div className="h-full w-full lg:p-8 grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-[auto_1fr_auto] gap-x-8 gap-y-8 lg:gap-y-0">
+              <div className={`h-full w-full rounded-none lg:rounded-[32px] p-6 md:p-8 lg:p-0 ${card.cardClass}`}>
+                <div className="h-full w-full lg:p-8 grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-[auto_1fr_auto] gap-x-6 gap-y-6 md:gap-x-8 md:gap-y-8 lg:gap-y-0">
                   
-                  <div className="lg:col-span-2 lg:row-start-1 flex justify-between items-start">
-                    <div>
-                      <div className={`${card.labelBgClass} text-sm font-medium leading-tight rounded-full px-4 py-1.5 inline-block mb-4`}>
+                  <div className="lg:col-span-2 lg:row-start-1 flex justify-between items-start gap-4">
+                    <div className="flex-1 min-w-0">
+                      <div className={`${card.labelBgClass} text-xs md:text-sm font-medium leading-tight rounded-full px-3 md:px-4 py-1.5 inline-block mb-3 md:mb-4 whitespace-nowrap`}>
                         Gamme professionnelle
                       </div>
-                      <h2 className="text-5xl sm:text-6xl lg:text-7xl font-medium tracking-[-0.06em] leading-none">
+                      <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-medium tracking-[-0.06em] leading-none break-words">
                         {card.title}
                       </h2>
                     </div>
-                    <div className="text-5xl sm:text-6xl lg:text-7xl font-medium tracking-[-0.06em] leading-none opacity-20">
+                    <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-medium tracking-[-0.06em] leading-none opacity-20 flex-shrink-0">
                       {card.id}
                     </div>
                   </div>
 
-                  <div className="lg:col-start-2 lg:row-start-2 lg:row-span-2 flex items-center justify-center min-h-[300px] sm:min-h-[400px]">
-                    <div className="w-full h-full aspect-square lg:aspect-auto rounded-3xl overflow-hidden relative">
+                  <div className="lg:col-start-2 lg:row-start-2 lg:row-span-2 flex items-center justify-center min-h-[250px] sm:min-h-[300px] lg:min-h-[400px]">
+                    <div className="w-full h-full aspect-square lg:aspect-auto rounded-2xl lg:rounded-3xl overflow-hidden relative">
                       <img
                   id={`expertise-image-${card.id}`}
                   data-card-id={card.id}
@@ -127,9 +127,9 @@ const ExpertisesSection = () => {
 
                       {(card.icon || card.title) &&
                 <div className="absolute inset-0 flex items-center justify-center bg-black/20">
-                          <div className="text-center p-8">
-                            {card.icon && <div className="text-9xl mb-4 !whitespace-pre-line !whitespace-pre-line">{card.icon}</div>}
-                            {card.title && <div className="text-2xl font-medium opacity-80 !whitespace-pre-line !whitespace-pre-line">{card.title}</div>}
+                          <div className="text-center p-4 md:p-8">
+                            {card.icon && <div className="text-6xl md:text-8xl lg:text-9xl mb-4">{card.icon}</div>}
+                            {card.title && <div className="text-xl md:text-2xl font-medium opacity-80">{card.title}</div>}
                           </div>
                         </div>
                 }
@@ -137,15 +137,15 @@ const ExpertisesSection = () => {
                   </div>
 
                   <div className="lg:col-start-1 lg:row-start-3 self-auto lg:self-end">
-                    <h3 className="text-2xl font-medium tracking-[-0.04em] leading-[1.2] mb-4">
+                    <h3 className="text-xl md:text-2xl font-medium tracking-[-0.04em] leading-[1.2] mb-3 md:mb-4">
                       {card.subtitle}
                     </h3>
-                    <p className="text-lg opacity-90 max-w-md mb-8">
+                    <p className="text-base md:text-lg opacity-90 max-w-md mb-6 md:mb-8">
                       {card.description}
                     </p>
-                    <Link href={card.buttonLink} className={`inline-flex items-center gap-3 rounded-full text-base px-6 py-3 font-medium transition-colors ${card.buttonClass}`}>
+                    <Link href={card.buttonLink} className={`inline-flex items-center gap-2 md:gap-3 rounded-full text-sm md:text-base px-5 md:px-6 py-2.5 md:py-3 font-medium transition-colors ${card.buttonClass}`}>
                         <span>{card.buttonText}</span>
-                        <ArrowRight className="size-4" />
+                        <ArrowRight className="size-3 md:size-4" />
                     </Link>
                   </div>
                 </div>
