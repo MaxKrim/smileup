@@ -117,16 +117,22 @@ const ExpertisesSection = () => {
                   </div>
 
                   <div className="lg:col-start-2 lg:row-start-2 lg:row-span-2 flex items-center justify-center min-h-[300px] sm:min-h-[400px]">
-                    <div
-                id={`expertise-image-${card.id}`}
-                data-card-id={card.id}
-                className={`${card.imageClass} w-full h-full aspect-square lg:aspect-auto rounded-3xl flex items-center justify-center bg-cover bg-center`}
-                style={{ backgroundImage: `url(${card.imageSrc})` }}>
-                 
-                      <div className="text-center p-8">
-                        <div className="text-9xl mb-4 !whitespace-pre-line !whitespace-pre-line">{card.icon}</div>
-                        <div className="text-2xl font-medium opacity-80 !whitespace-pre-line !whitespace-pre-line">{card.title}</div>
-                      </div>
+                    <div className="w-full h-full aspect-square lg:aspect-auto rounded-3xl overflow-hidden relative">
+                      <img
+                        id={`expertise-image-${card.id}`}
+                        data-card-id={card.id}
+                        className={`${card.imageClass} w-full h-full object-cover`}
+                        src={card.imageSrc}
+                        alt={card.subtitle}
+                      />
+                      {(card.icon || card.title) && (
+                        <div className="absolute inset-0 flex items-center justify-center bg-black/20">
+                          <div className="text-center p-8">
+                            {card.icon && <div className="text-9xl mb-4">{card.icon}</div>}
+                            {card.title && <div className="text-2xl font-medium opacity-80">{card.title}</div>}
+                          </div>
+                        </div>
+                      )}
                     </div>
                   </div>
 
