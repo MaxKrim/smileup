@@ -9,7 +9,7 @@ const Logo = () =>
   width="180"
   height="50"
   viewBox="0 0 982.52 270.95"
-  className="text-black !w-full !h-full"
+  className="text-black w-auto h-10 md:h-12"
   fill="none"
   xmlns="http://www.w3.org/2000/svg"
   role="img"
@@ -70,13 +70,13 @@ export default function Navigation() {
     <>
       <nav
         className={cn(
-          "fixed top-0 left-0 right-0 z-50 transition-all duration-300 font-body",
+          "fixed top-0 left-0 right-0 z-50 transition-all duration-300 font-body w-full",
           isScrolled ? "bg-background/95 backdrop-blur-sm border-b border-black/10" : "bg-transparent"
         )}>
 
-        <div className="container mx-auto px-6 md:px-12">
-          <div className="flex items-center justify-between h-20">
-            <Link href="/" aria-label="Page d'accueil">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 w-full">
+          <div className="flex items-center justify-between h-16 md:h-20">
+            <Link href="/" aria-label="Page d'accueil" className="flex-shrink-0">
               <Logo />
             </Link>
 
@@ -90,17 +90,17 @@ export default function Navigation() {
               </div>
             </div>
             
-            <div className="hidden lg:block">
+            <div className="hidden lg:block flex-shrink-0">
               <Link
                 href="#contact"
-                className="group flex items-center gap-2 text-base font-medium text-black bg-gradient-to-r from-[#F87DFF] to-accent py-3 px-6 rounded-full transition-transform hover:scale-105">
+                className="group flex items-center gap-2 text-sm md:text-base font-medium text-black bg-gradient-to-r from-[#F87DFF] to-accent py-2.5 md:py-3 px-5 md:px-6 rounded-full transition-transform hover:scale-105 whitespace-nowrap">
 
                 <span>Travailler Ensemble</span>
                 <span className="text-xl">🦷</span>
               </Link>
             </div>
 
-            <div className="lg:hidden">
+            <div className="lg:hidden flex-shrink-0">
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 className="relative z-50 h-8 w-8 text-black flex items-center justify-center"
@@ -117,17 +117,17 @@ export default function Navigation() {
 
       <div
         className={cn(
-          "lg:hidden fixed inset-0 bg-background z-40 transform transition-transform duration-500 ease-in-out font-body",
+          "lg:hidden fixed inset-0 bg-background z-40 transform transition-transform duration-500 ease-in-out font-body overflow-y-auto",
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         )}>
 
-        <div className="flex flex-col items-center justify-center h-full space-y-8 pt-20">
+        <div className="flex flex-col items-center justify-center min-h-full space-y-8 pt-20 pb-12 px-6">
           {navItems.map((item) =>
           <Link
             key={item.name}
             href={item.href}
             onClick={() => setIsMenuOpen(false)}
-            className="text-3xl font-medium text-black">
+            className="text-2xl md:text-3xl font-medium text-black">
 
               {item.name}
             </Link>
@@ -136,10 +136,10 @@ export default function Navigation() {
              <Link
               href="#contact"
               onClick={() => setIsMenuOpen(false)}
-              className="flex items-center gap-2 text-lg font-medium text-black bg-gradient-to-r from-[#F87DFF] to-accent py-4 px-8 rounded-full">
+              className="flex items-center gap-2 text-base md:text-lg font-medium text-black bg-gradient-to-r from-[#F87DFF] to-accent py-3 md:py-4 px-6 md:px-8 rounded-full">
 
                 <span>Travailler Ensemble</span>
-                <span className="text-2xl">🦷</span>
+                <span className="text-xl md:text-2xl">🦷</span>
               </Link>
           </div>
         </div>
