@@ -1,31 +1,31 @@
 import Link from 'next/link';
 import { Instagram, Mail, Phone } from 'lucide-react';
 
-const WaveSvg = () => (
-  <div className="absolute top-0 left-0 w-full overflow-hidden leading-none -translate-y-px">
+const WaveSvg = () =>
+<div className="absolute top-0 left-0 w-full overflow-hidden leading-none -translate-y-px">
     <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 1440 160"
-      preserveAspectRatio="none"
-      className="relative block w-full h-[160px]"
-      fill="#F4EFE6"
-    >
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 1440 160"
+    preserveAspectRatio="none"
+    className="relative block w-full h-[160px]"
+    fill="#F4EFE6">
+
       <path d="M0,80 C400,160 800,0 1440,50 V0 H0 Z" />
     </svg>
-  </div>
-);
+  </div>;
 
-const Logo = () => (
-  <svg
-    width="180"
-    height="50"
-    viewBox="0 0 982.52 270.95"
-    className="text-black !w-full !h-full"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    role="img"
-    aria-label="Smile UP Logo"
-  >
+
+const Logo = () =>
+<svg
+  width="180"
+  height="50"
+  viewBox="0 0 982.52 270.95"
+  className="text-black !w-full !h-full"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  role="img"
+  aria-label="Smile UP Logo">
+
     <defs>
       <style>{`.cls-1{fill:#2b2b2b;}.cls-2{fill:#46aac9;}`}</style>
     </defs>
@@ -40,19 +40,19 @@ const Logo = () => (
       <path className="cls-1" d="M322.26,257.12c-21.95-1.4-50.67.32-72.84,1.52-3.21.17-19.83.17-21.32,2.32-2.59,3.74,7.53,5.88,9.67,6.34,22.04,4.8,54.42,4.23,76.95,1.85,3.83-.41,23.65-2.52,24.36-6.46.67-3.75-14.1-5.41-16.82-5.58Z" />
       <path className="cls-1" d="M437.98,26.91c-12.66,2.63-9.81,25.39,6.25,22,13.52-2.85,10.55-25.49-6.25-22Z" />
     </g>
-  </svg>
-);
+  </svg>;
 
-const SocialLink = ({ href, children }: { href: string; children: React.ReactNode }) => (
-  <a
-    href={href}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="w-11 h-11 bg-white rounded-full flex items-center justify-center text-black hover:bg-[#0EA5E9] hover:text-white transition-colors"
-  >
+
+const SocialLink = ({ href, children }: {href: string;children: React.ReactNode;}) =>
+<a
+  href={href}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="w-11 h-11 bg-white rounded-full flex items-center justify-center text-black hover:bg-[#0EA5E9] hover:text-white transition-colors">
+
     {children}
-  </a>
-);
+  </a>;
+
 
 export default function Footer() {
   return (
@@ -64,7 +64,7 @@ export default function Footer() {
           <div className="lg:justify-self-start">
             <Link href="/">
               <div className="flex flex-col gap-2">
-                <span className="text-6xl">🦷</span>
+                <span className="text-6xl"></span>
                 <div className="w-[180px] h-[50px]">
                   <Logo />
                 </div>
@@ -87,17 +87,17 @@ export default function Footer() {
           <div className="lg:justify-self-end flex flex-col gap-6 text-base text-center lg:text-right">
             <div>
               <p className="font-bold text-black mb-3 text-lg">Jessica Lerandy-Estevez</p>
-              <a 
-                href="mailto:jessica.lerandyestevez@gmail.com" 
-                className="flex items-center justify-center lg:justify-end gap-2 text-black/80 hover:text-[#0EA5E9] transition-colors mb-2"
-              >
+              <a
+                href="mailto:jessica.lerandyestevez@gmail.com"
+                className="flex items-center justify-center lg:justify-end gap-2 text-black/80 hover:text-[#0EA5E9] transition-colors mb-2">
+
                 <Mail size={18} />
                 <span>jessica.lerandyestevez@gmail.com</span>
               </a>
-              <a 
-                href="tel:+33777995315" 
-                className="flex items-center justify-center lg:justify-end gap-2 text-black/80 hover:text-[#0EA5E9] transition-colors"
-              >
+              <a
+                href="tel:+33777995315"
+                className="flex items-center justify-center lg:justify-end gap-2 text-black/80 hover:text-[#0EA5E9] transition-colors">
+
                 <Phone size={18} />
                 <span>+33 7 77 99 53 15</span>
               </a>
@@ -118,6 +118,6 @@ export default function Footer() {
           <Link href="#" className="hover:text-black transition-colors">Mentions légales</Link>
         </div>
       </div>
-    </footer>
-  );
+    </footer>);
+
 }
