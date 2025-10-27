@@ -64,7 +64,7 @@ export default function Footer() {
           <div className="lg:justify-self-start">
             <Link href="/">
               <div className="flex flex-col gap-2">
-                <span className="text-6xl"></span>
+                <span className="text-6xl !whitespace-pre-line"></span>
                 <div className="w-[180px] h-[50px]">
                   <Logo />
                 </div>
