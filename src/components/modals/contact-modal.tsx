@@ -6,7 +6,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 
 const formSchema = z.object({
-  name: z.string().min(1, "Voor- en achternaam is verplicht."),
+  name: z.string().min(1, "Pour- en achternaam is verplicht."),
   email: z.string().email("Voer een geldig e-mailadres in.").min(1, "E-mail is verplicht."),
   phone: z.string().optional(),
   message: z.string().min(1, "Bericht is verplicht."),
@@ -148,7 +148,7 @@ const ContactForm = ({ onSuccess }: { onSuccess: () => void }) => {
                 <SubmitArrowIcon />
               </div>
             </button>
-            <p className="font-bold text-text-secondary text-base">Of bel <a href="tel:+31615337496" className="underline hover:no-underline">+31 6 1533 7496</a></p>
+            <p className="font-bold text-text-secondary text-base">Of bel <a href="tel:+33777995315" className="underline hover:no-underline">+33 7 77 99 53 15</a></p>
           </div>
         </form>
       </div>
@@ -172,6 +172,10 @@ const SuccessMessage = () => {
     );
 };
 
+interface ContactModalProps {
+  isOpen: boolean;
+  onClose: () => void;
+}
 
 export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
   const [isSubmitted, setIsSubmitted] = useState(false);
