@@ -5,11 +5,11 @@ import { ArrowRight, ArrowDown } from 'lucide-react';
 
 const Intro = () => {
   return (
-    <section id="intro-home" className="bg-background text-foreground py-24 !w-full !h-[696px]">
-      <div className="mx-auto px-6 md:px-12 !w-[1440px] !h-[495px] !max-w-[1440px]">
-        <div className="grid grid-cols-1 lg:grid-cols-12 lg:gap-x-8 gap-y-12 lg:gap-y-0 !w-full !h-[65px]">
-          <div className="lg:col-span-7 !w-[771px] !h-[72px]">
-            <h2 className="font-display text-[40px] leading-[1.1] font-medium -tracking-[0.06em] text-foreground whitespace-pre-line">
+    <section id="intro-home" className="bg-background text-foreground py-12 md:py-24 w-full overflow-hidden">
+      <div className="mx-auto px-6 md:px-12 max-w-7xl w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-12 lg:gap-x-8 gap-y-12 lg:gap-y-8 w-full">
+          <div className="lg:col-span-7 w-full">
+            <h2 className="font-display text-2xl sm:text-3xl md:text-[40px] leading-[1.1] font-medium -tracking-[0.06em] text-foreground">
               Une expertise technique pointue.
             </h2>
           </div>
@@ -26,16 +26,16 @@ const Intro = () => {
           </div>
 
           <div className="lg:col-span-7 lg:row-start-2">
-            <p className="text-secondary-foreground text-[20px] leading-[1.5] -tracking-[0.01em]">
+            <p className="text-secondary-foreground text-base md:text-lg lg:text-[20px] leading-[1.5] -tracking-[0.01em]">
               Je travaille exclusivement pour les orthodontistes, dentistes et chirurgiens-dentistes qui pratiquent l'orthodontie. Chaque appareil est réalisé avec précision selon vos prescriptions, pour des résultats optimaux chez vos patients, enfants comme adultes.
             </p>
             <div className="mt-8">
               <Link
                 href="/about"
-                className="group relative inline-flex items-center justify-center py-[14px] px-[30px] border-2 border-black rounded-full overflow-hidden font-medium text-base leading-snug">
+                className="group relative inline-flex items-center justify-center py-[14px] px-[30px] border-2 border-black rounded-full overflow-hidden font-medium text-sm md:text-base leading-snug">
                 <span className="absolute inset-0 w-full h-full bg-black transform scale-y-0 group-hover:scale-y-100 transition-transform duration-300 ease-in-out origin-bottom z-0"></span>
                 <span className="relative z-10 flex items-center gap-2 text-black group-hover:text-white transition-colors duration-300 ease-in-out">
-                  <span>En savoir plus sur mon parcours</span>
+                  <span className="whitespace-nowrap">En savoir plus sur mon parcours</span>
                   <ArrowRight size={14} />
                 </span>
               </Link>
