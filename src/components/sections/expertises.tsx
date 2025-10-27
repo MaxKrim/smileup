@@ -56,7 +56,7 @@ const expertisesData = [
 },
 {
   id: "04",
-  title: "CFAO & Modélisation",
+  title: "",
   subtitle: "Innovation numérique au service de l'orthodontie.",
   description: "Conception et Fabrication Assistées par Ordinateur. Modélisation numérique 3D pour des appareils ultra-précis. La technologie de demain, disponible aujourd'hui pour vos patients.",
   imageSrc: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/1b2e0205-1fa2-45bd-8c45-4d4c1200c30e/visual-edit-uploads/expertise-04.png",
