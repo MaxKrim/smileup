@@ -1,30 +1,25 @@
 import React from 'react';
 
-const LOGOS = [
-  { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/1b2e0205-1fa2-45bd-8c45-4d4c1200c30e-gethyped-nl/assets/svgs/6849d88f755388cc2c74ecff_salontopper-2.svg", alt: "Salontopper" },
-  { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/1b2e0205-1fa2-45bd-8c45-4d4c1200c30e-gethyped-nl/assets/svgs/6849d880bed5996600cbc586_seesing-flex-3.svg", alt: "Seesing Flex" },
-  { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/1b2e0205-1fa2-45bd-8c45-4d4c1200c30e-gethyped-nl/assets/svgs/6849d86cd6ba384af3c14e58_graafschap-college-4.svg", alt: "Graafschap College" },
-  { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/1b2e0205-1fa2-45bd-8c45-4d4c1200c30e-gethyped-nl/assets/svgs/6849d85341bf0d7476e56a8c_fides-5.svg", alt: "Fides" },
-  { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/1b2e0205-1fa2-45bd-8c45-4d4c1200c30e-gethyped-nl/assets/svgs/6849d838fc5735f090bd9843_SRHK-6.svg", alt: "SRHK" },
-  { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/1b2e0205-1fa2-45bd-8c45-4d4c1200c30e-gethyped-nl/assets/svgs/6849d81e72e08110e3fd1a17_knltb-7.svg", alt: "KNLTB" },
-  { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/1b2e0205-1fa2-45bd-8c45-4d4c1200c30e-gethyped-nl/assets/svgs/684b062ebc242028ca4b3ea1_tho-8.svg", alt: "THO" },
-  { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/1b2e0205-1fa2-45bd-8c45-4d4c1200c30e-gethyped-nl/assets/svgs/684c05642bf8f5cea7384403_de-talententuin-9.svg", alt: "De Talententuin" },
-  { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/1b2e0205-1fa2-45bd-8c45-4d4c1200c30e-gethyped-nl/assets/svgs/68c1952f22281ee50d3620b5_zclv-10.svg", alt: "ZCLV" },
-  { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/1b2e0205-1fa2-45bd-8c45-4d4c1200c30e-gethyped-nl/assets/svgs/68c194e6d1b186563459b107_morssinkhof-1.svg", alt: "Morssinkhof" },
+const PRACTITIONER_TYPES = [
+  { icon: "👨‍⚕️", title: "Orthodontistes", color: "bg-[#0EA5E9]" },
+  { icon: "🦷", title: "Dentistes", color: "bg-[#10B981]" },
+  { icon: "⚕️", title: "Chirurgiens-Dentistes", color: "bg-[#F0ABFC]" },
+  { icon: "👨‍⚕️", title: "Orthodontistes", color: "bg-[#FF6644]" },
+  { icon: "🦷", title: "Dentistes", color: "bg-[#0EA5E9]" },
+  { icon: "⚕️", title: "Chirurgiens-Dentistes", color: "bg-[#10B981]" },
+  { icon: "👨‍⚕️", title: "Orthodontistes", color: "bg-[#F0ABFC]" },
+  { icon: "🦷", title: "Dentistes", color: "bg-[#FF6644]" },
 ];
 
-const LogoTrack = () => (
+const PractitionerTrack = () => (
   <div className="flex flex-none items-center gap-8 pl-8">
-    {LOGOS.map((logo, index) => (
+    {PRACTITIONER_TYPES.map((practitioner, index) => (
       <div
         key={index}
-        className="w-[264px] shrink-0 h-[160px] bg-card border border-border rounded-sm flex items-center justify-center p-12 transition-transform duration-300 ease-in-out hover:scale-[1.02]"
+        className={`w-[264px] shrink-0 h-[160px] ${practitioner.color} text-white border border-white/20 rounded-2xl flex flex-col items-center justify-center p-8 transition-transform duration-300 ease-in-out hover:scale-[1.02]`}
       >
-        <img
-          src={logo.src}
-          alt={logo.alt}
-          className="max-h-[56px] w-auto object-contain"
-        />
+        <div className="text-6xl mb-3">{practitioner.icon}</div>
+        <div className="text-lg font-medium text-center">{practitioner.title}</div>
       </div>
     ))}
   </div>
@@ -45,14 +40,17 @@ const BrandsMarquee = () => {
                 `}
             </style>
             <div className="container">
-                <h2 className="text-[56px] font-medium tracking-[-0.06em] leading-none mb-24 font-display">
-                    These brands got hyped.
+                <h2 className="text-[56px] font-medium tracking-[-0.06em] leading-none mb-8 font-display">
+                    Des praticiens qui me font confiance.
                 </h2>
+                <p className="text-lg text-text-secondary max-w-[60ch] mb-24">
+                    Je travaille avec des orthodontistes, dentistes et chirurgiens-dentistes exigeants qui recherchent une qualité de travail irréprochable et un partenaire fiable pour leurs patients.
+                </p>
             </div>
             
             <div className="flex animate-marquee">
-                <LogoTrack />
-                <LogoTrack />
+                <PractitionerTrack />
+                <PractitionerTrack />
             </div>
         </section>
     );
