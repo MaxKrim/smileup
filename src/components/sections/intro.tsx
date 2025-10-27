@@ -26,7 +26,7 @@ const Intro = () => {
           </div>
 
           <div className="lg:col-span-7 lg:row-start-2">
-            <p className="text-secondary-foreground text-[20px] leading-[1.5] -tracking-[0.01em]">
+            <p className="text-secondary-foreground text-[20px] leading-[1.5] -tracking-[0.01em] !w-[823px] !h-[120px]">
               Je travaille exclusivement pour les orthodontistes, dentistes et chirurgiens-dentistes qui pratiquent l'orthodontie. Chaque appareil est réalisé avec précision selon vos prescriptions, pour des résultats optimaux chez vos patients, enfants comme adultes.
             </p>
             <div className="mt-8">
