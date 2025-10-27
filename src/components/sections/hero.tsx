@@ -14,7 +14,7 @@ const StatCard = ({
   className?: string;
 }) => (
   <div
-    className={`flex flex-col justify-between p-8 text-black rounded-[32px] min-h-[450px] ${bgColor} ${className}`}
+    className={`flex flex-col justify-between p-8 text-black rounded-[32px] min-h-[450px] transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-xl cursor-pointer ${bgColor} ${className}`}
   >
     <div className="font-display font-medium text-8xl tracking-tighter leading-none">
       {stat}
@@ -37,7 +37,7 @@ const VideoCard = ({
   className?: string;
 }) => (
   <div
-    className={`relative w-full rounded-[32px] overflow-hidden min-h-[450px] ${className}`}
+    className={`relative w-full rounded-[32px] overflow-hidden min-h-[450px] transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-xl cursor-pointer ${className}`}
   >
     <video
       src={videoSrc}
