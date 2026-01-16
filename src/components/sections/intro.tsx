@@ -140,32 +140,111 @@ const Intro = () => {
           </div>
         </div>
 
-        <div className="mt-12 bg-[#10B981] rounded-2xl p-6 md:p-10 text-white">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-            <div className="flex-1">
-              <h3 className="font-display text-xl md:text-2xl font-medium mb-2">
-                Livraison partout en France
-              </h3>
-              <p className="text-white/90">
-                Vos appareils sont livrés directement dans votre cabinet, partout en France métropolitaine.
-              </p>
-            </div>
-            <div className="bg-white/20 rounded-xl p-5 md:p-6 md:min-w-[280px]">
-              <p className="font-medium text-lg mb-2">Délais de livraison</p>
-              <ul className="space-y-2 text-sm text-white/90">
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-white rounded-full flex-shrink-0"></span>
-                  <span>Appareils simples : 5-7 jours ouvrés</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-white rounded-full flex-shrink-0"></span>
-                  <span>Appareils complexes : 7-10 jours ouvrés</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-white rounded-full flex-shrink-0"></span>
-                  <span>Urgences : nous consulter</span>
-                </li>
-              </ul>
+        <div className="mt-12 relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#002395] via-[#002395] to-[#ED2939]">
+          <div className="absolute inset-0 opacity-10">
+            <div className="absolute top-0 left-0 w-1/3 h-full bg-[#002395]"></div>
+            <div className="absolute top-0 left-1/3 w-1/3 h-full bg-white"></div>
+            <div className="absolute top-0 right-0 w-1/3 h-full bg-[#ED2939]"></div>
+          </div>
+          
+          <div className="relative p-8 md:p-12 lg:p-16">
+            <div className="flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-16">
+              <div className="flex-1">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="flex items-center gap-1">
+                    <div className="w-3 h-8 bg-[#002395] rounded-sm"></div>
+                    <div className="w-3 h-8 bg-white rounded-sm"></div>
+                    <div className="w-3 h-8 bg-[#ED2939] rounded-sm"></div>
+                  </div>
+                  <span className="bg-white text-[#002395] text-xs md:text-sm font-bold px-4 py-1.5 rounded-full uppercase tracking-wider">
+                    Origine France Garantie
+                  </span>
+                </div>
+                
+                <h3 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight">
+                  100% Fabriqué<br />en France
+                </h3>
+                
+                <p className="text-white/90 text-lg md:text-xl mb-6 max-w-xl">
+                  Chaque appareil est entièrement conçu et fabriqué dans notre laboratoire du <strong className="text-white">Loiret (45)</strong>, sans aucune sous-traitance.
+                </p>
+
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                  <div className="bg-white/15 backdrop-blur-sm rounded-xl p-4 border border-white/20">
+                    <div className="flex items-center gap-3 mb-2">
+                      <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+                        <MapPin className="w-5 h-5 text-[#002395]" />
+                      </div>
+                      <span className="text-white font-bold text-lg">Loiret (45)</span>
+                    </div>
+                    <p className="text-white/80 text-sm">Fabrication locale</p>
+                  </div>
+                  
+                  <div className="bg-white/15 backdrop-blur-sm rounded-xl p-4 border border-white/20">
+                    <div className="flex items-center gap-3 mb-2">
+                      <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+                        <svg className="w-5 h-5 text-[#002395]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                          <path d="M9 12l2 2 4-4"/>
+                        </svg>
+                      </div>
+                      <span className="text-white font-bold text-lg">0%</span>
+                    </div>
+                    <p className="text-white/80 text-sm">Sous-traitance</p>
+                  </div>
+                  
+                  <div className="bg-white/15 backdrop-blur-sm rounded-xl p-4 border border-white/20">
+                    <div className="flex items-center gap-3 mb-2">
+                      <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+                        <Truck className="w-5 h-5 text-[#002395]" />
+                      </div>
+                      <span className="text-white font-bold text-lg">5-10j</span>
+                    </div>
+                    <p className="text-white/80 text-sm">Livraison France</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="lg:w-[320px] flex-shrink-0">
+                <div className="bg-white rounded-2xl p-6 shadow-2xl">
+                  <div className="text-center mb-4">
+                    <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-[#002395] to-[#ED2939] rounded-full mb-3">
+                      <svg className="w-10 h-10 text-white" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                      </svg>
+                    </div>
+                    <h4 className="font-display text-xl font-bold text-gray-900">Délais de livraison</h4>
+                  </div>
+                  
+                  <div className="space-y-3">
+                    <div className="flex items-center justify-between p-3 bg-gray-50 rounded-xl">
+                      <div className="flex items-center gap-2">
+                        <div className="w-2 h-2 bg-[#10B981] rounded-full"></div>
+                        <span className="text-sm font-medium text-gray-700">Appareils simples</span>
+                      </div>
+                      <span className="text-sm font-bold text-[#002395]">5-7 jours</span>
+                    </div>
+                    <div className="flex items-center justify-between p-3 bg-gray-50 rounded-xl">
+                      <div className="flex items-center gap-2">
+                        <div className="w-2 h-2 bg-[#0EA5E9] rounded-full"></div>
+                        <span className="text-sm font-medium text-gray-700">Appareils complexes</span>
+                      </div>
+                      <span className="text-sm font-bold text-[#002395]">7-10 jours</span>
+                    </div>
+                    <div className="flex items-center justify-between p-3 bg-gray-50 rounded-xl">
+                      <div className="flex items-center gap-2">
+                        <div className="w-2 h-2 bg-[#FF6644] rounded-full"></div>
+                        <span className="text-sm font-medium text-gray-700">Urgences</span>
+                      </div>
+                      <span className="text-sm font-bold text-[#002395]">Nous consulter</span>
+                    </div>
+                  </div>
+                  
+                  <div className="mt-4 pt-4 border-t border-gray-100 text-center">
+                    <p className="text-xs text-gray-500">Livraison partout en France métropolitaine</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
