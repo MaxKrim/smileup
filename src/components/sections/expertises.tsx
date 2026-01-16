@@ -116,7 +116,7 @@ const ExpertisesSection = () => {
 
   return (
     <section id="expertises" ref={componentRef} className="bg-background relative w-full overflow-hidden py-12 md:py-16 lg:py-24">
-      <div className="container mx-auto px-6 md:px-8 lg:px-12">
+      <div className="mx-auto px-6 md:px-12 max-w-7xl w-full">
         <div className="mb-8 md:mb-12 lg:mb-16">
           <div className="flex flex-wrap gap-2 mb-4">
             <div className="bg-black text-white text-xs md:text-sm font-medium leading-tight rounded-full px-4 py-2 inline-block">
@@ -134,24 +134,24 @@ const ExpertisesSection = () => {
           </p>
         </div>
 
-        <div ref={cardsContainerRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-6 lg:gap-8">
+        <div ref={cardsContainerRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {expertisesData.map((card, index) => (
             <div
               key={card.id}
-              className="expertise-card group relative rounded-3xl overflow-hidden transition-all duration-500 hover:scale-105 hover:-translate-y-4 hover:shadow-2xl hover:z-10"
+              className="expertise-card group relative rounded-2xl md:rounded-3xl overflow-hidden transition-all duration-500 hover:scale-[1.02] hover:-translate-y-2 hover:shadow-2xl hover:z-10"
             >
-              <div className={`${card.cardClass} h-full min-h-[500px] md:min-h-[550px] lg:min-h-[600px] flex flex-col relative overflow-hidden`}>
+              <div className={`${card.cardClass} h-full min-h-[480px] md:min-h-[520px] lg:min-h-[560px] flex flex-col relative overflow-hidden`}>
                 <div className="absolute top-4 left-4 z-20">
                   <span className="bg-white/90 text-black text-xs font-semibold px-3 py-1 rounded-full">
                     {card.badge}
                   </span>
                 </div>
 
-                <div className="absolute top-6 right-6 text-6xl md:text-7xl lg:text-8xl font-medium tracking-[-0.06em] leading-none opacity-10 z-10 transition-all duration-500 group-hover:opacity-20 group-hover:scale-110">
+                <div className="absolute top-4 right-4 text-5xl md:text-6xl lg:text-7xl font-medium tracking-[-0.06em] leading-none opacity-10 z-10 transition-all duration-500 group-hover:opacity-20 group-hover:scale-110">
                   {card.id}
                 </div>
 
-                <div className="relative h-64 md:h-72 lg:h-80 overflow-hidden">
+                <div className="relative h-48 md:h-56 lg:h-64 overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/20 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <img
                     id={`expertise-image-${card.id}`}
@@ -162,29 +162,29 @@ const ExpertisesSection = () => {
                   />
                 </div>
 
-                <div className="flex-1 p-6 md:p-8 flex flex-col justify-between relative z-20">
+                <div className="flex-1 p-5 md:p-6 flex flex-col justify-between relative z-20">
                   <div>
-                    <h3 className="text-lg font-bold tracking-tight mb-1 opacity-80">
+                    <h3 className="text-base md:text-lg font-bold tracking-tight mb-1 opacity-80">
                       {card.title}
                     </h3>
-                    <h4 className="text-xl md:text-2xl font-medium tracking-[-0.04em] leading-[1.2] mb-3 transition-transform duration-500 group-hover:translate-x-2">
+                    <h4 className="text-lg md:text-xl font-medium tracking-[-0.04em] leading-[1.2] mb-3 transition-transform duration-500 group-hover:translate-x-2">
                       {card.subtitle}
                     </h4>
-                    <p className="text-sm md:text-base opacity-90 mb-6 line-clamp-4 transition-opacity duration-500 group-hover:opacity-100">
+                    <p className="text-sm opacity-90 mb-4 line-clamp-4 transition-opacity duration-500 group-hover:opacity-100">
                       {card.description}
                     </p>
                   </div>
 
                   <Link 
                     href={card.buttonLink} 
-                    className={`inline-flex items-center gap-2 rounded-full text-sm md:text-base px-5 py-2.5 font-medium transition-all duration-300 ${card.buttonClass} group-hover:gap-4 self-start`}
+                    className={`inline-flex items-center gap-2 rounded-full text-sm px-4 py-2 font-medium transition-all duration-300 ${card.buttonClass} group-hover:gap-3 self-start`}
                   >
                     <span>En savoir plus</span>
                     <ArrowRight className="size-4 transition-transform duration-300 group-hover:translate-x-1" />
                   </Link>
                 </div>
 
-                <div className="absolute inset-0 rounded-3xl border-4 border-white/0 group-hover:border-white/30 transition-all duration-500 pointer-events-none"></div>
+                <div className="absolute inset-0 rounded-2xl md:rounded-3xl border-4 border-white/0 group-hover:border-white/30 transition-all duration-500 pointer-events-none"></div>
               </div>
             </div>
           ))}
