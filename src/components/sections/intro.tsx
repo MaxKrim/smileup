@@ -35,29 +35,14 @@ const Intro = () => {
   return (
     <section id="intro-home" className="bg-background text-foreground py-12 md:py-24 w-full overflow-hidden">
       <div className="mx-auto px-6 md:px-12 max-w-7xl w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-12 lg:gap-x-8 gap-y-12 lg:gap-y-8 w-full">
-          <div className="lg:col-span-7 w-full">
+        <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8 lg:gap-12 w-full">
+          <div className="flex-1 max-w-3xl">
             <div className="bg-black text-white text-xs md:text-sm font-medium leading-tight rounded-full px-4 py-2 inline-block mb-4">
               Un laboratoire tourné vers l'humain et l'innovation
             </div>
-            <h2 className="font-display text-2xl sm:text-3xl md:text-[40px] leading-[1.1] font-medium -tracking-[0.06em] text-foreground">
+            <h2 className="font-display text-2xl sm:text-3xl md:text-[40px] leading-[1.1] font-medium -tracking-[0.06em] text-foreground mb-6">
               La technologie au service du sourire.
             </h2>
-          </div>
-
-          <div className="lg:col-start-9 lg:col-span-4 lg:row-start-1">
-            <div className="relative aspect-[400/486] w-full max-w-[400px] mx-auto lg:mx-0 rounded-[24px] overflow-hidden bg-[#0EA5E9]">
-              <div className="w-full h-full flex items-center justify-center p-8">
-                <div className="text-center text-white">
-                  <div className="text-6xl mb-4">🦷</div>
-                  <div className="font-display text-xl font-medium">Laboratoire d'Orthodontie</div>
-                  <div className="mt-2 text-sm opacity-90">Spécialisé en orthopédie dento-faciale</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="lg:col-span-7 lg:row-start-2">
             <p className="text-secondary-foreground text-base md:text-lg lg:text-[20px] leading-[1.5] -tracking-[0.01em] mb-4">
               Chez Smile Up, nous mettons la technologie au service du sourire—au sens propre.
               Spécialisé en orthodontie et en orthopédie dentofaciale, le laboratoire accompagne chaque praticien avec sérieux, précision et une vraie passion pour le travail bien fait.
@@ -69,7 +54,7 @@ const Intro = () => {
             <p className="text-[#0EA5E9] font-medium text-lg mt-4 italic">
               La précision n'est pas un concept : c'est une habitude quotidienne.
             </p>
-            <div className="mt-8">
+            <div className="mt-8 flex items-center gap-4">
               <Link
                 href="/about"
                 className="group relative inline-flex items-center justify-center py-[14px] px-[30px] border-2 border-black rounded-full overflow-hidden font-medium text-sm md:text-base leading-snug">
@@ -79,23 +64,28 @@ const Intro = () => {
                   <ArrowRight size={14} />
                 </span>
               </Link>
+              <Link
+                href="#expertises"
+                className="group relative w-14 h-14 bg-black rounded-full flex items-center justify-center overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
+                aria-label="Scroll to expertises">
+                <div className="absolute inset-0 flex flex-col items-center transition-transform duration-500 ease-out group-hover:-translate-y-14">
+                  <div className="w-14 h-14 flex items-center justify-center flex-shrink-0">
+                    <ArrowDown className="text-white" size={24} strokeWidth={2} />
+                  </div>
+                  <div className="w-14 h-14 flex items-center justify-center flex-shrink-0">
+                    <ArrowDown className="text-white" size={24} strokeWidth={2} />
+                  </div>
+                </div>
+              </Link>
             </div>
           </div>
 
-          <div className="flex lg:col-start-12 lg:row-start-2 justify-self-end self-end mt-8 lg:mt-0">
-            <Link
-              href="#expertises"
-              className="group relative w-14 h-14 bg-black rounded-full flex items-center justify-center overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
-              aria-label="Scroll to expertises">
-              <div className="absolute inset-0 flex flex-col items-center transition-transform duration-500 ease-out group-hover:-translate-y-14">
-                <div className="w-14 h-14 flex items-center justify-center flex-shrink-0">
-                  <ArrowDown className="text-white" size={24} strokeWidth={2} />
-                </div>
-                <div className="w-14 h-14 flex items-center justify-center flex-shrink-0">
-                  <ArrowDown className="text-white" size={24} strokeWidth={2} />
-                </div>
-              </div>
-            </Link>
+          <div className="hidden lg:block w-[280px] flex-shrink-0">
+            <div className="rounded-2xl overflow-hidden bg-[#0EA5E9] p-6 text-white">
+              <div className="text-5xl mb-3 text-center">🦷</div>
+              <div className="font-display text-lg font-medium text-center">Laboratoire d'Orthodontie</div>
+              <div className="mt-2 text-sm opacity-90 text-center">Spécialisé en orthopédie dento-faciale</div>
+            </div>
           </div>
         </div>
 
