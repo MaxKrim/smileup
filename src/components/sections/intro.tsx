@@ -138,19 +138,49 @@ const Intro = () => {
             ))}
           </div>
           
-          <div className="mt-8 pt-6 border-t border-black/10">
-            <p className="text-sm text-secondary-foreground mb-4">Compatible avec les principaux systèmes :</p>
-            <div className="flex flex-wrap gap-4 items-center">
-              {["3Shape", "iTero", "Medit", "Carestream"].map((brand, i) => (
-                <div key={i} className="bg-white rounded-lg px-4 py-2 text-sm font-semibold text-[#0EA5E9] shadow-sm border border-[#0EA5E9]/20">
-                  {brand}
-                </div>
-              ))}
+<div className="mt-8 pt-6 border-t border-black/10">
+              <p className="text-sm text-secondary-foreground mb-4">Compatible avec les principaux systèmes :</p>
+              <div className="flex flex-wrap gap-4 items-center">
+                {["3Shape", "iTero", "Medit", "Carestream"].map((brand, i) => (
+                  <div key={i} className="bg-white rounded-lg px-4 py-2 text-sm font-semibold text-[#0EA5E9] shadow-sm border border-[#0EA5E9]/20">
+                    {brand}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-12 bg-[#10B981] rounded-2xl p-8 md:p-10 text-white">
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+              <div>
+                <h3 className="font-display text-xl md:text-2xl font-medium mb-2">
+                  Livraison partout en France
+                </h3>
+                <p className="text-white/90">
+                  Vos appareils sont livrés directement dans votre cabinet, partout en France métropolitaine.
+                </p>
+              </div>
+              <div className="bg-white/20 rounded-xl p-6 md:min-w-[280px]">
+                <p className="font-medium text-lg mb-2">Délais de livraison</p>
+                <ul className="space-y-2 text-sm text-white/90">
+                  <li className="flex items-center gap-2">
+                    <span className="w-2 h-2 bg-white rounded-full"></span>
+                    Appareils simples : 5-7 jours ouvrés
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="w-2 h-2 bg-white rounded-full"></span>
+                    Appareils complexes : 7-10 jours ouvrés
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="w-2 h-2 bg-white rounded-full"></span>
+                    Urgences : nous consulter
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
   );
 };
 
