@@ -143,8 +143,8 @@ const Intro = () => {
                   </p>
                 </div>
                 
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                  <div className="group bg-white rounded-xl px-6 py-5 shadow-md border border-black/5 hover:shadow-xl hover:border-[#00A3E0]/30 transition-all duration-300 hover:-translate-y-1 flex items-center justify-center min-h-[70px]">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
+                  <div className="group bg-white rounded-lg px-3 py-2 shadow-sm border border-black/5 hover:shadow-md hover:border-[#00A3E0]/30 transition-all duration-300 hover:-translate-y-0.5 flex items-center justify-center">
                     <img 
                       src="/logos/3shape.svg" 
                       alt="3Shape" 
@@ -152,7 +152,7 @@ const Intro = () => {
                     />
                   </div>
                   
-                  <div className="group bg-white rounded-xl px-6 py-5 shadow-md border border-black/5 hover:shadow-xl hover:border-[#6B2D5B]/30 transition-all duration-300 hover:-translate-y-1 flex items-center justify-center min-h-[70px]">
+                  <div className="group bg-white rounded-lg px-3 py-2 shadow-sm border border-black/5 hover:shadow-md hover:border-[#6B2D5B]/30 transition-all duration-300 hover:-translate-y-0.5 flex items-center justify-center">
                     <img 
                       src="/logos/itero.svg" 
                       alt="iTero" 
@@ -160,7 +160,7 @@ const Intro = () => {
                     />
                   </div>
                   
-                  <div className="group bg-white rounded-xl px-6 py-5 shadow-md border border-black/5 hover:shadow-xl hover:border-[#00B4D8]/30 transition-all duration-300 hover:-translate-y-1 flex items-center justify-center min-h-[70px]">
+                  <div className="group bg-white rounded-lg px-3 py-2 shadow-sm border border-black/5 hover:shadow-md hover:border-[#00B4D8]/30 transition-all duration-300 hover:-translate-y-0.5 flex items-center justify-center">
                     <img 
                       src="/logos/medit.svg" 
                       alt="Medit" 
@@ -168,7 +168,7 @@ const Intro = () => {
                     />
                   </div>
                   
-                  <div className="group bg-white rounded-xl px-6 py-5 shadow-md border border-black/5 hover:shadow-xl hover:border-[#F7941D]/30 transition-all duration-300 hover:-translate-y-1 flex items-center justify-center min-h-[70px]">
+                  <div className="group bg-white rounded-lg px-3 py-2 shadow-sm border border-black/5 hover:shadow-md hover:border-[#F7941D]/30 transition-all duration-300 hover:-translate-y-0.5 flex items-center justify-center">
                     <img 
                       src="/logos/carestream.svg" 
                       alt="Carestream Dental" 
