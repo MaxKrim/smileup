@@ -89,23 +89,31 @@ export default function Footer() {
           </div>
 
           <div className="lg:justify-self-end flex flex-col gap-6 text-sm md:text-base text-center lg:text-right">
-            <div>
-              <p className="font-bold text-black mb-3 text-base md:text-lg">Jessica Lerandy Estevez</p>
-              <a
-                href="mailto:smile.up045@gmail.com"
-                className="flex items-center justify-center lg:justify-end gap-2 text-black/80 hover:text-[#0EA5E9] transition-colors mb-2 break-all">
+<div>
+                <p className="font-bold text-black mb-3 text-base md:text-lg">Jessica Lerandy Estevez</p>
+                <a
+                  href="mailto:smile.up045@gmail.com"
+                  className="flex items-center justify-center lg:justify-end gap-2 text-black/80 hover:text-[#0EA5E9] transition-colors mb-2 break-all">
 
-                <Mail size={18} className="flex-shrink-0" />
-                <span className="text-xs md:text-sm lg:text-base">smile.up045@gmail.com</span>
-              </a>
-              <a
-                href="tel:+33777995315"
-                className="flex items-center justify-center lg:justify-end gap-2 text-black/80 hover:text-[#0EA5E9] transition-colors">
+                  <Mail size={18} className="flex-shrink-0" />
+                  <span className="text-xs md:text-sm lg:text-base">smile.up045@gmail.com</span>
+                </a>
+                <a
+                  href="tel:+33777995315"
+                  className="flex items-center justify-center lg:justify-end gap-2 text-black/80 hover:text-[#0EA5E9] transition-colors mb-2">
 
-                <Phone size={18} className="flex-shrink-0" />
-                <span className="text-sm md:text-base">+33 7 77 99 53 15</span>
-              </a>
-            </div>
+                  <Phone size={18} className="flex-shrink-0" />
+                  <span className="text-sm md:text-base">+33 7 77 99 53 15</span>
+                </a>
+                <div className="flex items-center justify-center lg:justify-end gap-2 text-black/60 text-sm mt-3">
+                  <span>📍 Loiret (45) - Centre-Val de Loire</span>
+                </div>
+              </div>
+              
+              <div className="mt-4 pt-4 border-t border-black/10">
+                <p className="font-medium text-black mb-2 text-sm">Horaires d'ouverture</p>
+                <p className="text-black/70 text-sm">Lundi - Vendredi : 8h00 - 18h00</p>
+              </div>
             
             <div>
               <p className="font-medium text-black mb-3">Suivez-moi</p>
