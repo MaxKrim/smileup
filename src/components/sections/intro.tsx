@@ -128,40 +128,61 @@ const Intro = () => {
             ))}
           </div>
           
-              <div className="mt-8 pt-6 border-t border-black/10">
-              <p className="text-sm text-secondary-foreground mb-4">Compatible avec les principaux systèmes :</p>
-              <div className="flex flex-wrap gap-6 items-center">
-                <div className="bg-white rounded-lg px-5 py-3 shadow-sm border border-black/5 flex items-center justify-center h-14">
-                  <img 
-                    src="/logos/3shape.svg" 
-                    alt="3Shape" 
-                    className="h-8 w-auto object-contain"
-                  />
+              <div className="mt-10 pt-8 border-t border-black/10">
+              <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+                <div className="flex-1">
+                  <div className="inline-flex items-center gap-2 mb-3">
+                    <div className="w-2 h-2 bg-[#10B981] rounded-full animate-pulse"></div>
+                    <span className="text-xs font-bold uppercase tracking-wider text-[#10B981]">Intégration certifiée</span>
+                  </div>
+                  <h4 className="font-display text-xl md:text-2xl font-bold text-black mb-2">
+                    Compatible avec les leaders du marché
+                  </h4>
+                  <p className="text-secondary-foreground text-sm md:text-base">
+                    Réception directe de vos empreintes numériques depuis les systèmes les plus utilisés au monde.
+                  </p>
                 </div>
                 
-                <div className="bg-white rounded-lg px-5 py-3 shadow-sm border border-black/5 flex items-center justify-center h-14">
-                  <img 
-                    src="/logos/itero.svg" 
-                    alt="iTero" 
-                    className="h-8 w-auto object-contain"
-                  />
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                  <div className="group bg-white rounded-xl p-4 shadow-md border border-black/5 hover:shadow-xl hover:border-[#00A3E0]/30 transition-all duration-300 hover:-translate-y-1">
+                    <img 
+                      src="/logos/3shape.svg" 
+                      alt="3Shape" 
+                      className="h-7 w-auto object-contain mx-auto group-hover:scale-110 transition-transform duration-300"
+                    />
+                  </div>
+                  
+                  <div className="group bg-white rounded-xl p-4 shadow-md border border-black/5 hover:shadow-xl hover:border-[#6B2D5B]/30 transition-all duration-300 hover:-translate-y-1">
+                    <img 
+                      src="/logos/itero.svg" 
+                      alt="iTero" 
+                      className="h-7 w-auto object-contain mx-auto group-hover:scale-110 transition-transform duration-300"
+                    />
+                  </div>
+                  
+                  <div className="group bg-white rounded-xl p-4 shadow-md border border-black/5 hover:shadow-xl hover:border-[#00B4D8]/30 transition-all duration-300 hover:-translate-y-1">
+                    <img 
+                      src="/logos/medit.svg" 
+                      alt="Medit" 
+                      className="h-7 w-auto object-contain mx-auto group-hover:scale-110 transition-transform duration-300"
+                    />
+                  </div>
+                  
+                  <div className="group bg-white rounded-xl p-4 shadow-md border border-black/5 hover:shadow-xl hover:border-[#F7941D]/30 transition-all duration-300 hover:-translate-y-1">
+                    <img 
+                      src="/logos/carestream.svg" 
+                      alt="Carestream Dental" 
+                      className="h-7 w-auto object-contain mx-auto group-hover:scale-110 transition-transform duration-300"
+                    />
+                  </div>
                 </div>
-                
-                <div className="bg-white rounded-lg px-5 py-3 shadow-sm border border-black/5 flex items-center justify-center h-14">
-                  <img 
-                    src="/logos/medit.svg" 
-                    alt="Medit" 
-                    className="h-8 w-auto object-contain"
-                  />
-                </div>
-                
-                <div className="bg-white rounded-lg px-5 py-3 shadow-sm border border-black/5 flex items-center justify-center h-14">
-                  <img 
-                    src="/logos/carestream.svg" 
-                    alt="Carestream Dental" 
-                    className="h-8 w-auto object-contain"
-                  />
-                </div>
+              </div>
+              
+              <div className="mt-6 flex items-center gap-3 text-sm text-black/60">
+                <svg className="w-5 h-5 text-[#10B981]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span>Envoyez vos fichiers STL directement depuis votre scanner — nous les recevons en temps réel.</span>
               </div>
             </div>
         </div>
