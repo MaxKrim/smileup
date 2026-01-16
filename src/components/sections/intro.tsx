@@ -128,38 +128,38 @@ const Intro = () => {
             ))}
           </div>
           
-            <div className="mt-8 pt-6 border-t border-black/10">
+              <div className="mt-8 pt-6 border-t border-black/10">
               <p className="text-sm text-secondary-foreground mb-4">Compatible avec les principaux systèmes :</p>
               <div className="flex flex-wrap gap-6 items-center">
                 <div className="bg-white rounded-lg px-5 py-3 shadow-sm border border-black/5 flex items-center justify-center h-14">
                   <img 
-                    src="https://www.3shape.com/-/media/www/3shape_logo_blue.png" 
+                    src="/logos/3shape.svg" 
                     alt="3Shape" 
-                    className="h-6 w-auto object-contain"
+                    className="h-8 w-auto object-contain"
                   />
                 </div>
                 
                 <div className="bg-white rounded-lg px-5 py-3 shadow-sm border border-black/5 flex items-center justify-center h-14">
                   <img 
-                    src="https://itero.com/content/dam/itero/en/images/logo/itero-logo.png" 
+                    src="/logos/itero.svg" 
                     alt="iTero" 
-                    className="h-6 w-auto object-contain"
+                    className="h-8 w-auto object-contain"
                   />
                 </div>
                 
                 <div className="bg-white rounded-lg px-5 py-3 shadow-sm border border-black/5 flex items-center justify-center h-14">
                   <img 
-                    src="https://www.medit.com/hubfs/assets/images/medit-logo-blue.svg" 
+                    src="/logos/medit.svg" 
                     alt="Medit" 
-                    className="h-6 w-auto object-contain"
+                    className="h-8 w-auto object-contain"
                   />
                 </div>
                 
                 <div className="bg-white rounded-lg px-5 py-3 shadow-sm border border-black/5 flex items-center justify-center h-14">
                   <img 
-                    src="https://www.carestreamdental.com/content/dam/csd/en/images/csd-logo-color.png" 
+                    src="/logos/carestream.svg" 
                     alt="Carestream Dental" 
-                    className="h-6 w-auto object-contain"
+                    className="h-8 w-auto object-contain"
                   />
                 </div>
               </div>
