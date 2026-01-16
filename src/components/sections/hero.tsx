@@ -45,21 +45,29 @@ const Hero = () => {
       <div className="px-6 md:px-12 w-full">
         <div className="mx-auto max-w-7xl pt-24 md:pt-32 pb-12 md:pb-16 lg:pb-24 w-full">
           <div className="w-full">
+            <div className="flex flex-wrap gap-2 mb-6">
+              <span className="bg-[#0EA5E9] text-white text-xs md:text-sm font-medium px-4 py-1.5 rounded-full">
+                100% Fabriqué en France
+              </span>
+              <span className="bg-black text-white text-xs md:text-sm font-medium px-4 py-1.5 rounded-full">
+                Loiret (45)
+              </span>
+            </div>
             <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[120px] font-black leading-[1.0] tracking-[-0.06em] break-words">
               Votre Laboratoire d'Orthodontie Exclusive.
             </h1>
             <div className="mt-6 max-w-full lg:max-w-[60ch]">
               <p className="text-base md:text-lg lg:text-xl text-secondary-foreground leading-relaxed tracking-[-0.01em]">
-                Orthésiste dentaire diplômée, spécialisée en orthopédie dento-faciale. Je réalise tous vos appareils avec précision et passion.
+                Orthésiste dentaire diplômée, spécialisée en orthopédie dento-faciale. Je réalise tous vos appareils avec précision et passion depuis plus de 13 ans.
               </p>
             </div>
           </div>
           <div className="mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 w-full">
             <StatCard
               bgColor="bg-[#0EA5E9]"
-              stat="100%"
-              title="Orthodontie exclusive"
-              description="Spécialisation complète en appareils orthodontiques" />
+              stat="+13 ans"
+              title="D'expérience"
+              description="Un savoir-faire construit avec rigueur et passion" />
 
             <ImageCard
               imageSrc="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/1b2e0205-1fa2-45bd-8c45-4d4c1200c30e/visual-edit-uploads/1761570318948-74luo92m0o5.png"
@@ -68,9 +76,9 @@ const Hero = () => {
 
             <StatCard
               bgColor="bg-[#10B981]"
-              stat="Enfants & Adultes"
-              title="Pour tous les âges"
-              description="Solutions adaptées à chaque patient" />
+              stat="Sans sous-traitance"
+              title="Fabrication française"
+              description="Chaque appareil est réalisé avec soin dans le Loiret" />
 
             <ImageCard
               imageSrc="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/1b2e0205-1fa2-45bd-8c45-4d4c1200c30e/visual-edit-uploads/1761569985153-11q58kayx5t.png"

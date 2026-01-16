@@ -1,6 +1,6 @@
 import Navigation from '@/components/sections/navigation';
 import Footer from '@/components/sections/footer';
-import { ArrowRight, Award, Briefcase, Users, Sparkles } from 'lucide-react';
+import { ArrowRight, Award, Briefcase, Users, Sparkles, Heart, Shield, Zap } from 'lucide-react';
 import Link from 'next/link';
 
 export default function AboutPage() {
@@ -10,28 +10,34 @@ export default function AboutPage() {
         <Navigation />
         
         <main className="flex-1 pt-32">
-          {/* Hero Section */}
           <section className="px-6 md:px-12 pb-24">
             <div className="mx-auto max-w-[1440px]">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div>
                   <div className="inline-block bg-[#0EA5E9] text-white text-sm font-medium leading-tight rounded-full px-4 py-1.5 mb-6">
-                    Orthésiste dentaire diplômée
+                    Orthésiste dentaire spécialisée
                   </div>
                   <h1 className="font-display text-5xl md:text-7xl lg:text-[80px] font-black leading-[1.0] tracking-[-0.06em] mb-6">
                     Qui suis-je ?
                   </h1>
-                  <p className="text-xl text-secondary-foreground leading-relaxed tracking-[-0.01em] mb-8 !whitespace-pre-line !whitespace-pre-line !whitespace-pre-line !w-[103%] !h-[76px]">{`Prothésiste dentaire diplômée, spécialisée en orthopédie dento-faciale. `}
-
+                  <p className="text-xl text-secondary-foreground leading-relaxed tracking-[-0.01em] mb-6">
+                    Je suis <strong>Jessica Lerandy Estevez</strong>, fondatrice du laboratoire Smile Up et orthésiste dentaire spécialisée en orthopédie dento-faciale depuis plus de <strong>13 ans</strong>.
+                  </p>
+                  <p className="text-lg text-secondary-foreground leading-relaxed mb-6">
+                    Mon parcours s'est construit au fil d'exigences élevées, d'un sens aigu du détail et d'une volonté constante d'offrir un niveau de qualité irréprochable.
+                  </p>
+                  <p className="text-lg text-secondary-foreground leading-relaxed mb-8">
+                    Avec Smile Up, j'ai souhaité créer un laboratoire où précision technique et élégance du geste se rencontrent. Chaque appareil est conçu avec une approche artisanale moderne, alliant rigueur, esthétisme et innovation.
                   </p>
                 </div>
                 
-                <div className="relative aspect-[4/5] w-full max-w-[500px] mx-auto lg:mx-0 rounded-[32px] overflow-hidden bg-[#0EA5E9]">
+                <div className="relative aspect-[4/5] w-full max-w-[500px] mx-auto lg:mx-0 rounded-[32px] overflow-hidden bg-gradient-to-br from-[#0EA5E9] to-[#0284C7]">
                   <div className="w-full h-full flex items-center justify-center p-12">
                     <div className="text-center text-white">
-                      <div className="text-9xl mb-6">🦷</div>
-                      <div className="font-display text-3xl font-bold tracking-tighter">Smile UP</div>
-                      <div className="mt-4 text-xl opacity-90">Orthodontie Exclusive</div>
+                      <div className="text-9xl mb-6">👩‍⚕️</div>
+                      <div className="font-display text-3xl font-bold tracking-tighter">Jessica Lerandy Estevez</div>
+                      <div className="mt-4 text-xl opacity-90">Fondatrice de Smile Up</div>
+                      <div className="mt-2 text-sm opacity-75">Orthésiste dentaire diplômée</div>
                     </div>
                   </div>
                 </div>
@@ -39,81 +45,84 @@ export default function AboutPage() {
             </div>
           </section>
 
-          {/* Mon Expertise Section */}
           <section className="px-6 md:px-12 py-24 bg-[#F4EFE6]">
             <div className="mx-auto max-w-[1440px]">
-              <h2 className="font-display text-4xl md:text-5xl font-medium tracking-[-0.06em] mb-12">
-                Mon Expertise
+              <h2 className="font-display text-4xl md:text-5xl font-medium tracking-[-0.06em] mb-4">
+                Mes Valeurs
               </h2>
+              <p className="text-secondary-foreground text-lg mb-12 max-w-2xl">
+                Au-delà du savoir-faire, j'accorde une importance particulière à la relation de confiance avec chaque praticien.
+              </p>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-                <div className="bg-white rounded-[24px] p-8">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <div className="bg-white rounded-[24px] p-8 border-t-4 border-[#0EA5E9]">
                   <div className="w-12 h-12 bg-[#0EA5E9] rounded-full flex items-center justify-center mb-4">
                     <Award className="text-white" size={24} />
                   </div>
-                  <h3 className="font-display text-2xl font-medium mb-3">Spécialisation Exclusive</h3>
+                  <h3 className="font-display text-2xl font-medium mb-3">Qualité</h3>
                   <p className="text-secondary-foreground leading-relaxed">
-                    Je me concentre exclusivement sur l'orthodontie. Pas de prothèses classiques comme les dentiers ou fausses dents, uniquement des appareils orthodontiques de haute précision.
+                    Des orthèses de qualité supérieure, conçues avec des matériaux haut de gamme, qui s'adaptent parfaitement en bouche pour un gain de temps au fauteuil.
                   </p>
                 </div>
 
-                <div className="bg-white rounded-[24px] p-8">
+                <div className="bg-white rounded-[24px] p-8 border-t-4 border-[#10B981]">
                   <div className="w-12 h-12 bg-[#10B981] rounded-full flex items-center justify-center mb-4">
-                    <Users className="text-white" size={24} />
+                    <Shield className="text-white" size={24} />
                   </div>
-                  <h3 className="font-display text-2xl font-medium mb-3">Pour Tous les Âges</h3>
+                  <h3 className="font-display text-2xl font-medium mb-3">Fiabilité</h3>
                   <p className="text-secondary-foreground leading-relaxed">
-                    L'orthodontie touche tout le monde. Je travaille aussi bien pour des traitements destinés aux enfants qu'aux adultes, avec des solutions adaptées à chaque patient.
+                    Une organisation optimisée qui nous permet de fabriquer et livrer vos orthèses dans les délais demandés, avec une constance irréprochable.
                   </p>
                 </div>
 
-                <div className="bg-white rounded-[24px] p-8">
+                <div className="bg-white rounded-[24px] p-8 border-t-4 border-[#FF6644]">
                   <div className="w-12 h-12 bg-[#FF6644] rounded-full flex items-center justify-center mb-4">
-                    <Briefcase className="text-white" size={24} />
+                    <Zap className="text-white" size={24} />
                   </div>
-                  <h3 className="font-display text-2xl font-medium mb-3">Partenariat Professionnel</h3>
+                  <h3 className="font-display text-2xl font-medium mb-3">Réactivité</h3>
                   <p className="text-secondary-foreground leading-relaxed">
-                    Je travaille uniquement avec des professionnels : orthodontistes, dentistes et chirurgiens-dentistes qui pratiquent l'orthodontie. Chaque appareil est réalisé sur prescription.
-                  </p>
-                </div>
-
-                <div className="bg-white rounded-[24px] p-8">
-                  <div className="w-12 h-12 bg-[#E77EFF] rounded-full flex items-center justify-center mb-4">
-                    <Sparkles className="text-white" size={24} />
-                  </div>
-                  <h3 className="font-display text-2xl font-medium mb-3">Précision & Qualité</h3>
-                  <p className="text-secondary-foreground leading-relaxed">
-                    Chaque appareil est réalisé avec précision selon vos prescriptions, pour des résultats optimaux. La qualité est au cœur de mon travail, quel que soit le type d'appareil.
+                    Un interlocuteur unique pour des échanges directs et personnalisés, afin de répondre à vos demandes rapidement et efficacement.
                   </p>
                 </div>
               </div>
             </div>
           </section>
 
-          {/* Comment je travaille */}
           <section className="px-6 md:px-12 py-24">
             <div className="mx-auto max-w-[1440px]">
               <h2 className="font-display text-4xl md:text-5xl font-medium tracking-[-0.06em] mb-8">
-                Comment je travaille
+                Un vrai partenariat au quotidien
               </h2>
               
               <div className="max-w-[800px]">
                 <p className="text-xl text-secondary-foreground leading-relaxed mb-6">
-                  Mon travail consiste à fournir les appareils orthodontiques demandés par les praticiens. Vous me fournissez un bon de travail avec le nom du patient et le type d'appareil souhaité, et je me charge de la réalisation complète.
+                  Ce que les praticiens apprécient chez Smile Up :
                 </p>
                 
-                <p className="text-xl text-secondary-foreground leading-relaxed mb-6">
-                  Je ne vends pas directement aux patients. Il faut toujours un intermédiaire professionnel : orthodontiste, dentiste, chirurgien-dentiste. Cette approche B2B garantit que chaque appareil est adapté à un diagnostic professionnel précis.
-                </p>
+                <ul className="space-y-4 mb-8">
+                  {[
+                    "Un contact direct",
+                    "Des échanges simples et rapides",
+                    "Une écoute attentive",
+                    "Un travail sans sous-traitance",
+                    "Une adaptation aux besoins de chaque cabinet"
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-center gap-3 text-lg">
+                      <span className="w-2 h-2 bg-[#0EA5E9] rounded-full"></span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
 
-                <p className="text-xl text-secondary-foreground leading-relaxed mb-8">
-                  Je me déplace également dans votre cabinet pour faire un point sur vos besoins spécifiques, car chaque praticien a ses habitudes de travail et sa façon de faire qui lui est propre.
-                </p>
+                <div className="bg-[#0EA5E9]/10 rounded-2xl p-6 border-l-4 border-[#0EA5E9] mb-8">
+                  <p className="text-lg text-secondary-foreground italic">
+                    "Ici, chaque appareil est réalisé avec soin, et chaque demande est considérée comme unique."
+                  </p>
+                </div>
 
                 <Link
-                  href="#contact"
+                  href="/#contact"
                   className="group inline-flex items-center gap-3 rounded-full bg-[#0EA5E9] text-white px-8 py-4 text-base font-medium transition-transform hover:scale-105">
-
                   <span>Discutons de vos besoins</span>
                   <ArrowRight className="size-5 transition-transform group-hover:translate-x-1" />
                 </Link>
@@ -121,73 +130,73 @@ export default function AboutPage() {
             </div>
           </section>
 
-          {/* Gammes proposées */}
           <section className="px-6 md:px-12 py-24 bg-[#F4EFE6]">
             <div className="mx-auto max-w-[1440px]">
-              <h2 className="font-display text-4xl md:text-5xl font-medium tracking-[-0.06em] mb-8">
-                Les gammes que je propose
+              <h2 className="font-display text-4xl md:text-5xl font-medium tracking-[-0.06em] mb-4">
+                Notre philosophie
               </h2>
+              <p className="text-xl text-secondary-foreground max-w-3xl mb-12">
+                Créer un laboratoire où la technique, l'innovation et l'humain avancent ensemble.
+                Un lieu où la précision rencontre la créativité, et où chaque collaboration devient un vrai partenariat.
+              </p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div className="bg-white rounded-[24px] p-6 border-l-4 border-[#FF6644]">
+                <div className="bg-white rounded-[24px] p-6 border-l-4 border-[#0EA5E9]">
                   <h3 className="font-display text-xl font-medium mb-2">🔒 Appareils Fixes</h3>
-                  <p className="text-secondary-foreground">Scellés en bouche de manière permanente</p>
+                  <p className="text-secondary-foreground">Du Quad Helix aux mainteneurs d'espace, soudure laser de dernière génération</p>
                 </div>
 
-                <div className="bg-white rounded-[24px] p-6 border-l-4 border-[#E77EFF]">
+                <div className="bg-white rounded-[24px] p-6 border-l-4 border-[#FF6644]">
                   <h3 className="font-display text-xl font-medium mb-2">🔄 Appareils Mobiles</h3>
-                  <p className="text-secondary-foreground">Que le patient peut retirer et remettre</p>
+                  <p className="text-secondary-foreground">Plaques Hawley, Vaugeois, systèmes d'expansion - entièrement personnalisables</p>
                 </div>
 
                 <div className="bg-white rounded-[24px] p-6 border-l-4 border-[#10B981]">
-                  <h3 className="font-display text-xl font-medium mb-2">✨ Thermoformage</h3>
-                  <p className="text-secondary-foreground">Gouttières et appareils spécifiques</p>
+                  <h3 className="font-display text-xl font-medium mb-2">⚙️ Appareils Fonctionnels</h3>
+                  <p className="text-secondary-foreground">Chabre, Lautrou, Klammt, PUL, ELN, Bionator, pistes de Planas...</p>
+                </div>
+
+                <div className="bg-white rounded-[24px] p-6 border-l-4 border-[#E77EFF]">
+                  <h3 className="font-display text-xl font-medium mb-2">💫 Gamme P.U.L 2</h3>
+                  <p className="text-secondary-foreground">Propulseur Universel Light 2 - notre expertise en conception 3D</p>
                 </div>
 
                 <div className="bg-white rounded-[24px] p-6 border-l-4 border-[#0EA5E9]">
                   <h3 className="font-display text-xl font-medium mb-2">💻 CFAO</h3>
-                  <p className="text-secondary-foreground">Modélisation numérique 3D de précision</p>
-                </div>
-
-                <div className="bg-white rounded-[24px] p-6 border-l-4 border-[#FF6644]">
-                  <h3 className="font-display text-xl font-medium mb-2">⚙️ Appareil PUL</h3>
-                  <p className="text-secondary-foreground">Appareils très complexes haute technicité</p>
+                  <p className="text-secondary-foreground">Bagues sur mesure entièrement modélisées et fabriquées</p>
                 </div>
 
                 <div className="bg-white rounded-[24px] p-6 border-l-4 border-[#10B981]">
-                  <h3 className="font-display text-xl font-medium mb-2">🎯 Appareils Fonctionnels</h3>
-                  <p className="text-secondary-foreground">Mobiles demandant plus de travail</p>
+                  <h3 className="font-display text-xl font-medium mb-2">✨ Thermoformage</h3>
+                  <p className="text-secondary-foreground">Gouttières et appareils spécifiques haute précision</p>
                 </div>
               </div>
 
               <div className="mt-8 p-6 bg-white rounded-[24px] border-2 border-[#0EA5E9]">
                 <p className="text-lg text-secondary-foreground">
-                  <strong>+ Tout une gamme d'accessoires</strong> combinables avec tous les appareils que je propose. L'orthodontie est complexe et très mécanique, et la combinaison d'appareils est presque infinie.
+                  <strong>Smile Up reflète ce qui m'anime depuis toujours :</strong> l'excellence, la précision et le désir de contribuer à des sourires qui inspirent confiance.
                 </p>
               </div>
             </div>
           </section>
 
-          {/* CTA Final */}
           <section className="px-6 md:px-12 py-32" id="contact">
             <div className="mx-auto max-w-[1440px] text-center">
               <h2 className="font-display text-5xl md:text-7xl font-black tracking-[-0.06em] mb-8">
-                Travaillons ensemble pour vos patients
+                Travaillons ensemble
               </h2>
               <p className="text-xl text-secondary-foreground max-w-[700px] mx-auto mb-12">
-                Besoin d'appareils orthodontiques de qualité ? Discutons de vos besoins et de comment je peux vous accompagner dans vos traitements.
+                Être à l'écoute, anticiper les besoins, offrir une réactivité exemplaire : c'est ma manière de transformer chaque collaboration en une expérience fluide, professionnelle et sereine.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <Link
-                  href="mailto:contact@smileup-ortho.fr"
+                  href="mailto:smile.up045@gmail.com"
                   className="inline-flex items-center gap-2 rounded-full border-2 border-black bg-transparent px-8 py-4 text-base font-medium text-black transition-colors hover:bg-black hover:text-white">
-
-                  <span>M'envoyer un email</span>
+                  <span>smile.up045@gmail.com</span>
                 </Link>
                 <Link
                   href="/"
                   className="inline-flex items-center gap-2 rounded-full bg-[#0EA5E9] px-8 py-4 text-base font-medium text-white transition-transform hover:scale-105">
-
                   <span>Retour à l'accueil</span>
                 </Link>
               </div>
@@ -197,6 +206,6 @@ export default function AboutPage() {
 
         <Footer />
       </div>
-    </>);
-
+    </>
+  );
 }

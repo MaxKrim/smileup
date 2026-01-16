@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Instagram, Mail, Phone } from 'lucide-react';
+import { Instagram, Mail, Phone, Linkedin } from 'lucide-react';
 
 const WaveSvg = () =>
 <div className="absolute top-0 left-0 w-full overflow-hidden leading-none -translate-y-px">
@@ -60,7 +60,6 @@ export default function Footer() {
       <WaveSvg />
       <div className="relative max-w-7xl mx-auto px-6 md:px-12 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-12 lg:gap-x-8 mb-16">
-          {/* Column 1: Brand */}
           <div className="lg:justify-self-start">
             <Link href="/">
               <div className="flex flex-col gap-2">
@@ -70,9 +69,16 @@ export default function Footer() {
                 <span className="text-xs md:text-sm text-black/60">Laboratoire d'Orthodontie</span>
               </div>
             </Link>
+            <div className="mt-4 flex flex-wrap gap-2">
+              <span className="bg-[#0EA5E9] text-white text-xs font-medium px-3 py-1 rounded-full">
+                100% Fabriqué en France
+              </span>
+              <span className="bg-[#10B981] text-white text-xs font-medium px-3 py-1 rounded-full">
+                +13 ans d'expérience
+              </span>
+            </div>
           </div>
 
-          {/* Column 2: Navigation */}
           <div className="lg:justify-self-center">
             <nav className="flex flex-col gap-3 text-center lg:text-left">
               <Link href="/#intro-home" className="text-base md:text-lg text-black/80 hover:text-black transition-colors">À propos</Link>
@@ -82,16 +88,15 @@ export default function Footer() {
             </nav>
           </div>
 
-          {/* Column 3: Contact */}
           <div className="lg:justify-self-end flex flex-col gap-6 text-sm md:text-base text-center lg:text-right">
             <div>
-              <p className="font-bold text-black mb-3 text-base md:text-lg">Jessica Lerandy-Estevez</p>
+              <p className="font-bold text-black mb-3 text-base md:text-lg">Jessica Lerandy Estevez</p>
               <a
-                href="mailto:jessica.lerandyestevez@gmail.com"
+                href="mailto:smile.up045@gmail.com"
                 className="flex items-center justify-center lg:justify-end gap-2 text-black/80 hover:text-[#0EA5E9] transition-colors mb-2 break-all">
 
                 <Mail size={18} className="flex-shrink-0" />
-                <span className="text-xs md:text-sm lg:text-base">jessica.lerandyestevez@gmail.com</span>
+                <span className="text-xs md:text-sm lg:text-base">smile.up045@gmail.com</span>
               </a>
               <a
                 href="tel:+33777995315"
@@ -106,14 +111,14 @@ export default function Footer() {
               <p className="font-medium text-black mb-3">Suivez-moi</p>
               <div className="flex gap-2.5 justify-center lg:justify-end">
                 <SocialLink href="https://www.instagram.com/jessica_lrdy/"><Instagram size={20} /></SocialLink>
+                <SocialLink href="https://www.linkedin.com/in/jessica-lerandy-estevez/"><Linkedin size={20} /></SocialLink>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Bottom Bar */}
         <div className="border-t border-black/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs md:text-sm text-black/60 gap-4 text-center">
-          <p>© {new Date().getFullYear()} Smile UP Orthodontie - Jessica Lerandy-Estevez</p>
+          <p>© {new Date().getFullYear()} Smile UP Orthodontie - Jessica Lerandy Estevez - Loiret (45)</p>
           <Link href="#" className="hover:text-black transition-colors">Mentions légales</Link>
         </div>
       </div>
