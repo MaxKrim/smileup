@@ -39,7 +39,7 @@ const WorkCard = ({ title, label, icon, image, borderColor, bgColor, href }: Wor
           </div>
         </div>
         <div className="flex-grow p-6 text-white md:p-8" style={{ backgroundColor: bgColor }}>
-          <h3 className="font-display text-3xl font-medium leading-tight tracking-[-0.05em] lg:text-[32px]">{title}</h3>
+          <h3 className="font-display text-2xl md:text-3xl font-medium leading-tight tracking-[-0.05em]">{title}</h3>
           <div className="mt-4 inline-block rounded-full bg-white/95 px-4 py-1.5 text-sm font-medium text-black">
             {label}
           </div>
@@ -72,11 +72,11 @@ const worksData: WorkCardProps[] = [
 
 const PortfolioShowcase = () => {
     return (
-      <section id="work" className="bg-background py-16 md:py-24">
-        <div className="container">
+      <section id="work" className="bg-background py-16 md:py-24 w-full overflow-hidden">
+        <div className="mx-auto px-6 md:px-12 max-w-7xl w-full">
           <div className="max-w-[60ch]">
-            <h2 className="font-display text-6xl font-medium leading-none tracking-[-0.06em] md:text-7xl">Des réalisations qui font sourire.</h2>
-            <p className="mt-6 text-lg text-text-secondary">
+            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-medium leading-none tracking-[-0.06em]">Des réalisations qui font sourire.</h2>
+            <p className="mt-6 text-base md:text-lg text-secondary-foreground">
               Chaque appareil est conçu sur mesure selon vos prescriptions. De l'appareil fonctionnel complexe à la gouttière thermoformée, je maîtrise toutes les techniques pour des résultats qui répondent à vos exigences.
             </p>
           </div>
