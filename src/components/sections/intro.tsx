@@ -116,7 +116,7 @@ const Intro = () => {
           ))}
         </div>
 
-        <div className="mt-12 bg-[#F4EFE6] rounded-2xl p-8 md:p-10">
+        <div className="mt-12 bg-[#F4EFE6] rounded-2xl p-6 md:p-10">
           <h3 className="font-display text-xl md:text-2xl font-medium mb-4 text-black">
             Un laboratoire moderne, connecté et réactif
           </h3>
@@ -124,7 +124,7 @@ const Intro = () => {
             Smile Up s'appuie sur les dernières technologies pour offrir un service fluide et efficace.
             L'objectif : vous simplifier la vie et vous permettre d'avancer sereinement dans vos plans de traitement.
           </p>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-4">
             {[
               "Réception des empreintes numériques (STL)",
               "Conception 3D",
@@ -132,55 +132,55 @@ const Intro = () => {
               "Logiciels CFAO dernière génération",
               "Connexions directes avec les principaux systèmes"
             ].map((item, i) => (
-              <div key={i} className="bg-white rounded-xl px-4 py-3 text-sm font-medium text-center shadow-sm">
+              <div key={i} className="bg-white rounded-xl px-3 py-3 text-xs md:text-sm font-medium text-center shadow-sm">
                 {item}
               </div>
             ))}
           </div>
           
-<div className="mt-8 pt-6 border-t border-black/10">
-              <p className="text-sm text-secondary-foreground mb-4">Compatible avec les principaux systèmes :</p>
-              <div className="flex flex-wrap gap-4 items-center">
-                {["3Shape", "iTero", "Medit", "Carestream"].map((brand, i) => (
-                  <div key={i} className="bg-white rounded-lg px-4 py-2 text-sm font-semibold text-[#0EA5E9] shadow-sm border border-[#0EA5E9]/20">
-                    {brand}
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          <div className="mt-12 bg-[#10B981] rounded-2xl p-8 md:p-10 text-white">
-            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-              <div>
-                <h3 className="font-display text-xl md:text-2xl font-medium mb-2">
-                  Livraison partout en France
-                </h3>
-                <p className="text-white/90">
-                  Vos appareils sont livrés directement dans votre cabinet, partout en France métropolitaine.
-                </p>
-              </div>
-              <div className="bg-white/20 rounded-xl p-6 md:min-w-[280px]">
-                <p className="font-medium text-lg mb-2">Délais de livraison</p>
-                <ul className="space-y-2 text-sm text-white/90">
-                  <li className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-white rounded-full"></span>
-                    Appareils simples : 5-7 jours ouvrés
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-white rounded-full"></span>
-                    Appareils complexes : 7-10 jours ouvrés
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-white rounded-full"></span>
-                    Urgences : nous consulter
-                  </li>
-                </ul>
-              </div>
+          <div className="mt-8 pt-6 border-t border-black/10">
+            <p className="text-sm text-secondary-foreground mb-4">Compatible avec les principaux systèmes :</p>
+            <div className="flex flex-wrap gap-3 items-center">
+              {["3Shape", "iTero", "Medit", "Carestream"].map((brand, i) => (
+                <div key={i} className="bg-white rounded-lg px-4 py-2 text-sm font-semibold text-[#0EA5E9] shadow-sm border border-[#0EA5E9]/20">
+                  {brand}
+                </div>
+              ))}
             </div>
           </div>
         </div>
-      </section>
+
+        <div className="mt-12 bg-[#10B981] rounded-2xl p-6 md:p-10 text-white">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+            <div className="flex-1">
+              <h3 className="font-display text-xl md:text-2xl font-medium mb-2">
+                Livraison partout en France
+              </h3>
+              <p className="text-white/90">
+                Vos appareils sont livrés directement dans votre cabinet, partout en France métropolitaine.
+              </p>
+            </div>
+            <div className="bg-white/20 rounded-xl p-5 md:p-6 md:min-w-[280px]">
+              <p className="font-medium text-lg mb-2">Délais de livraison</p>
+              <ul className="space-y-2 text-sm text-white/90">
+                <li className="flex items-center gap-2">
+                  <span className="w-2 h-2 bg-white rounded-full flex-shrink-0"></span>
+                  <span>Appareils simples : 5-7 jours ouvrés</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="w-2 h-2 bg-white rounded-full flex-shrink-0"></span>
+                  <span>Appareils complexes : 7-10 jours ouvrés</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="w-2 h-2 bg-white rounded-full flex-shrink-0"></span>
+                  <span>Urgences : nous consulter</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 };
 
