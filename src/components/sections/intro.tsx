@@ -140,109 +140,89 @@ const Intro = () => {
           </div>
         </div>
 
-        <div className="mt-12 relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#002395] via-[#002395] to-[#ED2939]">
-          <div className="absolute inset-0 opacity-10">
-            <div className="absolute top-0 left-0 w-1/3 h-full bg-[#002395]"></div>
-            <div className="absolute top-0 left-1/3 w-1/3 h-full bg-white"></div>
-            <div className="absolute top-0 right-0 w-1/3 h-full bg-[#ED2939]"></div>
+        <div className="mt-12 relative overflow-hidden rounded-3xl bg-black">
+          <div className="absolute top-0 right-0 w-32 h-32 md:w-48 md:h-48">
+            <div className="absolute top-4 right-4 flex gap-1">
+              <div className="w-4 h-24 md:w-6 md:h-32 bg-[#002395] rounded-sm"></div>
+              <div className="w-4 h-24 md:w-6 md:h-32 bg-white rounded-sm"></div>
+              <div className="w-4 h-24 md:w-6 md:h-32 bg-[#ED2939] rounded-sm"></div>
+            </div>
           </div>
           
           <div className="relative p-8 md:p-12 lg:p-16">
             <div className="flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-16">
               <div className="flex-1">
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="flex items-center gap-1">
-                    <div className="w-3 h-8 bg-[#002395] rounded-sm"></div>
-                    <div className="w-3 h-8 bg-white rounded-sm"></div>
-                    <div className="w-3 h-8 bg-[#ED2939] rounded-sm"></div>
-                  </div>
-                  <span className="bg-white text-[#002395] text-xs md:text-sm font-bold px-4 py-1.5 rounded-full uppercase tracking-wider">
-                    Origine France Garantie
-                  </span>
+                <div className="inline-flex items-center gap-2 bg-white text-black text-xs md:text-sm font-bold px-4 py-2 rounded-full mb-6">
+                  <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    <path d="M9 12l2 2 4-4"/>
+                  </svg>
+                  Origine France Garantie
                 </div>
                 
                 <h3 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight">
                   100% Fabriqué<br />en France
                 </h3>
                 
-                <p className="text-white/90 text-lg md:text-xl mb-6 max-w-xl">
+                <p className="text-white/80 text-lg md:text-xl mb-8 max-w-xl">
                   Chaque appareil est entièrement conçu et fabriqué dans notre laboratoire du <strong className="text-white">Loiret (45)</strong>, sans aucune sous-traitance.
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                  <div className="bg-white/15 backdrop-blur-sm rounded-xl p-4 border border-white/20">
-                    <div className="flex items-center gap-3 mb-2">
-                      <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
-                        <MapPin className="w-5 h-5 text-[#002395]" />
-                      </div>
-                      <span className="text-white font-bold text-lg">Loiret (45)</span>
+                  <div className="bg-white/10 rounded-xl p-5 border border-white/10">
+                    <div className="w-12 h-12 bg-[#0D8EFF] rounded-xl flex items-center justify-center mb-3">
+                      <MapPin className="w-6 h-6 text-white" />
                     </div>
-                    <p className="text-white/80 text-sm">Fabrication locale</p>
+                    <span className="text-white font-bold text-xl block">Loiret (45)</span>
+                    <p className="text-white/60 text-sm mt-1">Fabrication locale</p>
                   </div>
                   
-                  <div className="bg-white/15 backdrop-blur-sm rounded-xl p-4 border border-white/20">
-                    <div className="flex items-center gap-3 mb-2">
-                      <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
-                        <svg className="w-5 h-5 text-[#002395]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                          <path d="M9 12l2 2 4-4"/>
-                        </svg>
-                      </div>
-                      <span className="text-white font-bold text-lg">0%</span>
+                  <div className="bg-white/10 rounded-xl p-5 border border-white/10">
+                    <div className="w-12 h-12 bg-[#5CDEAB] rounded-xl flex items-center justify-center mb-3">
+                      <svg className="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M8 12l2 2 4-4"/>
+                      </svg>
                     </div>
-                    <p className="text-white/80 text-sm">Sous-traitance</p>
+                    <span className="text-white font-bold text-xl block">0%</span>
+                    <p className="text-white/60 text-sm mt-1">Sous-traitance</p>
                   </div>
                   
-                  <div className="bg-white/15 backdrop-blur-sm rounded-xl p-4 border border-white/20">
-                    <div className="flex items-center gap-3 mb-2">
-                      <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
-                        <Truck className="w-5 h-5 text-[#002395]" />
-                      </div>
-                      <span className="text-white font-bold text-lg">5-10j</span>
+                  <div className="bg-white/10 rounded-xl p-5 border border-white/10">
+                    <div className="w-12 h-12 bg-[#FF6644] rounded-xl flex items-center justify-center mb-3">
+                      <Truck className="w-6 h-6 text-white" />
                     </div>
-                    <p className="text-white/80 text-sm">Livraison France</p>
+                    <span className="text-white font-bold text-xl block">5-10 jours</span>
+                    <p className="text-white/60 text-sm mt-1">Livraison France</p>
                   </div>
                 </div>
               </div>
 
-              <div className="lg:w-[320px] flex-shrink-0">
-                <div className="bg-white rounded-2xl p-6 shadow-2xl">
-                  <div className="text-center mb-4">
-                    <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-[#002395] to-[#ED2939] rounded-full mb-3">
-                      <svg className="w-10 h-10 text-white" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-                      </svg>
+              <div className="lg:w-[300px] flex-shrink-0">
+                <div className="bg-white rounded-2xl p-6">
+                  <div className="flex items-center gap-3 mb-5">
+                    <div className="w-12 h-12 bg-black rounded-xl flex items-center justify-center">
+                      <Clock className="w-6 h-6 text-white" />
                     </div>
-                    <h4 className="font-display text-xl font-bold text-gray-900">Délais de livraison</h4>
+                    <h4 className="font-display text-lg font-bold text-black">Délais de livraison</h4>
                   </div>
                   
                   <div className="space-y-3">
-                    <div className="flex items-center justify-between p-3 bg-gray-50 rounded-xl">
-                      <div className="flex items-center gap-2">
-                        <div className="w-2 h-2 bg-[#10B981] rounded-full"></div>
-                        <span className="text-sm font-medium text-gray-700">Appareils simples</span>
-                      </div>
-                      <span className="text-sm font-bold text-[#002395]">5-7 jours</span>
+                    <div className="flex items-center justify-between p-3 bg-[#F4EFE6] rounded-xl">
+                      <span className="text-sm font-medium text-black">Appareils simples</span>
+                      <span className="text-sm font-bold text-[#0D8EFF]">5-7 jours</span>
                     </div>
-                    <div className="flex items-center justify-between p-3 bg-gray-50 rounded-xl">
-                      <div className="flex items-center gap-2">
-                        <div className="w-2 h-2 bg-[#0EA5E9] rounded-full"></div>
-                        <span className="text-sm font-medium text-gray-700">Appareils complexes</span>
-                      </div>
-                      <span className="text-sm font-bold text-[#002395]">7-10 jours</span>
+                    <div className="flex items-center justify-between p-3 bg-[#F4EFE6] rounded-xl">
+                      <span className="text-sm font-medium text-black">Appareils complexes</span>
+                      <span className="text-sm font-bold text-[#0D8EFF]">7-10 jours</span>
                     </div>
-                    <div className="flex items-center justify-between p-3 bg-gray-50 rounded-xl">
-                      <div className="flex items-center gap-2">
-                        <div className="w-2 h-2 bg-[#FF6644] rounded-full"></div>
-                        <span className="text-sm font-medium text-gray-700">Urgences</span>
-                      </div>
-                      <span className="text-sm font-bold text-[#002395]">Nous consulter</span>
+                    <div className="flex items-center justify-between p-3 bg-[#F4EFE6] rounded-xl">
+                      <span className="text-sm font-medium text-black">Urgences</span>
+                      <span className="text-sm font-bold text-[#FF6644]">Nous consulter</span>
                     </div>
                   </div>
                   
-                  <div className="mt-4 pt-4 border-t border-gray-100 text-center">
-                    <p className="text-xs text-gray-500">Livraison partout en France métropolitaine</p>
-                  </div>
+                  <p className="text-xs text-black/50 mt-4 text-center">Livraison France métropolitaine</p>
                 </div>
               </div>
             </div>
