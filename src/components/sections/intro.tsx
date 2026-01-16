@@ -144,35 +144,35 @@ const Intro = () => {
                 </div>
                 
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                  <div className="group bg-white rounded-xl p-4 shadow-md border border-black/5 hover:shadow-xl hover:border-[#00A3E0]/30 transition-all duration-300 hover:-translate-y-1">
+                  <div className="group bg-white rounded-xl px-6 py-5 shadow-md border border-black/5 hover:shadow-xl hover:border-[#00A3E0]/30 transition-all duration-300 hover:-translate-y-1 flex items-center justify-center min-h-[70px]">
                     <img 
                       src="/logos/3shape.svg" 
                       alt="3Shape" 
-                      className="h-7 w-auto object-contain mx-auto group-hover:scale-110 transition-transform duration-300"
+                      className="h-10 w-full max-w-[120px] object-contain group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                   
-                  <div className="group bg-white rounded-xl p-4 shadow-md border border-black/5 hover:shadow-xl hover:border-[#6B2D5B]/30 transition-all duration-300 hover:-translate-y-1">
+                  <div className="group bg-white rounded-xl px-6 py-5 shadow-md border border-black/5 hover:shadow-xl hover:border-[#6B2D5B]/30 transition-all duration-300 hover:-translate-y-1 flex items-center justify-center min-h-[70px]">
                     <img 
                       src="/logos/itero.svg" 
                       alt="iTero" 
-                      className="h-7 w-auto object-contain mx-auto group-hover:scale-110 transition-transform duration-300"
+                      className="h-10 w-full max-w-[120px] object-contain group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                   
-                  <div className="group bg-white rounded-xl p-4 shadow-md border border-black/5 hover:shadow-xl hover:border-[#00B4D8]/30 transition-all duration-300 hover:-translate-y-1">
+                  <div className="group bg-white rounded-xl px-6 py-5 shadow-md border border-black/5 hover:shadow-xl hover:border-[#00B4D8]/30 transition-all duration-300 hover:-translate-y-1 flex items-center justify-center min-h-[70px]">
                     <img 
                       src="/logos/medit.svg" 
                       alt="Medit" 
-                      className="h-7 w-auto object-contain mx-auto group-hover:scale-110 transition-transform duration-300"
+                      className="h-10 w-full max-w-[120px] object-contain group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                   
-                  <div className="group bg-white rounded-xl p-4 shadow-md border border-black/5 hover:shadow-xl hover:border-[#F7941D]/30 transition-all duration-300 hover:-translate-y-1">
+                  <div className="group bg-white rounded-xl px-6 py-5 shadow-md border border-black/5 hover:shadow-xl hover:border-[#F7941D]/30 transition-all duration-300 hover:-translate-y-1 flex items-center justify-center min-h-[70px]">
                     <img 
                       src="/logos/carestream.svg" 
                       alt="Carestream Dental" 
-                      className="h-7 w-auto object-contain mx-auto group-hover:scale-110 transition-transform duration-300"
+                      className="h-10 w-full max-w-[120px] object-contain group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                 </div>
