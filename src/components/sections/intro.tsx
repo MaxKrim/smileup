@@ -76,13 +76,13 @@ const Intro = () => {
               { step: "05", icon: CheckCircle, title: "Contrôle & Envoi", desc: "Vérification finale et expédition", color: "bg-[#6366F1]" },
             ].map((item) => (
               <div key={item.step} className="relative group">
-                <div className={`${item.color} rounded-2xl p-5 text-white h-full min-h-[180px] flex flex-col justify-between transition-all duration-300 hover:scale-[1.02] hover:shadow-xl`}>
+                <div className={`${item.color} rounded-2xl p-5 h-full min-h-[180px] flex flex-col justify-between transition-all duration-300 hover:scale-[1.02] hover:shadow-xl`}>
                   <div>
-                    <span className="text-white/30 font-display text-4xl font-bold absolute top-3 right-4">{item.step}</span>
-                    <item.icon className="w-8 h-8 mb-3 opacity-90" />
-                    <h4 className="font-display text-base font-bold leading-tight">{item.title}</h4>
+                    <span className="text-black/10 font-display text-4xl font-bold absolute top-3 right-4">{item.step}</span>
+                    <item.icon className="w-8 h-8 mb-3 text-white" />
+                    <h4 className="font-display text-base font-bold leading-tight text-white">{item.title}</h4>
                   </div>
-                  <p className="text-sm opacity-80 mt-2">{item.desc}</p>
+                  <p className="text-sm font-semibold text-white/90 mt-2">{item.desc}</p>
                 </div>
               </div>
             ))}
