@@ -27,7 +27,7 @@ const Hero = () => {
           <div className="mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 w-full">
             {/* Case 1 - Texte: Orthodontie traditionnelle et numérique */}
             <div className="flex flex-col justify-between p-5 md:p-6 text-white rounded-2xl md:rounded-[32px] min-h-[180px] md:min-h-[220px] lg:min-h-[250px] transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-xl cursor-pointer overflow-hidden bg-[#0EA5E9]">
-              <div className="font-display font-medium tracking-tighter leading-none text-3xl md:text-4xl lg:text-5xl">
+              <div className="font-display font-medium tracking-tighter leading-none text-2xl md:text-3xl lg:text-4xl">
                 Orthodontie<br />traditionnelle<br />et numérique
               </div>
               <div className="mt-4 md:mt-6">
