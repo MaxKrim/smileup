@@ -80,9 +80,9 @@ const Intro = () => {
                   <div>
                     <span className="text-black/10 font-display text-4xl font-bold absolute top-3 right-4">{item.step}</span>
                     <item.icon className="w-8 h-8 mb-3 text-white" />
-                    <h4 className="font-display text-base font-bold leading-tight text-white">{item.title}</h4>
+                    <h4 className="font-display text-base font-bold leading-tight text-white" style={{ textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>{item.title}</h4>
                   </div>
-                  <p className="text-sm font-semibold text-white/90 mt-2">{item.desc}</p>
+                  <p className="text-sm font-semibold text-white/90 mt-2" style={{ textShadow: '0 1px 3px rgba(0,0,0,0.25)' }}>{item.desc}</p>
                 </div>
               </div>
             ))}
