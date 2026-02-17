@@ -6,7 +6,7 @@ import { ArrowRight, ArrowDown, Clock, Truck, MapPin, Cpu, Mail, Package, FileSe
 
 const Intro = () => {
   return (
-    <section id="intro-home" className="bg-background text-foreground py-12 md:py-24 w-full overflow-hidden">
+    <section id="intro-home" className="bg-background text-foreground py-12 md:py-24 overflow-hidden !w-full !h-[2227px]">
       <div className="mx-auto px-6 md:px-12 max-w-7xl w-full">
         
         {/* Bloc 3 - Texte principal */}
@@ -69,13 +69,13 @@ const Intro = () => {
           {/* Chaîne de fonctionnement - 5 étapes */}
           <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-4">
             {[
-              { step: "01", icon: Package, title: "Commande", desc: "Réception de votre prescription", color: "bg-[#0EA5E9]" },
-              { step: "02", icon: Mail, title: "Réception", desc: "Empreintes numériques (STL) ou physiques", color: "bg-[#10B981]" },
-              { step: "03", icon: FileSearch, title: "Vérification", desc: "Contrôle du dossier complet", color: "bg-[#FF6644]" },
-              { step: "04", icon: Wrench, title: "Conception & Fabrication", desc: "CFAO, impression 3D, travail manuel", color: "bg-[#E77EFF]" },
-              { step: "05", icon: CheckCircle, title: "Contrôle & Envoi", desc: "Vérification finale et expédition", color: "bg-[#6366F1]" },
-            ].map((item) => (
-              <div key={item.step} className="relative group">
+            { step: "01", icon: Package, title: "Commande", desc: "Réception de votre prescription", color: "bg-[#0EA5E9]" },
+            { step: "02", icon: Mail, title: "Réception", desc: "Empreintes numériques (STL) ou physiques", color: "bg-[#10B981]" },
+            { step: "03", icon: FileSearch, title: "Vérification", desc: "Contrôle du dossier complet", color: "bg-[#FF6644]" },
+            { step: "04", icon: Wrench, title: "Conception & Fabrication", desc: "CFAO, impression 3D, travail manuel", color: "bg-[#E77EFF]" },
+            { step: "05", icon: CheckCircle, title: "Contrôle & Envoi", desc: "Vérification finale et expédition", color: "bg-[#6366F1]" }].
+            map((item) =>
+            <div key={item.step} className="relative group">
                 <div className={`${item.color} rounded-2xl p-5 h-full min-h-[180px] flex flex-col justify-between transition-all duration-300 hover:scale-[1.02] hover:shadow-xl`}>
                   <div>
                     <span className="text-black/10 font-display text-4xl font-bold absolute top-3 right-4">{item.step}</span>
@@ -85,7 +85,7 @@ const Intro = () => {
                   <p className="text-sm font-semibold text-white/90 mt-2" style={{ textShadow: '0 1px 3px rgba(0,0,0,0.25)' }}>{item.desc}</p>
                 </div>
               </div>
-            ))}
+            )}
           </div>
         </div>
 
@@ -107,19 +107,19 @@ const Intro = () => {
             
             <div className="flex items-center gap-3 flex-wrap">
               {[
-                { src: "/logos/3shape.svg", alt: "3Shape", hoverColor: "hover:border-[#00A3E0]/40" },
-                { src: "/logos/itero.svg", alt: "iTero", hoverColor: "hover:border-[#6B2D5B]/40" },
-                { src: "/logos/medit.svg", alt: "Medit", hoverColor: "hover:border-[#00B4D8]/40" },
-                { src: "/logos/carestream.svg", alt: "Carestream Dental", hoverColor: "hover:border-[#F7941D]/40" },
-              ].map((logo) => (
-                <div key={logo.alt} className={`group bg-white rounded-lg h-12 px-4 shadow-sm border border-black/5 hover:shadow-md ${logo.hoverColor} transition-all duration-300 hover:-translate-y-0.5 flex items-center justify-center`}>
-                  <img 
-                    src={logo.src} 
-                    alt={logo.alt} 
-                    className="h-7 w-auto object-contain group-hover:scale-105 transition-transform duration-300"
-                  />
+              { src: "/logos/3shape.svg", alt: "3Shape", hoverColor: "hover:border-[#00A3E0]/40" },
+              { src: "/logos/itero.svg", alt: "iTero", hoverColor: "hover:border-[#6B2D5B]/40" },
+              { src: "/logos/medit.svg", alt: "Medit", hoverColor: "hover:border-[#00B4D8]/40" },
+              { src: "/logos/carestream.svg", alt: "Carestream Dental", hoverColor: "hover:border-[#F7941D]/40" }].
+              map((logo) =>
+              <div key={logo.alt} className={`group bg-white rounded-lg h-12 px-4 shadow-sm border border-black/5 hover:shadow-md ${logo.hoverColor} transition-all duration-300 hover:-translate-y-0.5 flex items-center justify-center`}>
+                  <img
+                  src={logo.src}
+                  alt={logo.alt}
+                  className="h-7 w-auto object-contain group-hover:scale-105 transition-transform duration-300" />
+
                 </div>
-              ))}
+              )}
             </div>
           </div>
           
@@ -179,8 +179,8 @@ const Intro = () => {
                   <div className="bg-white/60 backdrop-blur-sm rounded-xl p-5 border border-white/80 shadow-sm">
                     <div className="w-12 h-12 bg-[#10B981] rounded-xl flex items-center justify-center mb-3 shadow-lg shadow-[#10B981]/20">
                       <svg className="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <circle cx="12" cy="12" r="10"/>
-                        <path d="M8 12l2 2 4-4"/>
+                        <circle cx="12" cy="12" r="10" />
+                        <path d="M8 12l2 2 4-4" />
                       </svg>
                     </div>
                     <span className="text-black font-bold text-xl block">0%</span>
@@ -209,23 +209,23 @@ const Intro = () => {
                   
                   <div className="space-y-2">
                     {[
-                      { label: "Appareils fixes", delay: "7 à 10 jours", sub: "CFAO et traditionnel", color: "text-[#0EA5E9]" },
-                      { label: "Appareils amovibles", delay: "7 à 10 jours", sub: "", color: "text-[#0EA5E9]" },
-                      { label: "Appareils fonctionnels", delay: "≈ 15 jours", sub: "", color: "text-[#0EA5E9]" },
-                      { label: "Thermoformés", delay: "10 jours", sub: "", color: "text-[#0EA5E9]" },
-                      { label: "Contentions", delay: "3 à 5 jours", sub: "", color: "text-[#10B981]" },
-                      { label: "PUL", delay: "15 à 20 jours", sub: "", color: "text-[#0EA5E9]" },
-                      { label: "Réparations", delay: "3 à 5 jours", sub: "", color: "text-[#10B981]" },
-                      { label: "Urgences", delay: "Prioritaire", sub: "Nous consulter", color: "text-[#FF6644]" },
-                    ].map((item, i) => (
-                      <div key={i} className="flex items-center justify-between p-2.5 bg-white/80 backdrop-blur-sm rounded-xl border border-black/5">
+                    { label: "Appareils fixes", delay: "7 à 10 jours", sub: "CFAO et traditionnel", color: "text-[#0EA5E9]" },
+                    { label: "Appareils amovibles", delay: "7 à 10 jours", sub: "", color: "text-[#0EA5E9]" },
+                    { label: "Appareils fonctionnels", delay: "≈ 15 jours", sub: "", color: "text-[#0EA5E9]" },
+                    { label: "Thermoformés", delay: "10 jours", sub: "", color: "text-[#0EA5E9]" },
+                    { label: "Contentions", delay: "3 à 5 jours", sub: "", color: "text-[#10B981]" },
+                    { label: "PUL", delay: "15 à 20 jours", sub: "", color: "text-[#0EA5E9]" },
+                    { label: "Réparations", delay: "3 à 5 jours", sub: "", color: "text-[#10B981]" },
+                    { label: "Urgences", delay: "Prioritaire", sub: "Nous consulter", color: "text-[#FF6644]" }].
+                    map((item, i) =>
+                    <div key={i} className="flex items-center justify-between p-2.5 bg-white/80 backdrop-blur-sm rounded-xl border border-black/5">
                         <div>
                           <span className="text-xs font-medium text-black">{item.label}</span>
                           {item.sub && <span className="text-[10px] text-black/40 block">{item.sub}</span>}
                         </div>
                         <span className={`text-xs font-bold ${item.color}`}>{item.delay}</span>
                       </div>
-                    ))}
+                    )}
                   </div>
                   
                   <p className="text-[10px] text-black/40 mt-3 text-center">Livraison France métropolitaine</p>
@@ -235,8 +235,8 @@ const Intro = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default Intro;
