@@ -37,7 +37,7 @@ const Hero = () => {
             </div>
 
             {/* Case 2 - Photo labo */}
-            <div className="relative w-full rounded-2xl md:rounded-[32px] overflow-hidden min-h-[280px] md:min-h-[350px] lg:min-h-[400px] transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-xl cursor-pointer">
+            <div className="relative w-full rounded-2xl md:rounded-[32px] overflow-hidden min-h-[180px] md:min-h-[220px] lg:min-h-[250px] transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-xl cursor-pointer">
               <img
                 src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/1b2e0205-1fa2-45bd-8c45-4d4c1200c30e/visual-edit-uploads/1761570318948-74luo92m0o5.png"
                 alt="Appareil orthodontique de précision"
@@ -60,7 +60,7 @@ const Hero = () => {
             </div>
 
             {/* Case 4 - Photo + mention Sans sous-traitance */}
-            <div className="relative w-full rounded-2xl md:rounded-[32px] overflow-hidden min-h-[280px] md:min-h-[350px] lg:min-h-[400px] transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-xl cursor-pointer">
+            <div className="relative w-full rounded-2xl md:rounded-[32px] overflow-hidden min-h-[180px] md:min-h-[220px] lg:min-h-[250px] transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-xl cursor-pointer">
               <img
                 src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/1b2e0205-1fa2-45bd-8c45-4d4c1200c30e/visual-edit-uploads/1761569985153-11q58kayx5t.png"
                 alt="Laboratoire orthodontique moderne"
