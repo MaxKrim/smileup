@@ -143,38 +143,21 @@ const Intro = () => {
                   </p>
                 </div>
                 
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
-                  <div className="group bg-white rounded-lg px-3 py-2 shadow-sm border border-black/5 hover:shadow-md hover:border-[#00A3E0]/30 transition-all duration-300 hover:-translate-y-0.5 flex items-center justify-center">
-                    <img 
-                      src="/logos/3shape.svg" 
-                      alt="3Shape" 
-                      className="h-10 w-full max-w-[120px] object-contain group-hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                  
-                  <div className="group bg-white rounded-lg px-3 py-2 shadow-sm border border-black/5 hover:shadow-md hover:border-[#6B2D5B]/30 transition-all duration-300 hover:-translate-y-0.5 flex items-center justify-center">
-                    <img 
-                      src="/logos/itero.svg" 
-                      alt="iTero" 
-                      className="h-10 w-full max-w-[120px] object-contain group-hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                  
-                  <div className="group bg-white rounded-lg px-3 py-2 shadow-sm border border-black/5 hover:shadow-md hover:border-[#00B4D8]/30 transition-all duration-300 hover:-translate-y-0.5 flex items-center justify-center">
-                    <img 
-                      src="/logos/medit.svg" 
-                      alt="Medit" 
-                      className="h-10 w-full max-w-[120px] object-contain group-hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                  
-                  <div className="group bg-white rounded-lg px-3 py-2 shadow-sm border border-black/5 hover:shadow-md hover:border-[#F7941D]/30 transition-all duration-300 hover:-translate-y-0.5 flex items-center justify-center">
-                    <img 
-                      src="/logos/carestream.svg" 
-                      alt="Carestream Dental" 
-                      className="h-10 w-full max-w-[120px] object-contain group-hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
+                <div className="flex items-center gap-3 flex-wrap">
+                  {[
+                    { src: "/logos/3shape.svg", alt: "3Shape", hoverColor: "hover:border-[#00A3E0]/40" },
+                    { src: "/logos/itero.svg", alt: "iTero", hoverColor: "hover:border-[#6B2D5B]/40" },
+                    { src: "/logos/medit.svg", alt: "Medit", hoverColor: "hover:border-[#00B4D8]/40" },
+                    { src: "/logos/carestream.svg", alt: "Carestream Dental", hoverColor: "hover:border-[#F7941D]/40" },
+                  ].map((logo) => (
+                    <div key={logo.alt} className={`group bg-white rounded-lg h-12 px-4 shadow-sm border border-black/5 hover:shadow-md ${logo.hoverColor} transition-all duration-300 hover:-translate-y-0.5 flex items-center justify-center`}>
+                      <img 
+                        src={logo.src} 
+                        alt={logo.alt} 
+                        className="h-7 w-auto object-contain group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                  ))}
                 </div>
               </div>
               
