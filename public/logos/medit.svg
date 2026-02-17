@@ -1,9 +1,9 @@
-<svg viewBox="0 0 140 50" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="meditGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" style="stop-color:#00D4FF"/>
       <stop offset="100%" style="stop-color:#0099CC"/>
     </linearGradient>
   </defs>
-  <text x="10" y="35" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="bold" fill="url(#meditGrad)">Medit</text>
+  <text x="60" y="28" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="bold" fill="url(#meditGrad)">Medit</text>
 </svg>
