@@ -73,7 +73,7 @@ const Intro = () => {
               { step: "02", icon: Mail, title: "Réception", desc: "Empreintes numériques (STL) ou physiques", color: "bg-[#10B981]" },
               { step: "03", icon: FileSearch, title: "Vérification", desc: "Contrôle du dossier complet", color: "bg-[#FF6644]" },
               { step: "04", icon: Wrench, title: "Conception & Fabrication", desc: "CFAO, impression 3D, travail manuel", color: "bg-[#E77EFF]" },
-              { step: "05", icon: CheckCircle, title: "Contrôle & Envoi", desc: "Vérification finale et expédition", color: "bg-black" },
+              { step: "05", icon: CheckCircle, title: "Contrôle & Envoi", desc: "Vérification finale et expédition", color: "bg-[#6366F1]" },
             ].map((item) => (
               <div key={item.step} className="relative group">
                 <div className={`${item.color} rounded-2xl p-5 text-white h-full min-h-[180px] flex flex-col justify-between transition-all duration-300 hover:scale-[1.02] hover:shadow-xl`}>
