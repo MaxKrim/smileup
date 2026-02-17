@@ -6,7 +6,7 @@ import { ArrowRight, ArrowDown, Clock, Truck, MapPin, Cpu, Mail, Package, FileSe
 
 const Intro = () => {
   return (
-    <section id="intro-home" className="bg-background text-foreground py-12 md:py-24 overflow-hidden !w-full !h-[2222px]">
+    <section id="intro-home" className="bg-background text-foreground py-12 md:py-24 overflow-hidden !w-full !h-[2180px]">
       <div className="mx-auto px-6 md:px-12 max-w-7xl w-full">
         
         {/* Bloc 3 - Texte principal */}
