@@ -147,7 +147,7 @@ export default function AboutPage() {
                 </div>
 
                 <div className="bg-white rounded-[24px] p-6 border-l-4 border-[#FF6644]">
-                  <h3 className="font-display text-xl font-medium mb-2">🔄 Appareils Mobiles</h3>
+                  <h3 className="font-display text-xl font-medium mb-2">🔄 Appareils Amovibles</h3>
                   <p className="text-secondary-foreground">Plaques Hawley, Vaugeois, systèmes d'expansion - entièrement personnalisables</p>
                 </div>
 
