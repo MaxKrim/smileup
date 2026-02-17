@@ -46,7 +46,7 @@ const Hero = () => {
 
             {/* Case 3 - Texte: Disponibilité et échanges + Horaires */}
             <div className="flex flex-col justify-between p-5 md:p-6 text-white rounded-2xl md:rounded-[32px] min-h-[180px] md:min-h-[220px] lg:min-h-[250px] transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-xl cursor-pointer overflow-hidden bg-[#10B981]">
-              <div className="font-display font-medium tracking-tighter leading-none text-3xl md:text-4xl lg:text-5xl">
+              <div className="font-display font-medium tracking-tighter leading-none text-2xl md:text-3xl lg:text-4xl">
                 Disponibilité<br />& échanges
               </div>
               <div className="mt-4 md:mt-6">
