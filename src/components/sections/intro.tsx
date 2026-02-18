@@ -87,7 +87,7 @@ const Intro = () => {
               <span className="text-xs font-medium tracking-widest uppercase text-[#46aac9] mb-3 block">
                 Intégration certifiée
               </span>
-              <h4 className="font-display text-xl md:text-2xl font-light text-[#1D5F75] mb-2">
+              <h4 className="font-display text-xl md:text-2xl font-semibold text-[#1D5F75] mb-2">
                 Compatible avec les leaders du marché
               </h4>
               <p className="text-[#5A7A8A] text-sm md:text-base">
