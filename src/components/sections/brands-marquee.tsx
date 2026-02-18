@@ -1,25 +1,25 @@
 import React from 'react';
 
 const PRACTITIONER_TYPES = [
-  { icon: "👨‍⚕️", title: "Orthodontistes", color: "bg-[#0EA5E9]" },
-  { icon: "🦷", title: "Dentistes", color: "bg-[#10B981]" },
-  { icon: "⚕️", title: "Chirurgiens-Dentistes", color: "bg-[#F0ABFC]" },
-  { icon: "👨‍⚕️", title: "Orthodontistes", color: "bg-[#FF6644]" },
-  { icon: "🦷", title: "Dentistes", color: "bg-[#0EA5E9]" },
-  { icon: "⚕️", title: "Chirurgiens-Dentistes", color: "bg-[#10B981]" },
-  { icon: "👨‍⚕️", title: "Orthodontistes", color: "bg-[#F0ABFC]" },
-  { icon: "🦷", title: "Dentistes", color: "bg-[#FF6644]" },
+  { title: "Orthodontistes", abbr: "ODF" },
+  { title: "Dentistes", abbr: "DDS" },
+  { title: "Chirurgiens-Dentistes", abbr: "CD" },
+  { title: "Orthodontistes", abbr: "ODF" },
+  { title: "Dentistes", abbr: "DDS" },
+  { title: "Chirurgiens-Dentistes", abbr: "CD" },
+  { title: "Orthodontistes", abbr: "ODF" },
+  { title: "Dentistes", abbr: "DDS" },
 ];
 
 const PractitionerTrack = () => (
-  <div className="flex flex-none items-center gap-6 pl-6">
+  <div className="flex flex-none items-center gap-4 pl-4">
     {PRACTITIONER_TYPES.map((practitioner, index) => (
       <div
         key={index}
-        className={`w-[220px] md:w-[264px] shrink-0 h-[140px] md:h-[160px] ${practitioner.color} text-white border border-white/20 rounded-2xl flex flex-col items-center justify-center p-6 transition-transform duration-300 ease-in-out hover:scale-[1.02]`}
+        className="w-[200px] md:w-[240px] shrink-0 h-[100px] md:h-[110px] bg-white border border-[#1B2A4A]/8 text-[#1B2A4A] rounded-lg flex flex-col items-center justify-center p-5 transition-all duration-300 hover:border-[#C5A572]/30 hover:shadow-sm"
       >
-        <div className="text-5xl md:text-6xl mb-3">{practitioner.icon}</div>
-        <div className="text-base md:text-lg font-medium text-center">{practitioner.title}</div>
+        <div className="text-xs font-medium tracking-widest uppercase text-[#C5A572] mb-2">{practitioner.abbr}</div>
+        <div className="text-sm md:text-base font-medium text-center text-[#1B2A4A]">{practitioner.title}</div>
       </div>
     ))}
   </div>
@@ -27,7 +27,7 @@ const PractitionerTrack = () => (
 
 const BrandsMarquee = () => {
     return (
-        <section className="bg-background py-16 md:py-24 overflow-hidden w-full">
+        <section className="bg-background py-20 md:py-28 overflow-hidden w-full">
             <style>
                 {`
                     @keyframes marquee {
@@ -40,11 +40,12 @@ const BrandsMarquee = () => {
                 `}
             </style>
             <div className="mx-auto px-6 md:px-12 max-w-7xl w-full">
-                <h2 className="text-3xl md:text-4xl lg:text-[56px] font-medium tracking-[-0.06em] leading-none mb-6 md:mb-8 font-display">
+                <span className="text-xs font-medium tracking-widest uppercase text-[#C5A572] mb-4 block">Confiance</span>
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-light tracking-[-0.03em] leading-none mb-5 font-display text-[#1B2A4A]">
                     Des praticiens qui me font confiance.
                 </h2>
-                <p className="text-base md:text-lg text-secondary-foreground max-w-[60ch] mb-12 md:mb-16">
-                    Je travaille avec des orthodontistes, dentistes et chirurgiens-dentistes exigeants qui recherchent une qualité de travail irréprochable et un partenaire fiable pour leurs patients.
+                <p className="text-base md:text-lg text-[#3D4F6F] max-w-2xl mb-14 md:mb-16">
+                    Je travaille avec des orthodontistes, dentistes et chirurgiens-dentistes exigeants qui recherchent une qualit&eacute; de travail irr&eacute;prochable et un partenaire fiable pour leurs patients.
                 </p>
             </div>
             
