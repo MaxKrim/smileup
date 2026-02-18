@@ -125,8 +125,9 @@ const Intro = () => {
         </div>
 
         {/* Bloc 7 - Made in France + Bloc 8 - Délais */}
-        <div className="mt-12 bg-white border border-[#1D5F75]/8 rounded-lg overflow-hidden">
-          <div className="p-8 md:p-10">
+          <div className="mt-12 relative rounded-lg overflow-hidden" style={{ background: 'linear-gradient(135deg, #46aac9 0%, #1D5F75 100%)' }}>
+            <div className="absolute inset-0 bg-white/80 backdrop-blur-xl"></div>
+            <div className="relative p-8 md:p-10">
             <div className="flex flex-col lg:flex-row lg:items-start gap-10 lg:gap-16">
               <div className="flex-1">
                 <div className="inline-flex items-center gap-3 mb-6">
