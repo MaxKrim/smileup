@@ -15,14 +15,14 @@ const Intro = () => {
             <span className="text-xs font-medium tracking-widest uppercase text-[#C5A572] mb-6 block">
               Un laboratoire tourné vers l&apos;humain et l&apos;innovation
             </span>
-            <h2 className="font-display text-3xl sm:text-4xl md:text-[44px] leading-[1.1] font-light tracking-[-0.03em] text-[#1B2A4A] mb-8">
+            <h2 className="font-display text-3xl sm:text-4xl md:text-[44px] leading-[1.1] font-light tracking-[-0.03em] text-[#1D5F75] mb-8">
               La technologie au service du sourire.
             </h2>
             <p className="text-[#3D4F6F] text-base md:text-lg leading-relaxed mb-5">
               Smile Up est un laboratoire pensé comme un partenaire de travail au quotidien, au service de chaque praticien avec sérieux, précision et une vraie passion pour le travail bien fait.
             </p>
             <p className="text-[#3D4F6F] text-base md:text-[17px] leading-relaxed">
-              Derrière chaque dispositif, il y a un regard, une exigence et une expérience construite au fil des années. Les appareils conçus sont pensés pour être <strong className="font-medium text-[#1B2A4A]">fiables</strong>, <strong className="font-medium text-[#1B2A4A]">confortables</strong> et <strong className="font-medium text-[#1B2A4A]">adaptés aux traitements</strong>, avec une exigence constante.
+              Derrière chaque dispositif, il y a un regard, une exigence et une expérience construite au fil des années. Les appareils conçus sont pensés pour être <strong className="font-medium text-[#1D5F75]">fiables</strong>, <strong className="font-medium text-[#1D5F75]">confortables</strong> et <strong className="font-medium text-[#1D5F75]">adaptés aux traitements</strong>, avec une exigence constante.
             </p>
             <p className="text-[#C5A572] font-light text-lg mt-6 italic border-l-2 border-[#C5A572] pl-5">
               La précision n&apos;est pas un concept : c&apos;est une habitude quotidienne.
@@ -30,7 +30,7 @@ const Intro = () => {
             <div className="mt-10 flex items-center gap-4">
               <Link
                 href="/about"
-                className="group inline-flex items-center justify-center py-3 px-7 border border-[#1B2A4A] rounded-md overflow-hidden font-medium text-sm tracking-wide transition-all duration-300 text-[#1B2A4A] hover:bg-[#1B2A4A] hover:text-white">
+                className="group inline-flex items-center justify-center py-3 px-7 border border-[#1D5F75] rounded-md overflow-hidden font-medium text-sm tracking-wide transition-all duration-300 text-[#1D5F75] hover:bg-[#1D5F75] hover:text-white">
                 <span className="flex items-center gap-2">
                   <span>En savoir plus sur mon parcours</span>
                   <ArrowRight size={14} />
@@ -38,7 +38,7 @@ const Intro = () => {
               </Link>
               <Link
                 href="#expertises"
-                className="group w-12 h-12 bg-[#1B2A4A] rounded-md flex items-center justify-center shadow-sm hover:shadow-md transition-all duration-300"
+                className="group w-12 h-12 bg-[#1D5F75] rounded-md flex items-center justify-center shadow-sm hover:shadow-md transition-all duration-300"
                 aria-label="Scroll to expertises">
                 <ArrowDown className="text-white" size={20} strokeWidth={1.5} />
               </Link>
@@ -51,7 +51,7 @@ const Intro = () => {
           <span className="text-xs font-medium tracking-widest uppercase text-[#C5A572] mb-4 block">
             Un laboratoire moderne, connecté et réactif
           </span>
-          <h3 className="font-display text-2xl md:text-3xl font-light mb-3 text-[#1B2A4A]">
+          <h3 className="font-display text-2xl md:text-3xl font-light mb-3 text-[#1D5F75]">
             De la commande à la livraison
           </h3>
           <p className="text-[#3D4F6F] mb-8 max-w-2xl text-base">
@@ -67,11 +67,11 @@ const Intro = () => {
               { step: "05", icon: CheckCircle, title: "Contrôle & Envoi", desc: "Vérification finale et expédition" }
             ].map((item) => (
               <div key={item.step} className="relative group">
-                <div className="bg-white border border-[#1B2A4A]/8 rounded-lg p-5 h-full min-h-[150px] flex flex-col justify-between transition-all duration-300 hover:shadow-md hover:border-[#C5A572]/30">
+                <div className="bg-white border border-[#1D5F75]/8 rounded-lg p-5 h-full min-h-[150px] flex flex-col justify-between transition-all duration-300 hover:shadow-md hover:border-[#C5A572]/30">
                   <div>
                     <span className="text-[#C5A572]/30 font-display text-3xl font-light absolute top-4 right-4">{item.step}</span>
-                    <item.icon className="w-6 h-6 mb-4 text-[#1B2A4A]" strokeWidth={1.5} />
-                    <h4 className="font-display text-sm font-medium leading-tight text-[#1B2A4A]">{item.title}</h4>
+                    <item.icon className="w-6 h-6 mb-4 text-[#1D5F75]" strokeWidth={1.5} />
+                    <h4 className="font-display text-sm font-medium leading-tight text-[#1D5F75]">{item.title}</h4>
                   </div>
                   <p className="text-xs text-[#5A6A84] mt-3 leading-relaxed">{item.desc}</p>
                 </div>
@@ -81,13 +81,13 @@ const Intro = () => {
         </div>
 
         {/* Bloc 6 - Compatibilité scanners */}
-        <div className="mt-12 bg-white border border-[#1B2A4A]/8 rounded-lg p-8 md:p-10">
+        <div className="mt-12 bg-white border border-[#1D5F75]/8 rounded-lg p-8 md:p-10">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
             <div className="flex-1">
               <span className="text-xs font-medium tracking-widest uppercase text-[#C5A572] mb-3 block">
                 Intégration certifiée
               </span>
-              <h4 className="font-display text-xl md:text-2xl font-light text-[#1B2A4A] mb-2">
+              <h4 className="font-display text-xl md:text-2xl font-light text-[#1D5F75] mb-2">
                 Compatible avec les leaders du marché
               </h4>
               <p className="text-[#5A6A84] text-sm md:text-base">
@@ -102,7 +102,7 @@ const Intro = () => {
                 { src: "/logos/medit.svg", alt: "Medit" },
                 { src: "/logos/carestream.svg", alt: "Carestream Dental" }
               ].map((logo) => (
-                <div key={logo.alt} className="bg-[#F8F9FA] rounded-md h-12 px-5 border border-[#1B2A4A]/5 flex items-center justify-center transition-all duration-300 hover:border-[#C5A572]/30 hover:shadow-sm">
+                <div key={logo.alt} className="bg-[#F8F9FA] rounded-md h-12 px-5 border border-[#1D5F75]/5 flex items-center justify-center transition-all duration-300 hover:border-[#C5A572]/30 hover:shadow-sm">
                   <img
                     src={logo.src}
                     alt={logo.alt}
@@ -112,58 +112,58 @@ const Intro = () => {
             </div>
           </div>
           
-          <div className="mt-6 pt-5 border-t border-[#1B2A4A]/8 space-y-3">
+          <div className="mt-6 pt-5 border-t border-[#1D5F75]/8 space-y-3">
             <div className="flex items-center gap-3 text-sm text-[#3D4F6F]">
-              <CheckCircle className="w-4 h-4 text-[#1B2A4A] flex-shrink-0" strokeWidth={1.5} />
+              <CheckCircle className="w-4 h-4 text-[#1D5F75] flex-shrink-0" strokeWidth={1.5} />
               <span>Envoyez vos fichiers STL directement depuis votre scanner — réception en temps réel.</span>
             </div>
             <div className="flex items-center gap-3 text-sm text-[#3D4F6F]">
-              <Mail className="w-4 h-4 text-[#1B2A4A] flex-shrink-0" strokeWidth={1.5} />
-              <span>Pôle numérique : <a href="mailto:smile.up045@gmail.com" className="font-medium text-[#1B2A4A] hover:text-[#C5A572] transition-colors">smile.up045@gmail.com</a></span>
+              <Mail className="w-4 h-4 text-[#1D5F75] flex-shrink-0" strokeWidth={1.5} />
+              <span>Pôle numérique : <a href="mailto:smile.up045@gmail.com" className="font-medium text-[#1D5F75] hover:text-[#C5A572] transition-colors">smile.up045@gmail.com</a></span>
             </div>
           </div>
         </div>
 
         {/* Bloc 7 - Made in France + Bloc 8 - Délais */}
-        <div className="mt-12 bg-white border border-[#1B2A4A]/8 rounded-lg overflow-hidden">
+        <div className="mt-12 bg-white border border-[#1D5F75]/8 rounded-lg overflow-hidden">
           <div className="p-8 md:p-10">
             <div className="flex flex-col lg:flex-row lg:items-start gap-10 lg:gap-16">
               <div className="flex-1">
                 <div className="inline-flex items-center gap-3 mb-6">
                   <div className="flex gap-0.5">
                     <div className="w-1.5 h-5 bg-[#002395] rounded-sm"></div>
-                    <div className="w-1.5 h-5 bg-white border border-[#1B2A4A]/10 rounded-sm"></div>
+                    <div className="w-1.5 h-5 bg-white border border-[#1D5F75]/10 rounded-sm"></div>
                     <div className="w-1.5 h-5 bg-[#ED2939] rounded-sm"></div>
                   </div>
-                  <span className="text-xs font-medium tracking-widest uppercase text-[#1B2A4A]">
+                  <span className="text-xs font-medium tracking-widest uppercase text-[#1D5F75]">
                     Origine France Garantie
                   </span>
                 </div>
                 
-                <h3 className="font-display text-3xl md:text-4xl font-light text-[#1B2A4A] mb-5 leading-tight">
+                <h3 className="font-display text-3xl md:text-4xl font-light text-[#1D5F75] mb-5 leading-tight">
                   100% Fabriqué<br />en France
                 </h3>
                 
                 <p className="text-[#3D4F6F] text-base md:text-lg mb-8 max-w-xl leading-relaxed">
-                  Chaque appareil est entièrement conçu et fabriqué dans notre laboratoire à <strong className="font-medium text-[#1B2A4A]">Ingré (45)</strong>, sans aucune sous-traitance.
+                  Chaque appareil est entièrement conçu et fabriqué dans notre laboratoire à <strong className="font-medium text-[#1D5F75]">Ingré (45)</strong>, sans aucune sous-traitance.
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                  <div className="border border-[#1B2A4A]/8 rounded-lg p-5">
-                    <MapPin className="w-5 h-5 text-[#1B2A4A] mb-3" strokeWidth={1.5} />
-                    <span className="text-[#1B2A4A] font-medium text-lg block">Ingré (45)</span>
+                  <div className="border border-[#1D5F75]/8 rounded-lg p-5">
+                    <MapPin className="w-5 h-5 text-[#1D5F75] mb-3" strokeWidth={1.5} />
+                    <span className="text-[#1D5F75] font-medium text-lg block">Ingré (45)</span>
                     <p className="text-[#5A6A84] text-xs mt-1">Fabrication locale</p>
                   </div>
                   
-                  <div className="border border-[#1B2A4A]/8 rounded-lg p-5">
-                    <CheckCircle className="w-5 h-5 text-[#1B2A4A] mb-3" strokeWidth={1.5} />
-                    <span className="text-[#1B2A4A] font-medium text-lg block">0%</span>
+                  <div className="border border-[#1D5F75]/8 rounded-lg p-5">
+                    <CheckCircle className="w-5 h-5 text-[#1D5F75] mb-3" strokeWidth={1.5} />
+                    <span className="text-[#1D5F75] font-medium text-lg block">0%</span>
                     <p className="text-[#5A6A84] text-xs mt-1">Sous-traitance</p>
                   </div>
                   
-                  <div className="border border-[#1B2A4A]/8 rounded-lg p-5">
-                    <Truck className="w-5 h-5 text-[#1B2A4A] mb-3" strokeWidth={1.5} />
-                    <span className="text-[#1B2A4A] font-medium text-lg block">J+1</span>
+                  <div className="border border-[#1D5F75]/8 rounded-lg p-5">
+                    <Truck className="w-5 h-5 text-[#1D5F75] mb-3" strokeWidth={1.5} />
+                    <span className="text-[#1D5F75] font-medium text-lg block">J+1</span>
                     <p className="text-[#5A6A84] text-xs mt-1">Livraison France métropolitaine</p>
                   </div>
                 </div>
@@ -171,10 +171,10 @@ const Intro = () => {
 
               {/* Bloc 8 - Délais */}
               <div className="lg:w-[340px] flex-shrink-0">
-                <div className="bg-[#F8F9FA] rounded-lg p-6 border border-[#1B2A4A]/5">
+                <div className="bg-[#F8F9FA] rounded-lg p-6 border border-[#1D5F75]/5">
                   <div className="flex items-center gap-3 mb-5">
-                    <Clock className="w-5 h-5 text-[#1B2A4A]" strokeWidth={1.5} />
-                    <h4 className="font-display text-base font-medium text-[#1B2A4A]">Délais de fabrication</h4>
+                    <Clock className="w-5 h-5 text-[#1D5F75]" strokeWidth={1.5} />
+                    <h4 className="font-display text-base font-medium text-[#1D5F75]">Délais de fabrication</h4>
                   </div>
                   
                   <div className="space-y-2">
@@ -188,12 +188,12 @@ const Intro = () => {
                       { label: "Réparations", delay: "3 à 5 jours", sub: "" },
                       { label: "Urgences", delay: "Prioritaire", sub: "Nous consulter", accent: true }
                     ].map((item, i) => (
-                      <div key={i} className="flex items-center justify-between p-3 bg-white rounded-md border border-[#1B2A4A]/5">
+                      <div key={i} className="flex items-center justify-between p-3 bg-white rounded-md border border-[#1D5F75]/5">
                         <div>
-                          <span className="text-xs font-medium text-[#1B2A4A]">{item.label}</span>
+                          <span className="text-xs font-medium text-[#1D5F75]">{item.label}</span>
                           {item.sub && <span className="text-[10px] text-[#5A6A84] block mt-0.5">{item.sub}</span>}
                         </div>
-                        <span className={`text-xs font-medium ${item.accent ? 'text-[#C5A572]' : 'text-[#1B2A4A]'}`}>{item.delay}</span>
+                        <span className={`text-xs font-medium ${item.accent ? 'text-[#C5A572]' : 'text-[#1D5F75]'}`}>{item.delay}</span>
                       </div>
                     ))}
                   </div>
