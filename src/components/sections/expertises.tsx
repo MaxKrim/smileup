@@ -133,9 +133,9 @@ const ExpertisesSection = () => {
 
 const ExpertiseCard = ({ card }: { card: typeof expertisesData[0] }) => (
   <div className="expertise-card group relative rounded-lg overflow-hidden transition-all duration-500 hover:-translate-y-1 hover:shadow-lg">
-    <div className="bg-white border border-[#1D5F75]/8 h-full min-h-[480px] md:min-h-[500px] flex flex-col relative overflow-hidden rounded-lg">
+    <div className="bg-white border border-[#46aac9]/12 h-full min-h-[480px] md:min-h-[500px] flex flex-col relative overflow-hidden rounded-lg">
       <div className="absolute top-4 left-4 z-20">
-        <span className="bg-[#1D5F75] text-white text-[11px] font-medium px-3 py-1 rounded-md tracking-wide uppercase">
+        <span className="bg-[#E8734A] text-white text-[11px] font-medium px-3 py-1 rounded-md tracking-wide uppercase">
           {card.badge}
         </span>
       </div>
