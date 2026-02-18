@@ -14,7 +14,7 @@ type WorkCardProps = {
 const WorkCard = ({ title, label, image, href }: WorkCardProps) => {
   return (
     <Link href={href} legacyBehavior>
-      <a className="group flex flex-col overflow-hidden rounded-lg bg-white border border-[#1D5F75]/8 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+      <a className="group flex flex-col overflow-hidden rounded-lg bg-white border border-[#46aac9]/12 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
         <div className="relative aspect-[3/4] w-full overflow-hidden">
           <img 
             src={image} 
