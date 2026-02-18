@@ -51,7 +51,7 @@ const Intro = () => {
           <span className="text-xs font-medium tracking-widest uppercase text-[#46aac9] mb-4 block">
             Un laboratoire moderne, connecté et réactif
           </span>
-          <h3 className="font-display text-2xl md:text-3xl font-light mb-3 text-[#1D5F75]">
+          <h3 className="font-display text-2xl md:text-3xl font-semibold mb-3 text-[#1D5F75]">
             De la commande à la livraison
           </h3>
           <p className="text-[#3D5A6A] mb-8 max-w-2xl text-base">
