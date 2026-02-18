@@ -121,12 +121,12 @@ export default function Navigation() {
             </Link>
           )}
           <div className="pt-8">
-            <Link
-              href="#contact"
-              onClick={() => setIsMenuOpen(false)}
-              className="inline-flex items-center gap-2 text-sm font-medium text-white bg-[#1D5F75] py-3 px-8 rounded-md tracking-wide">
-              <span>Travailler Ensemble</span>
-            </Link>
+              <Link
+                href="#contact"
+                onClick={() => setIsMenuOpen(false)}
+                className="inline-flex items-center gap-2 text-sm font-medium text-white bg-[#E8734A] py-3 px-8 rounded-md tracking-wide shadow-md">
+                <span>Travailler Ensemble</span>
+              </Link>
           </div>
         </div>
       </div>
