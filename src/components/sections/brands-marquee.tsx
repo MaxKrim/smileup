@@ -18,7 +18,7 @@ const PractitionerTrack = () => (
         key={index}
         className="w-[200px] md:w-[240px] shrink-0 h-[100px] md:h-[110px] bg-white border border-[#1D5F75]/8 text-[#1D5F75] rounded-lg flex flex-col items-center justify-center p-5 transition-all duration-300 hover:border-[#46aac9]/30 hover:shadow-sm"
       >
-        <div className="text-xs font-medium tracking-widest uppercase text-[#46aac9] mb-2">{practitioner.abbr}</div>
+        <div className="text-xs font-medium tracking-widest uppercase text-[#E8734A] mb-2">{practitioner.abbr}</div>
         <div className="text-sm md:text-base font-medium text-center text-[#1D5F75]">{practitioner.title}</div>
       </div>
     ))}
