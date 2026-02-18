@@ -172,7 +172,7 @@ const Intro = () => {
 
               {/* Bloc 8 - Délais */}
               <div className="lg:w-[340px] flex-shrink-0">
-                <div className="bg-[#F8F9FA] rounded-lg p-6 border border-[#1D5F75]/5">
+                <div className="bg-white/50 backdrop-blur-sm rounded-lg p-6 border border-white/60 shadow-sm">
                   <div className="flex items-center gap-3 mb-5">
                     <Clock className="w-5 h-5 text-[#1D5F75]" strokeWidth={1.5} />
                     <h4 className="font-display text-base font-medium text-[#1D5F75]">Délais de fabrication</h4>
