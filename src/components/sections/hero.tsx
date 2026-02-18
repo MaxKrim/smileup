@@ -7,14 +7,14 @@ const Hero = () => {
         <div className="mx-auto max-w-7xl pt-28 md:pt-36 pb-12 md:pb-16 w-full">
           <div className="w-full">
             <div className="flex flex-wrap gap-3 mb-8">
-              <span className="bg-[#1B2A4A] text-white text-xs font-medium px-4 py-1.5 rounded-md tracking-wide uppercase">
+              <span className="bg-[#1D5F75] text-white text-xs font-medium px-4 py-1.5 rounded-md tracking-wide uppercase">
                 100% Fabriqué en France
               </span>
-              <span className="border border-[#1B2A4A]/20 text-[#1B2A4A] text-xs font-medium px-4 py-1.5 rounded-md tracking-wide uppercase">
+              <span className="border border-[#1D5F75]/20 text-[#1D5F75] text-xs font-medium px-4 py-1.5 rounded-md tracking-wide uppercase">
                 Loiret (45)
               </span>
             </div>
-            <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light leading-[1.05] tracking-[-0.03em] text-[#1B2A4A]">
+            <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light leading-[1.05] tracking-[-0.03em] text-[#1D5F75]">
               Votre Laboratoire<br />d&apos;Orthodontie Exclusive.
             </h1>
             <div className="mt-8 max-w-2xl">
@@ -26,7 +26,7 @@ const Hero = () => {
 
           <div className="mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full">
             {/* Case 1 - Orthodontie */}
-            <div className="flex flex-col justify-between p-6 md:p-7 text-white rounded-lg min-h-[200px] md:min-h-[240px] lg:min-h-[260px] transition-all duration-300 hover:shadow-lg bg-[#1B2A4A]">
+            <div className="flex flex-col justify-between p-6 md:p-7 text-white rounded-lg min-h-[200px] md:min-h-[240px] lg:min-h-[260px] transition-all duration-300 hover:shadow-lg bg-[#1D5F75]">
               <div>
                 <div className="font-display font-light tracking-tight leading-[1.1] text-2xl md:text-3xl lg:text-[2.2rem]">
                   Orthodontie<br />traditionnelle<br />et numérique
@@ -71,7 +71,7 @@ const Hero = () => {
                 className="absolute top-0 left-0 w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
               <div className="absolute bottom-5 left-5 right-5 z-10">
-                <span className="bg-white text-[#1B2A4A] text-xs font-medium px-4 py-2 rounded-md inline-block tracking-wide uppercase">
+                <span className="bg-white text-[#1D5F75] text-xs font-medium px-4 py-2 rounded-md inline-block tracking-wide uppercase">
                   Sans sous-traitance
                 </span>
               </div>
