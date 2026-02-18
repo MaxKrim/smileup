@@ -96,13 +96,13 @@ const ExpertisesSection = () => {
   return (
     <section id="expertises" ref={componentRef} className="bg-background relative w-full overflow-hidden py-14 md:py-20">
       <div className="mx-auto px-6 md:px-12 max-w-7xl w-full">
-        <div className="mb-12 md:mb-16 lg:mb-20">
+        <div className="mb-10 md:mb-14">
           <div className="flex flex-wrap gap-3 mb-6">
             <span className="text-xs font-medium tracking-widest uppercase text-[#C5A572]">
               Gamme professionnelle
             </span>
             <span className="text-xs font-medium tracking-widest uppercase text-[#5A6A84]">
-              / 100% Fabriqu&eacute; en France
+              / 100% Fabriqué en France
             </span>
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-light tracking-[-0.03em] leading-none text-[#1B2A4A]">
