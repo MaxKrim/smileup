@@ -167,7 +167,7 @@ const ExpertiseCard = ({ card }: { card: typeof expertisesData[0] }) => (
 
         <Link 
           href={card.buttonLink} 
-          className="inline-flex items-center gap-2 rounded-md text-sm px-5 py-2.5 font-medium transition-all duration-300 bg-[#1D5F75] text-white hover:bg-[#2D4A7A] self-start mt-5"
+          className="inline-flex items-center gap-2 rounded-md text-sm px-5 py-2.5 font-medium transition-all duration-300 bg-[#1D5F75] text-white hover:bg-[#2A7A95] self-start mt-5"
         >
           <span>En savoir plus</span>
           <ArrowRight className="size-3.5" />
