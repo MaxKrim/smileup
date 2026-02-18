@@ -51,12 +51,12 @@ export default function Footer() {
               </div>
             </Link>
             <div className="mt-5 flex flex-wrap gap-3">
-              <span className="bg-[#1D5F75] text-white text-[11px] font-medium px-3 py-1 rounded-md tracking-wide uppercase">
-                100% Fabriqu&eacute; en France
-              </span>
-              <span className="border border-[#1D5F75]/15 text-[#1D5F75] text-[11px] font-medium px-3 py-1 rounded-md tracking-wide uppercase">
-                +13 ans d&apos;exp&eacute;rience
-              </span>
+              <span className="bg-[#E8734A] text-white text-[11px] font-medium px-3 py-1 rounded-md tracking-wide uppercase">
+                  100% Fabriqué en France
+                </span>
+                <span className="border border-[#46aac9]/20 text-[#1D5F75] text-[11px] font-medium px-3 py-1 rounded-md tracking-wide uppercase">
+                  +13 ans d&apos;expérience
+                </span>
             </div>
           </div>
 
