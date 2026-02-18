@@ -34,9 +34,9 @@ const CtaFinal = () => {
           </div>
           
           <div className="mt-6">
-            <p className="text-sm text-[#5A6A84]">
-              Je me d&eacute;place &eacute;galement dans votre cabinet pour faire un point sur vos besoins sp&eacute;cifiques.
-            </p>
+              <p className="text-sm text-[#5A6A84]">
+                Je me déplace également dans votre cabinet pour faire un point sur vos besoins spécifiques.
+              </p>
           </div>
         </div>
       </div>
