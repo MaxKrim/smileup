@@ -6,7 +6,7 @@ const CtaFinal = () => {
       <section id="contact" className="relative bg-background py-16 md:py-24 overflow-hidden w-full">
       <div className="relative mx-auto px-6 md:px-12 max-w-7xl w-full">
         <div className="flex flex-col items-center gap-8 text-center">
-          <span className="text-xs font-medium tracking-widest uppercase text-[#C5A572]">Contact</span>
+          <span className="text-xs font-medium tracking-widest uppercase text-[#46aac9]">Contact</span>
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-light leading-none tracking-[-0.03em] text-[#1D5F75]">
             Travaillons ensemble pour vos patients.
           </h2>
