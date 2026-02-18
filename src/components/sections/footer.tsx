@@ -62,10 +62,10 @@ export default function Footer() {
 
           <div className="lg:justify-self-center">
             <nav className="flex flex-col gap-3 text-center lg:text-left">
-              <Link href="/#intro-home" className="text-sm text-[#3D5A6A] hover:text-[#1D5F75] transition-colors">&Agrave; propos</Link>
-              <Link href="/#expertises" className="text-sm text-[#3D5A6A] hover:text-[#1D5F75] transition-colors">Expertises</Link>
-              <Link href="/#work" className="text-sm text-[#3D5A6A] hover:text-[#1D5F75] transition-colors">R&eacute;alisations</Link>
-              <Link href="/#contact" className="text-sm text-[#3D5A6A] hover:text-[#1D5F75] transition-colors">Contact</Link>
+              <Link href="/#intro-home" className="text-sm text-[#3D5A6A] hover:text-[#E8734A] transition-colors">À propos</Link>
+              <Link href="/#expertises" className="text-sm text-[#3D5A6A] hover:text-[#E8734A] transition-colors">Expertises</Link>
+              <Link href="/#work" className="text-sm text-[#3D5A6A] hover:text-[#E8734A] transition-colors">Réalisations</Link>
+              <Link href="/#contact" className="text-sm text-[#3D5A6A] hover:text-[#E8734A] transition-colors">Contact</Link>
             </nav>
           </div>
 
