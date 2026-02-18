@@ -15,7 +15,7 @@ const Intro = () => {
             <span className="text-xs font-medium tracking-widest uppercase text-[#46aac9] mb-6 block">
               Un laboratoire tourné vers l&apos;humain et l&apos;innovation
             </span>
-            <h2 className="font-display text-3xl sm:text-4xl md:text-[44px] leading-[1.1] font-light tracking-[-0.03em] text-[#1D5F75] mb-8">
+            <h2 className="font-display text-3xl sm:text-4xl md:text-[44px] leading-[1.1] font-semibold tracking-[-0.02em] text-[#1D5F75] mb-8">
               La technologie au service du sourire.
             </h2>
             <p className="text-[#3D5A6A] text-base md:text-lg leading-relaxed mb-5">
