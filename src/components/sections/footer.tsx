@@ -1,31 +1,16 @@
 import Link from 'next/link';
 import { Instagram, Mail, Phone, Linkedin } from 'lucide-react';
 
-const WaveSvg = () =>
-<div className="absolute top-0 left-0 w-full overflow-hidden leading-none -translate-y-px">
-    <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 1440 160"
-    preserveAspectRatio="none"
-    className="relative block w-full h-[80px] md:h-[120px] lg:h-[160px]"
-    fill="#F4EFE6">
-
-      <path d="M0,80 C400,160 800,0 1440,50 V0 H0 Z" />
-    </svg>
-  </div>;
-
-
 const Logo = () =>
-<svg
-  width="180"
-  height="50"
-  viewBox="0 0 982.52 270.95"
-  className="text-black w-full h-full"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
-  role="img"
-  aria-label="Smile UP Logo">
-
+  <svg
+    width="180"
+    height="50"
+    viewBox="0 0 982.52 270.95"
+    className="text-black w-full h-full"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    role="img"
+    aria-label="Smile UP Logo">
     <defs>
       <style>{`.cls-1{fill:#2b2b2b;}.cls-2{fill:#46aac9;}`}</style>
     </defs>
@@ -42,94 +27,86 @@ const Logo = () =>
     </g>
   </svg>;
 
-
-const SocialLink = ({ href, children }: {href: string;children: React.ReactNode;}) =>
-<a
-  href={href}
-  target="_blank"
-  rel="noopener noreferrer"
-  className="w-11 h-11 bg-white rounded-full flex items-center justify-center text-black hover:bg-[#0EA5E9] hover:text-white transition-colors">
-
+const SocialLink = ({ href, children }: {href: string; children: React.ReactNode;}) =>
+  <a
+    href={href}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-10 h-10 border border-[#1B2A4A]/10 rounded-md flex items-center justify-center text-[#1B2A4A] hover:bg-[#1B2A4A] hover:text-white transition-all duration-300">
     {children}
   </a>;
 
-
 export default function Footer() {
   return (
-    <footer className="relative bg-[#F5F1ED] text-[#1A1A1A] overflow-hidden pt-32 md:pt-40 lg:pt-48 pb-12 w-full">
-      <WaveSvg />
-      <div className="relative max-w-7xl mx-auto px-6 md:px-12 w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-12 lg:gap-x-8 mb-16">
+    <footer className="bg-white border-t border-[#1B2A4A]/8 text-[#1B2A4A] pt-16 md:pt-20 pb-10 w-full">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-12 lg:gap-x-12 mb-16">
           <div className="lg:justify-self-start">
             <Link href="/">
               <div className="flex flex-col gap-2">
-                <div className="w-[140px] md:w-[180px] h-[40px] md:h-[50px]">
+                <div className="w-[140px] md:w-[160px] h-[40px] md:h-[45px]">
                   <Logo />
                 </div>
-                <span className="text-xs md:text-sm text-black/60">Laboratoire d'Orthodontie</span>
+                <span className="text-xs text-[#5A6A84] tracking-wide">Laboratoire d&apos;Orthodontie</span>
               </div>
             </Link>
-            <div className="mt-4 flex flex-wrap gap-2">
-              <span className="bg-[#0EA5E9] text-white text-xs font-medium px-3 py-1 rounded-full">
-                100% Fabriqué en France
+            <div className="mt-5 flex flex-wrap gap-3">
+              <span className="bg-[#1B2A4A] text-white text-[11px] font-medium px-3 py-1 rounded-md tracking-wide uppercase">
+                100% Fabriqu&eacute; en France
               </span>
-              <span className="bg-[#10B981] text-white text-xs font-medium px-3 py-1 rounded-full">
-                +13 ans d'expérience
+              <span className="border border-[#1B2A4A]/15 text-[#1B2A4A] text-[11px] font-medium px-3 py-1 rounded-md tracking-wide uppercase">
+                +13 ans d&apos;exp&eacute;rience
               </span>
             </div>
           </div>
 
           <div className="lg:justify-self-center">
             <nav className="flex flex-col gap-3 text-center lg:text-left">
-              <Link href="/#intro-home" className="text-base md:text-lg text-black/80 hover:text-black transition-colors">À propos</Link>
-              <Link href="/#expertises" className="text-base md:text-lg text-black/80 hover:text-black transition-colors">Expertises</Link>
-              <Link href="/#work" className="text-base md:text-lg text-black/80 hover:text-black transition-colors">Réalisations</Link>
-              <Link href="/#contact" className="text-base md:text-lg text-black/80 hover:text-black transition-colors">Contact</Link>
+              <Link href="/#intro-home" className="text-sm text-[#3D4F6F] hover:text-[#1B2A4A] transition-colors">&Agrave; propos</Link>
+              <Link href="/#expertises" className="text-sm text-[#3D4F6F] hover:text-[#1B2A4A] transition-colors">Expertises</Link>
+              <Link href="/#work" className="text-sm text-[#3D4F6F] hover:text-[#1B2A4A] transition-colors">R&eacute;alisations</Link>
+              <Link href="/#contact" className="text-sm text-[#3D4F6F] hover:text-[#1B2A4A] transition-colors">Contact</Link>
             </nav>
           </div>
 
-          <div className="lg:justify-self-end flex flex-col gap-6 text-sm md:text-base text-center lg:text-right">
-<div>
-                <p className="font-bold text-black mb-3 text-base md:text-lg">Jessica Lerandy Estevez</p>
-                <a
-                  href="mailto:smile.up045@gmail.com"
-                  className="flex items-center justify-center lg:justify-end gap-2 text-black/80 hover:text-[#0EA5E9] transition-colors mb-2 break-all">
-
-                  <Mail size={18} className="flex-shrink-0" />
-                  <span className="text-xs md:text-sm lg:text-base">smile.up045@gmail.com</span>
-                </a>
-                <a
-                  href="tel:+33777995315"
-                  className="flex items-center justify-center lg:justify-end gap-2 text-black/80 hover:text-[#0EA5E9] transition-colors mb-2">
-
-                  <Phone size={18} className="flex-shrink-0" />
-                  <span className="text-sm md:text-base">+33 7 77 99 53 15</span>
-                </a>
-                <div className="flex items-center justify-center lg:justify-end gap-2 text-black/60 text-sm mt-3">
-                  <span>📍 Loiret (45) - Centre-Val de Loire</span>
-                </div>
-              </div>
-              
-              <div className="mt-4 pt-4 border-t border-black/10">
-                <p className="font-medium text-black mb-2 text-sm">Horaires d'ouverture</p>
-                <p className="text-black/70 text-sm">Lundi - Vendredi : 8h00 - 18h00</p>
-              </div>
-            
+          <div className="lg:justify-self-end flex flex-col gap-5 text-sm text-center lg:text-right">
             <div>
-              <p className="font-medium text-black mb-3">Suivez-moi</p>
-              <div className="flex gap-2.5 justify-center lg:justify-end">
-                <SocialLink href="https://www.instagram.com/jessica_lrdy/"><Instagram size={20} /></SocialLink>
-                <SocialLink href="https://www.linkedin.com/in/jessica-lerandy-estevez/"><Linkedin size={20} /></SocialLink>
+              <p className="font-medium text-[#1B2A4A] mb-3">Jessica Lerandy Estevez</p>
+              <a
+                href="mailto:smile.up045@gmail.com"
+                className="flex items-center justify-center lg:justify-end gap-2 text-[#3D4F6F] hover:text-[#1B2A4A] transition-colors mb-2">
+                <Mail size={16} className="flex-shrink-0" strokeWidth={1.5} />
+                <span className="text-sm">smile.up045@gmail.com</span>
+              </a>
+              <a
+                href="tel:+33777995315"
+                className="flex items-center justify-center lg:justify-end gap-2 text-[#3D4F6F] hover:text-[#1B2A4A] transition-colors mb-2">
+                <Phone size={16} className="flex-shrink-0" strokeWidth={1.5} />
+                <span className="text-sm">+33 7 77 99 53 15</span>
+              </a>
+              <p className="text-xs text-[#5A6A84] mt-3">Loiret (45) &ndash; Centre-Val de Loire</p>
+            </div>
+            
+            <div className="pt-4 border-t border-[#1B2A4A]/8">
+              <p className="text-xs font-medium text-[#1B2A4A] mb-1 tracking-wide uppercase">Horaires</p>
+              <p className="text-xs text-[#5A6A84]">Lundi - Vendredi : 8h00 - 18h00</p>
+            </div>
+          
+            <div>
+              <p className="text-xs font-medium text-[#1B2A4A] mb-3 tracking-wide uppercase">Suivez-moi</p>
+              <div className="flex gap-2 justify-center lg:justify-end">
+                <SocialLink href="https://www.instagram.com/jessica_lrdy/"><Instagram size={18} strokeWidth={1.5} /></SocialLink>
+                <SocialLink href="https://www.linkedin.com/in/jessica-lerandy-estevez/"><Linkedin size={18} strokeWidth={1.5} /></SocialLink>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-black/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs md:text-sm text-black/60 gap-4 text-center">
-          <p>© {new Date().getFullYear()} Smile UP Orthodontie - Jessica Lerandy Estevez - Loiret (45)</p>
-          <Link href="#" className="hover:text-black transition-colors">Mentions légales</Link>
+        <div className="border-t border-[#1B2A4A]/8 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-[#5A6A84] gap-4 text-center">
+          <p>&copy; {new Date().getFullYear()} Smile UP Orthodontie &ndash; Jessica Lerandy Estevez &ndash; Loiret (45)</p>
+          <Link href="#" className="hover:text-[#1B2A4A] transition-colors">Mentions l&eacute;gales</Link>
         </div>
       </div>
-    </footer>);
-
+    </footer>
+  );
 }
