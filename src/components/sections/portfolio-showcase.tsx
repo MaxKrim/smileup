@@ -1,46 +1,34 @@
 "use client";
 
-import React, { useRef } from 'react';
+import React from 'react';
 import Link from 'next/link';
 import { ArrowUpRight, ArrowRight } from 'lucide-react';
 
 type WorkCardProps = {
   title: string;
   label: string;
-  icon: string;
   image: string;
-  borderColor: string;
-  bgColor: string;
   href: string;
 };
 
-const WorkCard = ({ title, label, icon, image, borderColor, bgColor, href }: WorkCardProps) => {
+const WorkCard = ({ title, label, image, href }: WorkCardProps) => {
   return (
     <Link href={href} legacyBehavior>
-      <a
-        className="group flex flex-col overflow-hidden rounded-2xl bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
-        style={{ borderWidth: '3px', borderColor }}
-      >
+      <a className="group flex flex-col overflow-hidden rounded-lg bg-white border border-[#1B2A4A]/8 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
         <div className="relative aspect-[3/4] w-full overflow-hidden">
           <img 
             src={image} 
             alt={label}
-            className="absolute inset-0 h-full w-full object-cover"
+            className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="text-center p-8 relative z-10">
-              <div className="text-8xl mb-4 drop-shadow-lg">{icon}</div>
-              <div className="text-2xl font-medium text-white drop-shadow-md">{label}</div>
-            </div>
-          </div>
-          <div className="absolute top-5 right-5 z-10 flex size-12 items-center justify-center rounded-full bg-white text-black transition-transform duration-300 group-hover:scale-110">
-            <ArrowUpRight strokeWidth={2.5} className="size-6" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#1B2A4A]/40 to-transparent"></div>
+          <div className="absolute top-5 right-5 z-10 flex size-10 items-center justify-center rounded-md bg-white text-[#1B2A4A] transition-all duration-300 group-hover:bg-[#1B2A4A] group-hover:text-white">
+            <ArrowUpRight strokeWidth={1.5} className="size-5" />
           </div>
         </div>
-        <div className="flex-grow p-6 text-white md:p-8" style={{ backgroundColor: bgColor }}>
-          <h3 className="font-display text-2xl md:text-3xl font-medium leading-tight tracking-[-0.05em]">{title}</h3>
-          <div className="mt-4 inline-block rounded-full bg-white/95 px-4 py-1.5 text-sm font-medium text-black">
+        <div className="flex-grow p-6 md:p-8 bg-[#1B2A4A]">
+          <h3 className="font-display text-xl md:text-2xl font-light leading-tight tracking-tight text-white">{title}</h3>
+          <div className="mt-4 inline-block border border-white/20 px-4 py-1.5 text-xs font-medium text-white/80 rounded-md tracking-wide uppercase">
             {label}
           </div>
         </div>
@@ -51,42 +39,37 @@ const WorkCard = ({ title, label, icon, image, borderColor, bgColor, href }: Wor
 
 const worksData: WorkCardProps[] = [
   {
-    title: "Précision technique pour résultats optimaux",
+    title: "Pr\u00e9cision technique pour r\u00e9sultats optimaux",
     label: "Appareils Fonctionnels",
-    icon: "⚙️",
     image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/1b2e0205-1fa2-45bd-8c45-4d4c1200c30e/generated_images/professional-orthodontic-laboratory-work-00dbade2-20251027142027.jpg",
-    borderColor: "var(--color-brand-orange)",
-    bgColor: "var(--color-brand-orange)",
     href: "#contact"
   },
   {
-    title: "Innovation numérique et expertise artisanale",
+    title: "Innovation num\u00e9rique et expertise artisanale",
     label: "Gamme PUL",
-    icon: "🔬",
     image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/1b2e0205-1fa2-45bd-8c45-4d4c1200c30e/generated_images/modern-digital-orthodontic-cad-cam-syste-941a755d-20251027142027.jpg",
-    borderColor: "var(--color-brand-blue)",
-    bgColor: "var(--color-brand-blue)",
     href: "#contact"
   }
 ];
 
 const PortfolioShowcase = () => {
     return (
-      <section id="work" className="bg-background py-16 md:py-24 w-full overflow-hidden">
+      <section id="work" className="bg-background py-20 md:py-28 w-full overflow-hidden">
         <div className="mx-auto px-6 md:px-12 max-w-7xl w-full">
-          <div className="max-w-[60ch]">
-            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-medium leading-none tracking-[-0.06em]">Des réalisations qui font sourire.</h2>
-            <p className="mt-6 text-base md:text-lg text-secondary-foreground">
-              Chaque appareil est conçu sur mesure selon vos prescriptions. De l'appareil fonctionnel complexe à la gouttière thermoformée, je maîtrise toutes les techniques pour des résultats qui répondent à vos exigences.
+          <div className="max-w-2xl">
+            <span className="text-xs font-medium tracking-widest uppercase text-[#C5A572] mb-4 block">R&eacute;alisations</span>
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-light leading-none tracking-[-0.03em] text-[#1B2A4A]">Des r&eacute;alisations qui font sourire.</h2>
+            <p className="mt-5 text-base md:text-lg text-[#3D4F6F] leading-relaxed">
+              Chaque appareil est con&ccedil;u sur mesure selon vos prescriptions. De l&apos;appareil fonctionnel complexe &agrave; la goutti&egrave;re thermoform&eacute;e, je ma&icirc;trise toutes les techniques pour des r&eacute;sultats qui r&eacute;pondent &agrave; vos exigences.
             </p>
           </div>
-          <div className="mt-8 mb-12">
-              <Link href="#contact" legacyBehavior>
-                  <a className="group inline-flex items-center gap-3 rounded-full border-2 border-primary bg-transparent px-7 py-3 text-base font-medium text-primary transition-colors duration-300 hover:bg-primary hover:text-primary-foreground">
-                      <span>Discutons de vos besoins</span>
-                      <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-                  </a>
-              </Link>
+          <div className="mt-8 mb-14">
+            <Link href="#contact" legacyBehavior>
+              <a className="group inline-flex items-center gap-3 border border-[#1B2A4A] px-7 py-3 rounded-md text-sm font-medium text-[#1B2A4A] transition-all duration-300 hover:bg-[#1B2A4A] hover:text-white tracking-wide">
+                <span>Discutons de vos besoins</span>
+                <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+              </a>
+            </Link>
           </div>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:gap-8">
             {worksData.map((work, index) => (
