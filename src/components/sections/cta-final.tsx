@@ -11,9 +11,9 @@ const CtaFinal = () => {
             Travaillons ensemble pour vos patients.
           </h2>
           
-          <p className="text-base md:text-lg text-[#3D4F6F] max-w-xl leading-relaxed">
-            Besoin d&apos;appareils orthodontiques de qualit&eacute; ? Discutons de vos besoins et de comment je peux vous accompagner dans vos traitements.
-          </p>
+            <p className="text-base md:text-lg text-[#3D4F6F] max-w-xl leading-relaxed">
+              Besoin d&apos;appareils orthodontiques de qualité ? Discutons de vos besoins et de comment je peux vous accompagner dans vos traitements.
+            </p>
 
           <div className="flex w-full flex-col items-center justify-center gap-4 sm:w-auto sm:flex-row mt-4">
             <a
