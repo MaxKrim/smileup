@@ -26,7 +26,7 @@ const WorkCard = ({ title, label, image, href }: WorkCardProps) => {
             <ArrowUpRight strokeWidth={1.5} className="size-5" />
           </div>
         </div>
-        <div className="flex-grow p-6 md:p-8 bg-[#1D5F75]">
+        <div className="flex-grow p-6 md:p-8 bg-gradient-to-r from-[#46aac9] to-[#2A7A95]">
           <h3 className="font-display text-xl md:text-2xl font-semibold leading-tight tracking-tight text-white">{title}</h3>
           <div className="mt-4 inline-block border border-white/20 px-4 py-1.5 text-xs font-medium text-white/80 rounded-md tracking-wide uppercase">
             {label}
