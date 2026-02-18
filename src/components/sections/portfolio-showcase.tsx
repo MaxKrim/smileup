@@ -63,7 +63,7 @@ const PortfolioShowcase = () => {
               Chaque appareil est conçu sur mesure selon vos prescriptions. De l&apos;appareil fonctionnel complexe à la gouttière thermoformée, je maîtrise toutes les techniques pour des résultats qui répondent à vos exigences.
             </p>
           </div>
-          <div className="mt-8 mb-14">
+          <div className="mt-8 mb-10">
             <Link href="#contact" legacyBehavior>
               <a className="group inline-flex items-center gap-3 border border-[#1B2A4A] px-7 py-3 rounded-md text-sm font-medium text-[#1B2A4A] transition-all duration-300 hover:bg-[#1B2A4A] hover:text-white tracking-wide">
                 <span>Discutons de vos besoins</span>
