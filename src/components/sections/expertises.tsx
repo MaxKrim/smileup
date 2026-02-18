@@ -101,7 +101,7 @@ const ExpertisesSection = () => {
             <span className="text-xs font-medium tracking-widest uppercase text-[#46aac9]">
               Gamme professionnelle
             </span>
-            <span className="text-xs font-medium tracking-widest uppercase text-[#5A6A84]">
+            <span className="text-xs font-medium tracking-widest uppercase text-[#5A7A8A]">
               / 100% Fabriqué en France
             </span>
           </div>
@@ -160,7 +160,7 @@ const ExpertiseCard = ({ card }: { card: typeof expertisesData[0] }) => (
           <h4 className="text-lg md:text-xl font-light tracking-tight leading-[1.2] text-[#1D5F75] mb-4">
             {card.subtitle}
           </h4>
-          <p className="text-sm text-[#5A6A84] leading-relaxed line-clamp-4">
+          <p className="text-sm text-[#5A7A8A] leading-relaxed line-clamp-4">
             {card.description}
           </p>
         </div>
