@@ -6,26 +6,26 @@ import { ArrowRight, ArrowDown, Clock, Truck, MapPin, Mail, Package, FileSearch,
 
 const Intro = () => {
   return (
-    <section id="intro-home" className="bg-background text-foreground py-20 md:py-32 overflow-hidden w-full">
+    <section id="intro-home" className="bg-background text-foreground py-14 md:py-20 overflow-hidden w-full">
       <div className="mx-auto px-6 md:px-12 max-w-7xl w-full">
         
         {/* Bloc 3 - Texte principal */}
         <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-12 lg:gap-20 w-full">
           <div className="flex-1 max-w-2xl">
             <span className="text-xs font-medium tracking-widest uppercase text-[#C5A572] mb-6 block">
-              Un laboratoire tourn&eacute; vers l&apos;humain et l&apos;innovation
+              Un laboratoire tourné vers l&apos;humain et l&apos;innovation
             </span>
             <h2 className="font-display text-3xl sm:text-4xl md:text-[44px] leading-[1.1] font-light tracking-[-0.03em] text-[#1B2A4A] mb-8">
               La technologie au service du sourire.
             </h2>
             <p className="text-[#3D4F6F] text-base md:text-lg leading-relaxed mb-5">
-              Smile Up est un laboratoire pens&eacute; comme un partenaire de travail au quotidien, au service de chaque praticien avec s&eacute;rieux, pr&eacute;cision et une vraie passion pour le travail bien fait.
+              Smile Up est un laboratoire pensé comme un partenaire de travail au quotidien, au service de chaque praticien avec sérieux, précision et une vraie passion pour le travail bien fait.
             </p>
             <p className="text-[#3D4F6F] text-base md:text-[17px] leading-relaxed">
-              Derri&egrave;re chaque dispositif, il y a un regard, une exigence et une exp&eacute;rience construite au fil des ann&eacute;es. Les appareils con&ccedil;us sont pens&eacute;s pour &ecirc;tre <strong className="font-medium text-[#1B2A4A]">fiables</strong>, <strong className="font-medium text-[#1B2A4A]">confortables</strong> et <strong className="font-medium text-[#1B2A4A]">adapt&eacute;s aux traitements</strong>, avec une exigence constante.
+              Derrière chaque dispositif, il y a un regard, une exigence et une expérience construite au fil des années. Les appareils conçus sont pensés pour être <strong className="font-medium text-[#1B2A4A]">fiables</strong>, <strong className="font-medium text-[#1B2A4A]">confortables</strong> et <strong className="font-medium text-[#1B2A4A]">adaptés aux traitements</strong>, avec une exigence constante.
             </p>
             <p className="text-[#C5A572] font-light text-lg mt-6 italic border-l-2 border-[#C5A572] pl-5">
-              La pr&eacute;cision n&apos;est pas un concept : c&apos;est une habitude quotidienne.
+              La précision n&apos;est pas un concept : c&apos;est une habitude quotidienne.
             </p>
             <div className="mt-10 flex items-center gap-4">
               <Link
@@ -46,28 +46,28 @@ const Intro = () => {
           </div>
         </div>
 
-        {/* Bloc 5 - Cha&icirc;ne de fonctionnement */}
-        <div className="mt-24 md:mt-32">
+        {/* Bloc 5 - Chaîne de fonctionnement */}
+        <div className="mt-16 md:mt-20">
           <span className="text-xs font-medium tracking-widest uppercase text-[#C5A572] mb-4 block">
-            Un laboratoire moderne, connect&eacute; et r&eacute;actif
+            Un laboratoire moderne, connecté et réactif
           </span>
           <h3 className="font-display text-2xl md:text-3xl font-light mb-3 text-[#1B2A4A]">
-            De la commande &agrave; la livraison
+            De la commande à la livraison
           </h3>
-          <p className="text-[#3D4F6F] mb-10 max-w-2xl text-base">
-            Smile Up s&apos;appuie sur les derni&egrave;res technologies pour offrir un service fluide et efficace. L&apos;objectif : vous simplifier la vie et vous permettre d&apos;avancer sereinement dans vos plans de traitement.
+          <p className="text-[#3D4F6F] mb-8 max-w-2xl text-base">
+            Smile Up s&apos;appuie sur les dernières technologies pour offrir un service fluide et efficace. L&apos;objectif : vous simplifier la vie et vous permettre d&apos;avancer sereinement dans vos plans de traitement.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-3">
             {[
-              { step: "01", icon: Package, title: "Commande", desc: "R&eacute;ception de votre prescription" },
-              { step: "02", icon: Mail, title: "R&eacute;ception", desc: "Empreintes num&eacute;riques (STL) ou physiques" },
-              { step: "03", icon: FileSearch, title: "V&eacute;rification", desc: "Contr&ocirc;le du dossier complet" },
+              { step: "01", icon: Package, title: "Commande", desc: "Réception de votre prescription" },
+              { step: "02", icon: Mail, title: "Réception", desc: "Empreintes numériques (STL) ou physiques" },
+              { step: "03", icon: FileSearch, title: "Vérification", desc: "Contrôle du dossier complet" },
               { step: "04", icon: Wrench, title: "Conception & Fabrication", desc: "CFAO, impression 3D, travail manuel" },
-              { step: "05", icon: CheckCircle, title: "Contr&ocirc;le & Envoi", desc: "V&eacute;rification finale et exp&eacute;dition" }
+              { step: "05", icon: CheckCircle, title: "Contrôle & Envoi", desc: "Vérification finale et expédition" }
             ].map((item) => (
               <div key={item.step} className="relative group">
-                <div className="bg-white border border-[#1B2A4A]/8 rounded-lg p-5 h-full min-h-[160px] flex flex-col justify-between transition-all duration-300 hover:shadow-md hover:border-[#C5A572]/30">
+                <div className="bg-white border border-[#1B2A4A]/8 rounded-lg p-5 h-full min-h-[150px] flex flex-col justify-between transition-all duration-300 hover:shadow-md hover:border-[#C5A572]/30">
                   <div>
                     <span className="text-[#C5A572]/30 font-display text-3xl font-light absolute top-4 right-4">{item.step}</span>
                     <item.icon className="w-6 h-6 mb-4 text-[#1B2A4A]" strokeWidth={1.5} />
@@ -80,18 +80,18 @@ const Intro = () => {
           </div>
         </div>
 
-        {/* Bloc 6 - Compatibilit&eacute; scanners */}
-        <div className="mt-16 bg-white border border-[#1B2A4A]/8 rounded-lg p-8 md:p-12">
+        {/* Bloc 6 - Compatibilité scanners */}
+        <div className="mt-12 bg-white border border-[#1B2A4A]/8 rounded-lg p-8 md:p-10">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
             <div className="flex-1">
               <span className="text-xs font-medium tracking-widest uppercase text-[#C5A572] mb-3 block">
-                Int&eacute;gration certifi&eacute;e
+                Intégration certifiée
               </span>
               <h4 className="font-display text-xl md:text-2xl font-light text-[#1B2A4A] mb-2">
-                Compatible avec les leaders du march&eacute;
+                Compatible avec les leaders du marché
               </h4>
               <p className="text-[#5A6A84] text-sm md:text-base">
-                R&eacute;ception directe de vos empreintes num&eacute;riques depuis les syst&egrave;mes les plus utilis&eacute;s au monde.
+                Réception directe de vos empreintes numériques depuis les systèmes les plus utilisés au monde.
               </p>
             </div>
             
@@ -112,24 +112,24 @@ const Intro = () => {
             </div>
           </div>
           
-          <div className="mt-8 pt-6 border-t border-[#1B2A4A]/8 space-y-3">
+          <div className="mt-6 pt-5 border-t border-[#1B2A4A]/8 space-y-3">
             <div className="flex items-center gap-3 text-sm text-[#3D4F6F]">
               <CheckCircle className="w-4 h-4 text-[#1B2A4A] flex-shrink-0" strokeWidth={1.5} />
-              <span>Envoyez vos fichiers STL directement depuis votre scanner &mdash; r&eacute;ception en temps r&eacute;el.</span>
+              <span>Envoyez vos fichiers STL directement depuis votre scanner — réception en temps réel.</span>
             </div>
             <div className="flex items-center gap-3 text-sm text-[#3D4F6F]">
               <Mail className="w-4 h-4 text-[#1B2A4A] flex-shrink-0" strokeWidth={1.5} />
-              <span>P&ocirc;le num&eacute;rique : <a href="mailto:smile.up045@gmail.com" className="font-medium text-[#1B2A4A] hover:text-[#C5A572] transition-colors">smile.up045@gmail.com</a></span>
+              <span>Pôle numérique : <a href="mailto:smile.up045@gmail.com" className="font-medium text-[#1B2A4A] hover:text-[#C5A572] transition-colors">smile.up045@gmail.com</a></span>
             </div>
           </div>
         </div>
 
-        {/* Bloc 7 - Made in France + Bloc 8 - D&eacute;lais */}
-        <div className="mt-16 bg-white border border-[#1B2A4A]/8 rounded-lg overflow-hidden">
-          <div className="p-8 md:p-12 lg:p-16">
-            <div className="flex flex-col lg:flex-row lg:items-start gap-12 lg:gap-20">
+        {/* Bloc 7 - Made in France + Bloc 8 - Délais */}
+        <div className="mt-12 bg-white border border-[#1B2A4A]/8 rounded-lg overflow-hidden">
+          <div className="p-8 md:p-10">
+            <div className="flex flex-col lg:flex-row lg:items-start gap-10 lg:gap-16">
               <div className="flex-1">
-                <div className="inline-flex items-center gap-3 mb-8">
+                <div className="inline-flex items-center gap-3 mb-6">
                   <div className="flex gap-0.5">
                     <div className="w-1.5 h-5 bg-[#002395] rounded-sm"></div>
                     <div className="w-1.5 h-5 bg-white border border-[#1B2A4A]/10 rounded-sm"></div>
@@ -141,17 +141,17 @@ const Intro = () => {
                 </div>
                 
                 <h3 className="font-display text-3xl md:text-4xl font-light text-[#1B2A4A] mb-5 leading-tight">
-                  100% Fabriqu&eacute;<br />en France
+                  100% Fabriqué<br />en France
                 </h3>
                 
-                <p className="text-[#3D4F6F] text-base md:text-lg mb-10 max-w-xl leading-relaxed">
-                  Chaque appareil est enti&egrave;rement con&ccedil;u et fabriqu&eacute; dans notre laboratoire &agrave; <strong className="font-medium text-[#1B2A4A]">Ingr&eacute; (45)</strong>, sans aucune sous-traitance.
+                <p className="text-[#3D4F6F] text-base md:text-lg mb-8 max-w-xl leading-relaxed">
+                  Chaque appareil est entièrement conçu et fabriqué dans notre laboratoire à <strong className="font-medium text-[#1B2A4A]">Ingré (45)</strong>, sans aucune sous-traitance.
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                   <div className="border border-[#1B2A4A]/8 rounded-lg p-5">
                     <MapPin className="w-5 h-5 text-[#1B2A4A] mb-3" strokeWidth={1.5} />
-                    <span className="text-[#1B2A4A] font-medium text-lg block">Ingr&eacute; (45)</span>
+                    <span className="text-[#1B2A4A] font-medium text-lg block">Ingré (45)</span>
                     <p className="text-[#5A6A84] text-xs mt-1">Fabrication locale</p>
                   </div>
                   
@@ -164,28 +164,28 @@ const Intro = () => {
                   <div className="border border-[#1B2A4A]/8 rounded-lg p-5">
                     <Truck className="w-5 h-5 text-[#1B2A4A] mb-3" strokeWidth={1.5} />
                     <span className="text-[#1B2A4A] font-medium text-lg block">J+1</span>
-                    <p className="text-[#5A6A84] text-xs mt-1">Livraison France m&eacute;tropolitaine</p>
+                    <p className="text-[#5A6A84] text-xs mt-1">Livraison France métropolitaine</p>
                   </div>
                 </div>
               </div>
 
-              {/* Bloc 8 - D&eacute;lais */}
+              {/* Bloc 8 - Délais */}
               <div className="lg:w-[340px] flex-shrink-0">
                 <div className="bg-[#F8F9FA] rounded-lg p-6 border border-[#1B2A4A]/5">
-                  <div className="flex items-center gap-3 mb-6">
+                  <div className="flex items-center gap-3 mb-5">
                     <Clock className="w-5 h-5 text-[#1B2A4A]" strokeWidth={1.5} />
-                    <h4 className="font-display text-base font-medium text-[#1B2A4A]">D&eacute;lais de fabrication</h4>
+                    <h4 className="font-display text-base font-medium text-[#1B2A4A]">Délais de fabrication</h4>
                   </div>
                   
                   <div className="space-y-2">
                     {[
-                      { label: "Appareils fixes", delay: "7 &agrave; 10 jours", sub: "CFAO et traditionnel" },
-                      { label: "Appareils amovibles", delay: "7 &agrave; 10 jours", sub: "" },
+                      { label: "Appareils fixes", delay: "7 à 10 jours", sub: "CFAO et traditionnel" },
+                      { label: "Appareils amovibles", delay: "7 à 10 jours", sub: "" },
                       { label: "Appareils fonctionnels", delay: "~ 15 jours", sub: "" },
-                      { label: "Thermoform&eacute;s", delay: "10 jours", sub: "" },
-                      { label: "Contentions", delay: "3 &agrave; 5 jours", sub: "" },
-                      { label: "PUL", delay: "15 &agrave; 20 jours", sub: "" },
-                      { label: "R&eacute;parations", delay: "3 &agrave; 5 jours", sub: "" },
+                      { label: "Thermoformés", delay: "10 jours", sub: "" },
+                      { label: "Contentions", delay: "3 à 5 jours", sub: "" },
+                      { label: "PUL", delay: "15 à 20 jours", sub: "" },
+                      { label: "Réparations", delay: "3 à 5 jours", sub: "" },
                       { label: "Urgences", delay: "Prioritaire", sub: "Nous consulter", accent: true }
                     ].map((item, i) => (
                       <div key={i} className="flex items-center justify-between p-3 bg-white rounded-md border border-[#1B2A4A]/5">
@@ -198,7 +198,7 @@ const Intro = () => {
                     ))}
                   </div>
                   
-                  <p className="text-[10px] text-[#5A6A84] mt-4 text-center">Livraison France m&eacute;tropolitaine</p>
+                  <p className="text-[10px] text-[#5A6A84] mt-4 text-center">Livraison France métropolitaine</p>
                 </div>
               </div>
             </div>
