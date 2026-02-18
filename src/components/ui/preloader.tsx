@@ -58,35 +58,24 @@ export default function Preloader() {
         aria-hidden="true" // Hide from screen readers
       >
         <div className="relative flex h-full items-center justify-center">
-          {/* This corresponds to the preloader_line */}
-          <div
-            className="relative h-[2px] w-full origin-left bg-background z-10"
-            style={{
-              // Horizontal line expansion animation.
-              animation: "preloader-line-expand 0.8s cubic-bezier(0.65, 0, 0.35, 1) forwards",
-            }}
-          />
-
-          {/* This corresponds to the preloader__shapes container */}
-          <div className="absolute inset-0 flex flex-col pointer-events-auto">
-            {/* Top fill, corresponding to preloader__fill-top */}
-            <div
-              className="h-1/2 w-full bg-[#E77EFF]" // --color-brand-pink
-              style={{
-                // Vertical reveal animation for the top half.
-                animation: "preloader-fill-up 1.2s cubic-bezier(0.65, 0, 0.35, 1) 0.8s forwards",
-              }}
-            />
-            {/* Bottom fill, corresponding to preloader__fill-bottom */}
-            <div
-              className="h-1/2 w-full bg-[#E77EFF]" // --color-brand-pink
-              style={{
-                // Vertical reveal animation for the bottom half.
-                animation: "preloader-fill-down 1.2s cubic-bezier(0.65, 0, 0.35, 1) 0.8s forwards",
-              }}
-            />
+            {/* Full-screen fill that slides apart */}
+            <div className="absolute inset-0 flex flex-col pointer-events-auto">
+              {/* Top half */}
+              <div
+                className="h-1/2 w-full bg-[#46aac9]"
+                style={{
+                  animation: "preloader-fill-up 1.2s cubic-bezier(0.65, 0, 0.35, 1) 0.8s forwards",
+                }}
+              />
+              {/* Bottom half */}
+              <div
+                className="h-1/2 w-full bg-[#46aac9]"
+                style={{
+                  animation: "preloader-fill-down 1.2s cubic-bezier(0.65, 0, 0.35, 1) 0.8s forwards",
+                }}
+              />
+            </div>
           </div>
-        </div>
       </div>
     </>
   );
