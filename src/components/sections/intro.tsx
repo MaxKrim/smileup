@@ -150,19 +150,19 @@ const Intro = () => {
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                  <div className="border border-[#1D5F75]/8 rounded-lg p-5">
+                  <div className="bg-white/50 backdrop-blur-sm border border-white/60 rounded-lg p-5 shadow-sm">
                     <MapPin className="w-5 h-5 text-[#1D5F75] mb-3" strokeWidth={1.5} />
                     <span className="text-[#1D5F75] font-medium text-lg block">Ingré (45)</span>
                     <p className="text-[#5A7A8A] text-xs mt-1">Fabrication locale</p>
                   </div>
                   
-                  <div className="border border-[#1D5F75]/8 rounded-lg p-5">
+                  <div className="bg-white/50 backdrop-blur-sm border border-white/60 rounded-lg p-5 shadow-sm">
                     <CheckCircle className="w-5 h-5 text-[#1D5F75] mb-3" strokeWidth={1.5} />
                     <span className="text-[#1D5F75] font-medium text-lg block">0%</span>
                     <p className="text-[#5A7A8A] text-xs mt-1">Sous-traitance</p>
                   </div>
                   
-                  <div className="border border-[#1D5F75]/8 rounded-lg p-5">
+                  <div className="bg-white/50 backdrop-blur-sm border border-white/60 rounded-lg p-5 shadow-sm">
                     <Truck className="w-5 h-5 text-[#1D5F75] mb-3" strokeWidth={1.5} />
                     <span className="text-[#1D5F75] font-medium text-lg block">J+1</span>
                     <p className="text-[#5A7A8A] text-xs mt-1">Livraison France métropolitaine</p>
