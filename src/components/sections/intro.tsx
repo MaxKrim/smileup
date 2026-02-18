@@ -189,7 +189,7 @@ const Intro = () => {
                       { label: "Réparations", delay: "3 à 5 jours", sub: "" },
                       { label: "Urgences", delay: "Prioritaire", sub: "Nous consulter", accent: true }
                     ].map((item, i) => (
-                      <div key={i} className="flex items-center justify-between p-3 bg-white rounded-md border border-[#1D5F75]/5">
+                      <div key={i} className="flex items-center justify-between p-3 bg-white/60 backdrop-blur-sm rounded-md border border-white/70">
                         <div>
                           <span className="text-xs font-medium text-[#1D5F75]">{item.label}</span>
                           {item.sub && <span className="text-[10px] text-[#5A7A8A] block mt-0.5">{item.sub}</span>}
