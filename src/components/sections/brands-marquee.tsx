@@ -27,7 +27,7 @@ const PractitionerTrack = () => (
 
 const BrandsMarquee = () => {
     return (
-        <section className="bg-background py-20 md:py-28 overflow-hidden w-full">
+          <section className="bg-background py-14 md:py-20 overflow-hidden w-full">
             <style>
                 {`
                     @keyframes marquee {
