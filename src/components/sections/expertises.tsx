@@ -94,7 +94,7 @@ const ExpertisesSection = () => {
   }, []);
 
   return (
-    <section id="expertises" ref={componentRef} className="bg-background relative w-full overflow-hidden py-20 md:py-28 lg:py-36">
+    <section id="expertises" ref={componentRef} className="bg-background relative w-full overflow-hidden py-14 md:py-20">
       <div className="mx-auto px-6 md:px-12 max-w-7xl w-full">
         <div className="mb-12 md:mb-16 lg:mb-20">
           <div className="flex flex-wrap gap-3 mb-6">
