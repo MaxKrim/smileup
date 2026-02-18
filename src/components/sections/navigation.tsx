@@ -31,7 +31,7 @@ const Logo = () =>
   </svg>;
 
 const NavLink = ({ href, children }: {href: string; children: React.ReactNode;}) =>
-  <Link href={href} className="text-[#3D4F6F] text-sm font-medium tracking-wide hover:text-[#1B2A4A] transition-colors duration-200">
+  <Link href={href} className="text-[#3D4F6F] text-sm font-medium tracking-wide hover:text-[#1D5F75] transition-colors duration-200">
     {children}
   </Link>;
 
@@ -65,7 +65,7 @@ export default function Navigation() {
       <nav
         className={cn(
           "fixed top-0 left-0 right-0 z-50 transition-all duration-300 font-body w-full",
-          isScrolled ? "bg-white/95 backdrop-blur-sm border-b border-[#1B2A4A]/8" : "bg-transparent"
+          isScrolled ? "bg-white/95 backdrop-blur-sm border-b border-[#1D5F75]/8" : "bg-transparent"
         )}>
         <div className="max-w-7xl mx-auto px-6 md:px-12 w-full">
           <div className="flex items-center justify-between h-16 md:h-20">
@@ -86,7 +86,7 @@ export default function Navigation() {
             <div className="hidden lg:block flex-shrink-0">
               <Link
                 href="#contact"
-                className="inline-flex items-center gap-2 text-sm font-medium text-white bg-[#1B2A4A] py-2.5 px-6 rounded-md transition-all duration-300 hover:bg-[#2D4A7A] tracking-wide">
+                className="inline-flex items-center gap-2 text-sm font-medium text-white bg-[#1D5F75] py-2.5 px-6 rounded-md transition-all duration-300 hover:bg-[#2D4A7A] tracking-wide">
                 <span>Travailler Ensemble</span>
               </Link>
             </div>
@@ -94,7 +94,7 @@ export default function Navigation() {
             <div className="lg:hidden flex-shrink-0">
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="relative z-50 h-8 w-8 text-[#1B2A4A] flex items-center justify-center"
+                className="relative z-50 h-8 w-8 text-[#1D5F75] flex items-center justify-center"
                 aria-label="Toggle menu">
                 <span className={cn("block absolute h-[1.5px] w-6 bg-current transform transition duration-300 ease-in-out", isMenuOpen ? "rotate-45" : "-translate-y-1.5")}></span>
                 <span className={cn("block absolute h-[1.5px] w-6 bg-current transition duration-300 ease-in-out", isMenuOpen ? "opacity-0" : "")}></span>
@@ -116,7 +116,7 @@ export default function Navigation() {
               key={item.name}
               href={item.href}
               onClick={() => setIsMenuOpen(false)}
-              className="text-xl font-light text-[#1B2A4A] tracking-tight">
+              className="text-xl font-light text-[#1D5F75] tracking-tight">
               {item.name}
             </Link>
           )}
@@ -124,7 +124,7 @@ export default function Navigation() {
             <Link
               href="#contact"
               onClick={() => setIsMenuOpen(false)}
-              className="inline-flex items-center gap-2 text-sm font-medium text-white bg-[#1B2A4A] py-3 px-8 rounded-md tracking-wide">
+              className="inline-flex items-center gap-2 text-sm font-medium text-white bg-[#1D5F75] py-3 px-8 rounded-md tracking-wide">
               <span>Travailler Ensemble</span>
             </Link>
           </div>
