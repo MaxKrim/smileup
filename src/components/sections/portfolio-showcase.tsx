@@ -27,7 +27,7 @@ const WorkCard = ({ title, label, image, href }: WorkCardProps) => {
           </div>
         </div>
         <div className="flex-grow p-6 md:p-8 bg-[#1D5F75]">
-          <h3 className="font-display text-xl md:text-2xl font-light leading-tight tracking-tight text-white">{title}</h3>
+          <h3 className="font-display text-xl md:text-2xl font-semibold leading-tight tracking-tight text-white">{title}</h3>
           <div className="mt-4 inline-block border border-white/20 px-4 py-1.5 text-xs font-medium text-white/80 rounded-md tracking-wide uppercase">
             {label}
           </div>
@@ -58,7 +58,7 @@ const PortfolioShowcase = () => {
         <div className="mx-auto px-6 md:px-12 max-w-7xl w-full">
           <div className="max-w-2xl">
             <span className="text-xs font-medium tracking-widest uppercase text-[#46aac9] mb-4 block">Réalisations</span>
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-light leading-none tracking-[-0.03em] text-[#1D5F75]">Des réalisations qui font sourire.</h2>
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold leading-none tracking-[-0.03em] text-[#1D5F75]">Des réalisations qui font sourire.</h2>
             <p className="mt-5 text-base md:text-lg text-[#3D5A6A] leading-relaxed">
               Chaque appareil est conçu sur mesure selon vos prescriptions. De l&apos;appareil fonctionnel complexe à la gouttière thermoformée, je maîtrise toutes les techniques pour des résultats qui répondent à vos exigences.
             </p>
