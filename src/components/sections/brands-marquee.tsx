@@ -44,8 +44,8 @@ const BrandsMarquee = () => {
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-light tracking-[-0.03em] leading-none mb-5 font-display text-[#1B2A4A]">
                     Des praticiens qui me font confiance.
                 </h2>
-                <p className="text-base md:text-lg text-[#3D4F6F] max-w-2xl mb-14 md:mb-16">
-                    Je travaille avec des orthodontistes, dentistes et chirurgiens-dentistes exigeants qui recherchent une qualit&eacute; de travail irr&eacute;prochable et un partenaire fiable pour leurs patients.
+                <p className="text-base md:text-lg text-[#3D4F6F] max-w-2xl mb-10">
+                    Je travaille avec des orthodontistes, dentistes et chirurgiens-dentistes exigeants qui recherchent une qualité de travail irréprochable et un partenaire fiable pour leurs patients.
                 </p>
             </div>
             
