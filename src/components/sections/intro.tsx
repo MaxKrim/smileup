@@ -73,7 +73,7 @@ const Intro = () => {
                     <item.icon className="w-6 h-6 mb-4 text-[#1D5F75]" strokeWidth={1.5} />
                     <h4 className="font-display text-sm font-medium leading-tight text-[#1D5F75]">{item.title}</h4>
                   </div>
-                  <p className="text-xs text-[#5A6A84] mt-3 leading-relaxed">{item.desc}</p>
+                  <p className="text-xs text-[#5A7A8A] mt-3 leading-relaxed">{item.desc}</p>
                 </div>
               </div>
             ))}
@@ -90,7 +90,7 @@ const Intro = () => {
               <h4 className="font-display text-xl md:text-2xl font-light text-[#1D5F75] mb-2">
                 Compatible avec les leaders du marché
               </h4>
-              <p className="text-[#5A6A84] text-sm md:text-base">
+              <p className="text-[#5A7A8A] text-sm md:text-base">
                 Réception directe de vos empreintes numériques depuis les systèmes les plus utilisés au monde.
               </p>
             </div>
@@ -152,19 +152,19 @@ const Intro = () => {
                   <div className="border border-[#1D5F75]/8 rounded-lg p-5">
                     <MapPin className="w-5 h-5 text-[#1D5F75] mb-3" strokeWidth={1.5} />
                     <span className="text-[#1D5F75] font-medium text-lg block">Ingré (45)</span>
-                    <p className="text-[#5A6A84] text-xs mt-1">Fabrication locale</p>
+                    <p className="text-[#5A7A8A] text-xs mt-1">Fabrication locale</p>
                   </div>
                   
                   <div className="border border-[#1D5F75]/8 rounded-lg p-5">
                     <CheckCircle className="w-5 h-5 text-[#1D5F75] mb-3" strokeWidth={1.5} />
                     <span className="text-[#1D5F75] font-medium text-lg block">0%</span>
-                    <p className="text-[#5A6A84] text-xs mt-1">Sous-traitance</p>
+                    <p className="text-[#5A7A8A] text-xs mt-1">Sous-traitance</p>
                   </div>
                   
                   <div className="border border-[#1D5F75]/8 rounded-lg p-5">
                     <Truck className="w-5 h-5 text-[#1D5F75] mb-3" strokeWidth={1.5} />
                     <span className="text-[#1D5F75] font-medium text-lg block">J+1</span>
-                    <p className="text-[#5A6A84] text-xs mt-1">Livraison France métropolitaine</p>
+                    <p className="text-[#5A7A8A] text-xs mt-1">Livraison France métropolitaine</p>
                   </div>
                 </div>
               </div>
@@ -191,14 +191,14 @@ const Intro = () => {
                       <div key={i} className="flex items-center justify-between p-3 bg-white rounded-md border border-[#1D5F75]/5">
                         <div>
                           <span className="text-xs font-medium text-[#1D5F75]">{item.label}</span>
-                          {item.sub && <span className="text-[10px] text-[#5A6A84] block mt-0.5">{item.sub}</span>}
+                          {item.sub && <span className="text-[10px] text-[#5A7A8A] block mt-0.5">{item.sub}</span>}
                         </div>
                         <span className={`text-xs font-medium ${item.accent ? 'text-[#46aac9]' : 'text-[#1D5F75]'}`}>{item.delay}</span>
                       </div>
                     ))}
                   </div>
                   
-                  <p className="text-[10px] text-[#5A6A84] mt-4 text-center">Livraison France métropolitaine</p>
+                  <p className="text-[10px] text-[#5A7A8A] mt-4 text-center">Livraison France métropolitaine</p>
                 </div>
               </div>
             </div>
