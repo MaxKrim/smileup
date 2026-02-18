@@ -98,7 +98,7 @@ const ExpertisesSection = () => {
       <div className="mx-auto px-6 md:px-12 max-w-7xl w-full">
         <div className="mb-10 md:mb-14">
           <div className="flex flex-wrap gap-3 mb-6">
-            <span className="text-xs font-medium tracking-widest uppercase text-[#C5A572]">
+            <span className="text-xs font-medium tracking-widest uppercase text-[#46aac9]">
               Gamme professionnelle
             </span>
             <span className="text-xs font-medium tracking-widest uppercase text-[#5A6A84]">
@@ -154,7 +154,7 @@ const ExpertiseCard = ({ card }: { card: typeof expertisesData[0] }) => (
 
       <div className="flex-1 p-6 flex flex-col justify-between relative z-20">
         <div>
-          <h3 className="text-xs font-medium tracking-widest uppercase text-[#C5A572] mb-2">
+          <h3 className="text-xs font-medium tracking-widest uppercase text-[#46aac9] mb-2">
             {card.title}
           </h3>
           <h4 className="text-lg md:text-xl font-light tracking-tight leading-[1.2] text-[#1D5F75] mb-4">
