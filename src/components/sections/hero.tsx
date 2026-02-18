@@ -47,9 +47,9 @@ const Hero = () => {
             </div>
 
             {/* Case 3 - Disponibilité */}
-            <div className="flex flex-col justify-between p-6 md:p-7 text-white rounded-lg min-h-[200px] md:min-h-[240px] lg:min-h-[260px] transition-all duration-300 hover:shadow-lg bg-[#2D4A7A]">
-              <div>
-                <div className="font-display font-light tracking-tight leading-[1.1] text-2xl md:text-3xl lg:text-[2.2rem]">
+            <div className="flex flex-col justify-between p-6 md:p-7 text-white rounded-lg min-h-[200px] md:min-h-[240px] lg:min-h-[260px] transition-all duration-300 hover:shadow-lg bg-gradient-to-br from-[#2A7A95] to-[#1D5F75]">
+                <div>
+                  <div className="font-display font-semibold tracking-tight leading-[1.1] text-2xl md:text-3xl lg:text-[2.2rem]">
                   Disponibilité<br />& échanges
                 </div>
               </div>
