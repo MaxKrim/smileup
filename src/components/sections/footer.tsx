@@ -62,10 +62,10 @@ export default function Footer() {
 
           <div className="lg:justify-self-center">
             <nav className="flex flex-col gap-3 text-center lg:text-left">
-              <Link href="/#intro-home" className="text-sm text-[#3D4F6F] hover:text-[#1D5F75] transition-colors">&Agrave; propos</Link>
-              <Link href="/#expertises" className="text-sm text-[#3D4F6F] hover:text-[#1D5F75] transition-colors">Expertises</Link>
-              <Link href="/#work" className="text-sm text-[#3D4F6F] hover:text-[#1D5F75] transition-colors">R&eacute;alisations</Link>
-              <Link href="/#contact" className="text-sm text-[#3D4F6F] hover:text-[#1D5F75] transition-colors">Contact</Link>
+              <Link href="/#intro-home" className="text-sm text-[#3D5A6A] hover:text-[#1D5F75] transition-colors">&Agrave; propos</Link>
+              <Link href="/#expertises" className="text-sm text-[#3D5A6A] hover:text-[#1D5F75] transition-colors">Expertises</Link>
+              <Link href="/#work" className="text-sm text-[#3D5A6A] hover:text-[#1D5F75] transition-colors">R&eacute;alisations</Link>
+              <Link href="/#contact" className="text-sm text-[#3D5A6A] hover:text-[#1D5F75] transition-colors">Contact</Link>
             </nav>
           </div>
 
@@ -74,13 +74,13 @@ export default function Footer() {
               <p className="font-medium text-[#1D5F75] mb-3">Jessica Lerandy Estevez</p>
               <a
                 href="mailto:smile.up045@gmail.com"
-                className="flex items-center justify-center lg:justify-end gap-2 text-[#3D4F6F] hover:text-[#1D5F75] transition-colors mb-2">
+                className="flex items-center justify-center lg:justify-end gap-2 text-[#3D5A6A] hover:text-[#1D5F75] transition-colors mb-2">
                 <Mail size={16} className="flex-shrink-0" strokeWidth={1.5} />
                 <span className="text-sm">smile.up045@gmail.com</span>
               </a>
               <a
                 href="tel:+33777995315"
-                className="flex items-center justify-center lg:justify-end gap-2 text-[#3D4F6F] hover:text-[#1D5F75] transition-colors mb-2">
+                className="flex items-center justify-center lg:justify-end gap-2 text-[#3D5A6A] hover:text-[#1D5F75] transition-colors mb-2">
                 <Phone size={16} className="flex-shrink-0" strokeWidth={1.5} />
                 <span className="text-sm">+33 7 77 99 53 15</span>
               </a>
