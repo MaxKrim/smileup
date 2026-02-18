@@ -98,7 +98,7 @@ const ExpertisesSection = () => {
       <div className="mx-auto px-6 md:px-12 max-w-7xl w-full">
         <div className="mb-10 md:mb-14">
           <div className="flex flex-wrap gap-3 mb-6">
-            <span className="text-xs font-medium tracking-widest uppercase text-[#46aac9]">
+            <span className="text-xs font-medium tracking-widest uppercase text-[#E8734A]">
               Gamme professionnelle
             </span>
             <span className="text-xs font-medium tracking-widest uppercase text-[#5A7A8A]">
