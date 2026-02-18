@@ -31,7 +31,7 @@ const Logo = () =>
   </svg>;
 
 const NavLink = ({ href, children }: {href: string; children: React.ReactNode;}) =>
-  <Link href={href} className="text-[#3D4F6F] text-sm font-medium tracking-wide hover:text-[#1D5F75] transition-colors duration-200">
+  <Link href={href} className="text-[#3D5A6A] text-sm font-medium tracking-wide hover:text-[#1D5F75] transition-colors duration-200">
     {children}
   </Link>;
 
