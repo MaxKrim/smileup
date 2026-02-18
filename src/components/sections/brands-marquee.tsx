@@ -16,10 +16,10 @@ const PractitionerTrack = () => (
     {PRACTITIONER_TYPES.map((practitioner, index) => (
       <div
         key={index}
-        className="w-[200px] md:w-[240px] shrink-0 h-[100px] md:h-[110px] bg-white border border-[#1B2A4A]/8 text-[#1B2A4A] rounded-lg flex flex-col items-center justify-center p-5 transition-all duration-300 hover:border-[#C5A572]/30 hover:shadow-sm"
+        className="w-[200px] md:w-[240px] shrink-0 h-[100px] md:h-[110px] bg-white border border-[#1D5F75]/8 text-[#1D5F75] rounded-lg flex flex-col items-center justify-center p-5 transition-all duration-300 hover:border-[#C5A572]/30 hover:shadow-sm"
       >
         <div className="text-xs font-medium tracking-widest uppercase text-[#C5A572] mb-2">{practitioner.abbr}</div>
-        <div className="text-sm md:text-base font-medium text-center text-[#1B2A4A]">{practitioner.title}</div>
+        <div className="text-sm md:text-base font-medium text-center text-[#1D5F75]">{practitioner.title}</div>
       </div>
     ))}
   </div>
@@ -41,7 +41,7 @@ const BrandsMarquee = () => {
             </style>
             <div className="mx-auto px-6 md:px-12 max-w-7xl w-full">
                 <span className="text-xs font-medium tracking-widest uppercase text-[#C5A572] mb-4 block">Confiance</span>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-light tracking-[-0.03em] leading-none mb-5 font-display text-[#1B2A4A]">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-light tracking-[-0.03em] leading-none mb-5 font-display text-[#1D5F75]">
                     Des praticiens qui me font confiance.
                 </h2>
                 <p className="text-base md:text-lg text-[#3D4F6F] max-w-2xl mb-10">
