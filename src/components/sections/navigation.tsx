@@ -5,16 +5,15 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 const Logo = () =>
-<svg
-  width="180"
-  height="50"
-  viewBox="0 0 982.52 270.95"
-  className="text-black w-auto h-10 md:h-12"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
-  role="img"
-  aria-label="Smile UP Logo">
-
+  <svg
+    width="180"
+    height="50"
+    viewBox="0 0 982.52 270.95"
+    className="text-black w-auto h-9 md:h-11"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    role="img"
+    aria-label="Smile UP Logo">
     <defs>
       <style>{`.cls-1{fill:#2b2b2b;}.cls-2{fill:#46aac9;}`}</style>
     </defs>
@@ -31,15 +30,10 @@ const Logo = () =>
     </g>
   </svg>;
 
-
-const NavLink = ({ href, children }: {href: string;children: React.ReactNode;}) =>
-<Link href={href} className="relative inline-block overflow-hidden px-2 py-1 text-black text-base font-medium group">
-    <span className="absolute top-0 left-0 w-1/2 h-full bg-accent transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out"></span>
-    <span className="absolute top-0 right-0 w-1/2 h-full bg-accent transform translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out"></span>
-    <span className="relative z-10">{children}</span>
+const NavLink = ({ href, children }: {href: string; children: React.ReactNode;}) =>
+  <Link href={href} className="text-[#3D4F6F] text-sm font-medium tracking-wide hover:text-[#1B2A4A] transition-colors duration-200">
+    {children}
   </Link>;
-
-
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -60,20 +54,19 @@ export default function Navigation() {
   }, [isMenuOpen]);
 
   const navItems = [
-  { name: "Nos Gammes", href: "#expertises" },
-  { name: "Réalisations", href: "#work" },
-  { name: "Qui suis-je", href: "/about" },
-  { name: "Contact", href: "#contact" }];
-
+    { name: "Nos Gammes", href: "#expertises" },
+    { name: "R\u00e9alisations", href: "#work" },
+    { name: "Qui suis-je", href: "/about" },
+    { name: "Contact", href: "#contact" }
+  ];
 
   return (
     <>
       <nav
         className={cn(
           "fixed top-0 left-0 right-0 z-50 transition-all duration-300 font-body w-full",
-          isScrolled ? "bg-background/95 backdrop-blur-sm border-b border-black/10" : "bg-transparent"
+          isScrolled ? "bg-white/95 backdrop-blur-sm border-b border-[#1B2A4A]/8" : "bg-transparent"
         )}>
-
         <div className="max-w-7xl mx-auto px-6 md:px-12 w-full">
           <div className="flex items-center justify-between h-16 md:h-20">
             <Link href="/" aria-label="Page d'accueil" className="flex-shrink-0">
@@ -81,9 +74,9 @@ export default function Navigation() {
             </Link>
 
             <div className="hidden lg:flex items-center justify-center flex-1">
-              <div className="flex items-center space-x-8">
+              <div className="flex items-center space-x-10">
                 {navItems.map((item) =>
-                <NavLink key={item.name} href={item.href}>
+                  <NavLink key={item.name} href={item.href}>
                     {item.name}
                   </NavLink>
                 )}
@@ -93,22 +86,19 @@ export default function Navigation() {
             <div className="hidden lg:block flex-shrink-0">
               <Link
                 href="#contact"
-                className="group flex items-center gap-2 text-sm md:text-base font-medium text-black bg-gradient-to-r from-[#F87DFF] to-accent py-2.5 md:py-3 px-5 md:px-6 rounded-full transition-transform hover:scale-105 whitespace-nowrap">
-
+                className="inline-flex items-center gap-2 text-sm font-medium text-white bg-[#1B2A4A] py-2.5 px-6 rounded-md transition-all duration-300 hover:bg-[#2D4A7A] tracking-wide">
                 <span>Travailler Ensemble</span>
-                <span className="text-xl">🦷</span>
               </Link>
             </div>
 
             <div className="lg:hidden flex-shrink-0">
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="relative z-50 h-8 w-8 text-black flex items-center justify-center"
+                className="relative z-50 h-8 w-8 text-[#1B2A4A] flex items-center justify-center"
                 aria-label="Toggle menu">
-
-                <span className={cn("block absolute h-[2px] w-6 bg-current transform transition duration-300 ease-in-out", isMenuOpen ? "rotate-45" : "-translate-y-1.5")}></span>
-                <span className={cn("block absolute h-[2px] w-6 bg-current transition duration-300 ease-in-out", isMenuOpen ? "opacity-0" : "")}></span>
-                <span className={cn("block absolute h-[2px] w-6 bg-current transform transition duration-300 ease-in-out", isMenuOpen ? "-rotate-45" : "translate-y-1.5")}></span>
+                <span className={cn("block absolute h-[1.5px] w-6 bg-current transform transition duration-300 ease-in-out", isMenuOpen ? "rotate-45" : "-translate-y-1.5")}></span>
+                <span className={cn("block absolute h-[1.5px] w-6 bg-current transition duration-300 ease-in-out", isMenuOpen ? "opacity-0" : "")}></span>
+                <span className={cn("block absolute h-[1.5px] w-6 bg-current transform transition duration-300 ease-in-out", isMenuOpen ? "-rotate-45" : "translate-y-1.5")}></span>
               </button>
             </div>
           </div>
@@ -117,33 +107,29 @@ export default function Navigation() {
 
       <div
         className={cn(
-          "lg:hidden fixed inset-0 bg-background z-40 transform transition-transform duration-500 ease-in-out font-body overflow-y-auto",
+          "lg:hidden fixed inset-0 bg-white z-40 transform transition-transform duration-500 ease-in-out font-body overflow-y-auto",
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         )}>
-
         <div className="flex flex-col items-center justify-center min-h-full space-y-8 pt-20 pb-12 px-6">
           {navItems.map((item) =>
-          <Link
-            key={item.name}
-            href={item.href}
-            onClick={() => setIsMenuOpen(false)}
-            className="text-2xl md:text-3xl font-medium text-black">
-
+            <Link
+              key={item.name}
+              href={item.href}
+              onClick={() => setIsMenuOpen(false)}
+              className="text-xl font-light text-[#1B2A4A] tracking-tight">
               {item.name}
             </Link>
           )}
           <div className="pt-8">
-             <Link
+            <Link
               href="#contact"
               onClick={() => setIsMenuOpen(false)}
-              className="flex items-center gap-2 text-base md:text-lg font-medium text-black bg-gradient-to-r from-[#F87DFF] to-accent py-3 md:py-4 px-6 md:px-8 rounded-full">
-
-                <span>Travailler Ensemble</span>
-                <span className="text-xl md:text-2xl">🦷</span>
-              </Link>
+              className="inline-flex items-center gap-2 text-sm font-medium text-white bg-[#1B2A4A] py-3 px-8 rounded-md tracking-wide">
+              <span>Travailler Ensemble</span>
+            </Link>
           </div>
         </div>
       </div>
-    </>);
-
+    </>
+  );
 }
