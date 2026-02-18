@@ -154,9 +154,9 @@ const ExpertiseCard = ({ card }: { card: typeof expertisesData[0] }) => (
 
       <div className="flex-1 p-6 flex flex-col justify-between relative z-20">
         <div>
-          <h3 className="text-xs font-medium tracking-widest uppercase text-[#46aac9] mb-2">
-            {card.title}
-          </h3>
+          <h3 className="text-xs font-medium tracking-widest uppercase text-[#E8734A] mb-2">
+              {card.title}
+            </h3>
           <h4 className="text-lg md:text-xl font-light tracking-tight leading-[1.2] text-[#1D5F75] mb-4">
             {card.subtitle}
           </h4>
