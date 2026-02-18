@@ -18,7 +18,7 @@ const Hero = () => {
               Votre Laboratoire<br />d&apos;Orthodontie Exclusive.
             </h1>
             <div className="mt-8 max-w-2xl">
-              <p className="text-base md:text-lg text-[#3D4F6F] leading-relaxed">
+              <p className="text-base md:text-lg text-[#3D5A6A] leading-relaxed">
                 Prothésiste dentaire diplômée en 2011, spécialisée en orthopédie dento-faciale. Un parcours dédié à l&apos;orthodontie, porté par l&apos;exigence et l&apos;engagement autour du traitement.
               </p>
             </div>
