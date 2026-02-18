@@ -12,7 +12,7 @@ const Intro = () => {
         {/* Bloc 3 - Texte principal */}
         <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-12 lg:gap-20 w-full">
           <div className="flex-1 max-w-2xl">
-            <span className="text-xs font-medium tracking-widest uppercase text-[#C5A572] mb-6 block">
+            <span className="text-xs font-medium tracking-widest uppercase text-[#46aac9] mb-6 block">
               Un laboratoire tourné vers l&apos;humain et l&apos;innovation
             </span>
             <h2 className="font-display text-3xl sm:text-4xl md:text-[44px] leading-[1.1] font-light tracking-[-0.03em] text-[#1D5F75] mb-8">
@@ -24,7 +24,7 @@ const Intro = () => {
             <p className="text-[#3D5A6A] text-base md:text-[17px] leading-relaxed">
               Derrière chaque dispositif, il y a un regard, une exigence et une expérience construite au fil des années. Les appareils conçus sont pensés pour être <strong className="font-medium text-[#1D5F75]">fiables</strong>, <strong className="font-medium text-[#1D5F75]">confortables</strong> et <strong className="font-medium text-[#1D5F75]">adaptés aux traitements</strong>, avec une exigence constante.
             </p>
-            <p className="text-[#C5A572] font-light text-lg mt-6 italic border-l-2 border-[#C5A572] pl-5">
+            <p className="text-[#46aac9] font-light text-lg mt-6 italic border-l-2 border-[#46aac9] pl-5">
               La précision n&apos;est pas un concept : c&apos;est une habitude quotidienne.
             </p>
             <div className="mt-10 flex items-center gap-4">
@@ -48,7 +48,7 @@ const Intro = () => {
 
         {/* Bloc 5 - Chaîne de fonctionnement */}
         <div className="mt-16 md:mt-20">
-          <span className="text-xs font-medium tracking-widest uppercase text-[#C5A572] mb-4 block">
+          <span className="text-xs font-medium tracking-widest uppercase text-[#46aac9] mb-4 block">
             Un laboratoire moderne, connecté et réactif
           </span>
           <h3 className="font-display text-2xl md:text-3xl font-light mb-3 text-[#1D5F75]">
@@ -67,9 +67,9 @@ const Intro = () => {
               { step: "05", icon: CheckCircle, title: "Contrôle & Envoi", desc: "Vérification finale et expédition" }
             ].map((item) => (
               <div key={item.step} className="relative group">
-                <div className="bg-white border border-[#1D5F75]/8 rounded-lg p-5 h-full min-h-[150px] flex flex-col justify-between transition-all duration-300 hover:shadow-md hover:border-[#C5A572]/30">
+                <div className="bg-white border border-[#1D5F75]/8 rounded-lg p-5 h-full min-h-[150px] flex flex-col justify-between transition-all duration-300 hover:shadow-md hover:border-[#46aac9]/30">
                   <div>
-                    <span className="text-[#C5A572]/30 font-display text-3xl font-light absolute top-4 right-4">{item.step}</span>
+                    <span className="text-[#46aac9]/30 font-display text-3xl font-light absolute top-4 right-4">{item.step}</span>
                     <item.icon className="w-6 h-6 mb-4 text-[#1D5F75]" strokeWidth={1.5} />
                     <h4 className="font-display text-sm font-medium leading-tight text-[#1D5F75]">{item.title}</h4>
                   </div>
@@ -84,7 +84,7 @@ const Intro = () => {
         <div className="mt-12 bg-white border border-[#1D5F75]/8 rounded-lg p-8 md:p-10">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
             <div className="flex-1">
-              <span className="text-xs font-medium tracking-widest uppercase text-[#C5A572] mb-3 block">
+              <span className="text-xs font-medium tracking-widest uppercase text-[#46aac9] mb-3 block">
                 Intégration certifiée
               </span>
               <h4 className="font-display text-xl md:text-2xl font-light text-[#1D5F75] mb-2">
@@ -102,7 +102,7 @@ const Intro = () => {
                 { src: "/logos/medit.svg", alt: "Medit" },
                 { src: "/logos/carestream.svg", alt: "Carestream Dental" }
               ].map((logo) => (
-                <div key={logo.alt} className="bg-[#F8F9FA] rounded-md h-12 px-5 border border-[#1D5F75]/5 flex items-center justify-center transition-all duration-300 hover:border-[#C5A572]/30 hover:shadow-sm">
+                <div key={logo.alt} className="bg-[#F8F9FA] rounded-md h-12 px-5 border border-[#1D5F75]/5 flex items-center justify-center transition-all duration-300 hover:border-[#46aac9]/30 hover:shadow-sm">
                   <img
                     src={logo.src}
                     alt={logo.alt}
@@ -119,7 +119,7 @@ const Intro = () => {
             </div>
             <div className="flex items-center gap-3 text-sm text-[#3D5A6A]">
               <Mail className="w-4 h-4 text-[#1D5F75] flex-shrink-0" strokeWidth={1.5} />
-              <span>Pôle numérique : <a href="mailto:smile.up045@gmail.com" className="font-medium text-[#1D5F75] hover:text-[#C5A572] transition-colors">smile.up045@gmail.com</a></span>
+              <span>Pôle numérique : <a href="mailto:smile.up045@gmail.com" className="font-medium text-[#1D5F75] hover:text-[#46aac9] transition-colors">smile.up045@gmail.com</a></span>
             </div>
           </div>
         </div>
@@ -193,7 +193,7 @@ const Intro = () => {
                           <span className="text-xs font-medium text-[#1D5F75]">{item.label}</span>
                           {item.sub && <span className="text-[10px] text-[#5A6A84] block mt-0.5">{item.sub}</span>}
                         </div>
-                        <span className={`text-xs font-medium ${item.accent ? 'text-[#C5A572]' : 'text-[#1D5F75]'}`}>{item.delay}</span>
+                        <span className={`text-xs font-medium ${item.accent ? 'text-[#46aac9]' : 'text-[#1D5F75]'}`}>{item.delay}</span>
                       </div>
                     ))}
                   </div>
