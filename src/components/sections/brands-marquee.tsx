@@ -40,8 +40,8 @@ const BrandsMarquee = () => {
                 `}
             </style>
             <div className="mx-auto px-6 md:px-12 max-w-7xl w-full">
-                <span className="text-xs font-medium tracking-widest uppercase text-[#46aac9] mb-4 block">Confiance</span>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-light tracking-[-0.03em] leading-none mb-5 font-display text-[#1D5F75]">
+                <span className="text-xs font-medium tracking-widest uppercase text-[#E8734A] mb-4 block">Confiance</span>
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] leading-none mb-5 font-display text-[#1D5F75]">
                     Des praticiens qui me font confiance.
                 </h2>
                 <p className="text-base md:text-lg text-[#3D4F6F] max-w-2xl mb-10">
