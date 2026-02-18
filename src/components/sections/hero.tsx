@@ -14,7 +14,7 @@ const Hero = () => {
                 Loiret (45)
               </span>
             </div>
-            <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light leading-[1.05] tracking-[-0.03em] text-[#1D5F75]">
+            <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold leading-[1.05] tracking-[-0.02em] text-[#1D5F75]">
               Votre Laboratoire<br />d&apos;Orthodontie Exclusive.
             </h1>
             <div className="mt-8 max-w-2xl">
