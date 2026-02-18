@@ -140,7 +140,7 @@ const Intro = () => {
                   </span>
                 </div>
                 
-                <h3 className="font-display text-3xl md:text-4xl font-light text-[#1D5F75] mb-5 leading-tight">
+                <h3 className="font-display text-3xl md:text-4xl font-semibold text-[#1D5F75] mb-5 leading-tight">
                   100% Fabriqué<br />en France
                 </h3>
                 
