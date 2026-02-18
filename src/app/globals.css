@@ -5,7 +5,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  /* Palette basée sur le bleu du logo #46aac9 */
+  /* Palette principale - Bleu logo + accent corail */
   --color-background: #FAFBFC;
   --color-foreground: #1A2B3D;
 
@@ -55,12 +55,11 @@
   --color-brand-blue-deep: #1D5F75;
   --color-brand-blue-light: #7CC8DE;
   --color-brand-blue-pale: #E8F4F8;
+  --color-brand-coral: #E8734A;
+  --color-brand-coral-light: #F09070;
   --color-text-primary: #1A2B3D;
   --color-text-secondary: #3D5A6A;
   --color-white: #FFFFFF;
-  --color-label-background: rgba(255, 255, 255, 0.95);
-  --color-border-dark: rgba(70, 170, 201, 0.15);
-  --color-border-light: rgba(255, 255, 255, 0.1);
 
   /* Typography */
   --font-display: "Inter", sans-serif;
