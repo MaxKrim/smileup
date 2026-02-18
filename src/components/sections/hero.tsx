@@ -26,10 +26,10 @@ const Hero = () => {
 
           <div className="mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full">
             {/* Case 1 - Orthodontie */}
-            <div className="flex flex-col justify-between p-6 md:p-7 text-white rounded-lg min-h-[200px] md:min-h-[240px] lg:min-h-[260px] transition-all duration-300 hover:shadow-lg bg-[#1D5F75]">
-              <div>
-                <div className="font-display font-light tracking-tight leading-[1.1] text-2xl md:text-3xl lg:text-[2.2rem]">
-                  Orthodontie<br />traditionnelle<br />et numérique
+            <div className="flex flex-col justify-between p-6 md:p-7 text-white rounded-lg min-h-[200px] md:min-h-[240px] lg:min-h-[260px] transition-all duration-300 hover:shadow-lg bg-gradient-to-br from-[#46aac9] to-[#2A7A95]">
+                <div>
+                  <div className="font-display font-semibold tracking-tight leading-[1.1] text-2xl md:text-3xl lg:text-[2.2rem]">
+                    Orthodontie<br />traditionnelle<br />et numérique
                 </div>
               </div>
               <div className="mt-6">
