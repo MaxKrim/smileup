@@ -59,7 +59,7 @@ const PortfolioShowcase = () => {
           <div className="max-w-2xl">
             <span className="text-xs font-medium tracking-widest uppercase text-[#46aac9] mb-4 block">Réalisations</span>
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-light leading-none tracking-[-0.03em] text-[#1D5F75]">Des réalisations qui font sourire.</h2>
-            <p className="mt-5 text-base md:text-lg text-[#3D4F6F] leading-relaxed">
+            <p className="mt-5 text-base md:text-lg text-[#3D5A6A] leading-relaxed">
               Chaque appareil est conçu sur mesure selon vos prescriptions. De l&apos;appareil fonctionnel complexe à la gouttière thermoformée, je maîtrise toutes les techniques pour des résultats qui répondent à vos exigences.
             </p>
           </div>
