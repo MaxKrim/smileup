@@ -26,7 +26,7 @@ const CtaFinal = () => {
 
             <a
               href="tel:+33777995315"
-              className="group inline-flex w-full items-center justify-center gap-2 bg-[#1D5F75] px-7 py-3 rounded-md text-sm font-medium text-white transition-all duration-300 hover:bg-[#2D4A7A] sm:w-auto tracking-wide"
+              className="group inline-flex w-full items-center justify-center gap-2 bg-[#1D5F75] px-7 py-3 rounded-md text-sm font-medium text-white transition-all duration-300 hover:bg-[#2A7A95] sm:w-auto tracking-wide"
             >
               <Phone className="h-4 w-4" strokeWidth={1.5} />
               <span>Appelez-moi</span>
