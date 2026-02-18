@@ -54,7 +54,7 @@ const worksData: WorkCardProps[] = [
 
 const PortfolioShowcase = () => {
     return (
-      <section id="work" className="bg-background py-20 md:py-28 w-full overflow-hidden">
+      <section id="work" className="bg-background py-14 md:py-20 w-full overflow-hidden">
         <div className="mx-auto px-6 md:px-12 max-w-7xl w-full">
           <div className="max-w-2xl">
             <span className="text-xs font-medium tracking-widest uppercase text-[#C5A572] mb-4 block">R&eacute;alisations</span>
