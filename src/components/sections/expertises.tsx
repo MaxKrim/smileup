@@ -105,7 +105,7 @@ const ExpertisesSection = () => {
               / 100% Fabriqué en France
             </span>
           </div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-light tracking-[-0.03em] leading-none text-[#1D5F75]">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.02em] leading-none text-[#1D5F75]">
             Nos expertises
           </h2>
             <p className="mt-5 text-[#3D5A6A] text-base md:text-lg max-w-2xl">
