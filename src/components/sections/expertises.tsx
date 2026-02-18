@@ -108,9 +108,9 @@ const ExpertisesSection = () => {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-light tracking-[-0.03em] leading-none text-[#1B2A4A]">
             Nos expertises
           </h2>
-          <p className="mt-5 text-[#3D4F6F] text-base md:text-lg max-w-2xl">
-            Notre savoir-faire couvre toute la diversit&eacute; des dispositifs orthodontiques, m&ecirc;me les plus sp&eacute;cifiques.
-          </p>
+            <p className="mt-5 text-[#3D4F6F] text-base md:text-lg max-w-2xl">
+              Notre savoir-faire couvre toute la diversité des dispositifs orthodontiques, même les plus spécifiques.
+            </p>
         </div>
 
         {/* First row: 3 cards */}
