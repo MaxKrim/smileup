@@ -86,7 +86,7 @@ export default function Navigation() {
             <div className="hidden lg:block flex-shrink-0">
               <Link
                 href="#contact"
-                className="inline-flex items-center gap-2 text-sm font-medium text-white bg-[#1D5F75] py-2.5 px-6 rounded-md transition-all duration-300 hover:bg-[#2D4A7A] tracking-wide">
+                className="inline-flex items-center gap-2 text-sm font-medium text-white bg-[#1D5F75] py-2.5 px-6 rounded-md transition-all duration-300 hover:bg-[#2A7A95] tracking-wide">
                 <span>Travailler Ensemble</span>
               </Link>
             </div>
