@@ -47,7 +47,7 @@ export default function Footer() {
                 <div className="w-[140px] md:w-[160px] h-[40px] md:h-[45px]">
                   <Logo />
                 </div>
-                <span className="text-xs text-[#5A6A84] tracking-wide">Laboratoire d&apos;Orthodontie</span>
+                <span className="text-xs text-[#5A7A8A] tracking-wide">Laboratoire d&apos;Orthodontie</span>
               </div>
             </Link>
             <div className="mt-5 flex flex-wrap gap-3">
@@ -84,12 +84,12 @@ export default function Footer() {
                 <Phone size={16} className="flex-shrink-0" strokeWidth={1.5} />
                 <span className="text-sm">+33 7 77 99 53 15</span>
               </a>
-              <p className="text-xs text-[#5A6A84] mt-3">Loiret (45) &ndash; Centre-Val de Loire</p>
+              <p className="text-xs text-[#5A7A8A] mt-3">Loiret (45) &ndash; Centre-Val de Loire</p>
             </div>
             
             <div className="pt-4 border-t border-[#1D5F75]/8">
               <p className="text-xs font-medium text-[#1D5F75] mb-1 tracking-wide uppercase">Horaires</p>
-              <p className="text-xs text-[#5A6A84]">Lundi - Vendredi : 8h00 - 18h00</p>
+              <p className="text-xs text-[#5A7A8A]">Lundi - Vendredi : 8h00 - 18h00</p>
             </div>
           
             <div>
@@ -102,7 +102,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-[#1D5F75]/8 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-[#5A6A84] gap-4 text-center">
+        <div className="border-t border-[#1D5F75]/8 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-[#5A7A8A] gap-4 text-center">
           <p>&copy; {new Date().getFullYear()} Smile UP Orthodontie &ndash; Jessica Lerandy Estevez &ndash; Loiret (45)</p>
           <Link href="#" className="hover:text-[#1D5F75] transition-colors">Mentions l&eacute;gales</Link>
         </div>
