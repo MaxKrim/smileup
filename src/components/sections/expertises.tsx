@@ -105,7 +105,7 @@ const ExpertisesSection = () => {
               / 100% Fabriqué en France
             </span>
           </div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-light tracking-[-0.03em] leading-none text-[#1B2A4A]">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-light tracking-[-0.03em] leading-none text-[#1D5F75]">
             Nos expertises
           </h2>
             <p className="mt-5 text-[#3D4F6F] text-base md:text-lg max-w-2xl">
@@ -133,14 +133,14 @@ const ExpertisesSection = () => {
 
 const ExpertiseCard = ({ card }: { card: typeof expertisesData[0] }) => (
   <div className="expertise-card group relative rounded-lg overflow-hidden transition-all duration-500 hover:-translate-y-1 hover:shadow-lg">
-    <div className="bg-white border border-[#1B2A4A]/8 h-full min-h-[480px] md:min-h-[500px] flex flex-col relative overflow-hidden rounded-lg">
+    <div className="bg-white border border-[#1D5F75]/8 h-full min-h-[480px] md:min-h-[500px] flex flex-col relative overflow-hidden rounded-lg">
       <div className="absolute top-4 left-4 z-20">
-        <span className="bg-[#1B2A4A] text-white text-[11px] font-medium px-3 py-1 rounded-md tracking-wide uppercase">
+        <span className="bg-[#1D5F75] text-white text-[11px] font-medium px-3 py-1 rounded-md tracking-wide uppercase">
           {card.badge}
         </span>
       </div>
 
-      <div className="absolute top-4 right-5 text-5xl md:text-6xl font-light tracking-tight text-[#1B2A4A]/5 z-10">
+      <div className="absolute top-4 right-5 text-5xl md:text-6xl font-light tracking-tight text-[#1D5F75]/5 z-10">
         {card.id}
       </div>
 
@@ -157,7 +157,7 @@ const ExpertiseCard = ({ card }: { card: typeof expertisesData[0] }) => (
           <h3 className="text-xs font-medium tracking-widest uppercase text-[#C5A572] mb-2">
             {card.title}
           </h3>
-          <h4 className="text-lg md:text-xl font-light tracking-tight leading-[1.2] text-[#1B2A4A] mb-4">
+          <h4 className="text-lg md:text-xl font-light tracking-tight leading-[1.2] text-[#1D5F75] mb-4">
             {card.subtitle}
           </h4>
           <p className="text-sm text-[#5A6A84] leading-relaxed line-clamp-4">
@@ -167,7 +167,7 @@ const ExpertiseCard = ({ card }: { card: typeof expertisesData[0] }) => (
 
         <Link 
           href={card.buttonLink} 
-          className="inline-flex items-center gap-2 rounded-md text-sm px-5 py-2.5 font-medium transition-all duration-300 bg-[#1B2A4A] text-white hover:bg-[#2D4A7A] self-start mt-5"
+          className="inline-flex items-center gap-2 rounded-md text-sm px-5 py-2.5 font-medium transition-all duration-300 bg-[#1D5F75] text-white hover:bg-[#2D4A7A] self-start mt-5"
         >
           <span>En savoir plus</span>
           <ArrowRight className="size-3.5" />
