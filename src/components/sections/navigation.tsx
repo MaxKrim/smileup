@@ -54,10 +54,10 @@ export default function Navigation() {
   }, [isMenuOpen]);
 
   const navItems = [
-    { name: "Nos Gammes", href: "#expertises" },
-    { name: "R\u00e9alisations", href: "#work" },
+    { name: "Nos Gammes", href: "/#expertises" },
+    { name: "Réalisations", href: "/#work" },
     { name: "Qui suis-je", href: "/about" },
-    { name: "Contact", href: "#contact" }
+    { name: "Contact", href: "/#contact" }
   ];
 
   return (
