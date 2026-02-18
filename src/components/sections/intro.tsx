@@ -18,10 +18,10 @@ const Intro = () => {
             <h2 className="font-display text-3xl sm:text-4xl md:text-[44px] leading-[1.1] font-light tracking-[-0.03em] text-[#1D5F75] mb-8">
               La technologie au service du sourire.
             </h2>
-            <p className="text-[#3D4F6F] text-base md:text-lg leading-relaxed mb-5">
+            <p className="text-[#3D5A6A] text-base md:text-lg leading-relaxed mb-5">
               Smile Up est un laboratoire pensé comme un partenaire de travail au quotidien, au service de chaque praticien avec sérieux, précision et une vraie passion pour le travail bien fait.
             </p>
-            <p className="text-[#3D4F6F] text-base md:text-[17px] leading-relaxed">
+            <p className="text-[#3D5A6A] text-base md:text-[17px] leading-relaxed">
               Derrière chaque dispositif, il y a un regard, une exigence et une expérience construite au fil des années. Les appareils conçus sont pensés pour être <strong className="font-medium text-[#1D5F75]">fiables</strong>, <strong className="font-medium text-[#1D5F75]">confortables</strong> et <strong className="font-medium text-[#1D5F75]">adaptés aux traitements</strong>, avec une exigence constante.
             </p>
             <p className="text-[#C5A572] font-light text-lg mt-6 italic border-l-2 border-[#C5A572] pl-5">
@@ -54,7 +54,7 @@ const Intro = () => {
           <h3 className="font-display text-2xl md:text-3xl font-light mb-3 text-[#1D5F75]">
             De la commande à la livraison
           </h3>
-          <p className="text-[#3D4F6F] mb-8 max-w-2xl text-base">
+          <p className="text-[#3D5A6A] mb-8 max-w-2xl text-base">
             Smile Up s&apos;appuie sur les dernières technologies pour offrir un service fluide et efficace. L&apos;objectif : vous simplifier la vie et vous permettre d&apos;avancer sereinement dans vos plans de traitement.
           </p>
 
@@ -113,11 +113,11 @@ const Intro = () => {
           </div>
           
           <div className="mt-6 pt-5 border-t border-[#1D5F75]/8 space-y-3">
-            <div className="flex items-center gap-3 text-sm text-[#3D4F6F]">
+            <div className="flex items-center gap-3 text-sm text-[#3D5A6A]">
               <CheckCircle className="w-4 h-4 text-[#1D5F75] flex-shrink-0" strokeWidth={1.5} />
               <span>Envoyez vos fichiers STL directement depuis votre scanner — réception en temps réel.</span>
             </div>
-            <div className="flex items-center gap-3 text-sm text-[#3D4F6F]">
+            <div className="flex items-center gap-3 text-sm text-[#3D5A6A]">
               <Mail className="w-4 h-4 text-[#1D5F75] flex-shrink-0" strokeWidth={1.5} />
               <span>Pôle numérique : <a href="mailto:smile.up045@gmail.com" className="font-medium text-[#1D5F75] hover:text-[#C5A572] transition-colors">smile.up045@gmail.com</a></span>
             </div>
@@ -144,7 +144,7 @@ const Intro = () => {
                   100% Fabriqué<br />en France
                 </h3>
                 
-                <p className="text-[#3D4F6F] text-base md:text-lg mb-8 max-w-xl leading-relaxed">
+                <p className="text-[#3D5A6A] text-base md:text-lg mb-8 max-w-xl leading-relaxed">
                   Chaque appareil est entièrement conçu et fabriqué dans notre laboratoire à <strong className="font-medium text-[#1D5F75]">Ingré (45)</strong>, sans aucune sous-traitance.
                 </p>
 
