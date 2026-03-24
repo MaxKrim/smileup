@@ -97,13 +97,13 @@ const Intro = () => {
             
             <div className="flex items-center gap-3 flex-wrap">
               {[
-                { src: "/logos/itero.webp", alt: "iTero" },
-                { src: "/logos/3shape.png", alt: "3Shape" },
-                { src: "/logos/medit.png", alt: "Medit" },
-                { src: "/logos/carestream.webp", alt: "Carestream Dental" },
+                { src: "/logos/itero.webp", alt: "iTero", size: "h-7" },
+                { src: "/logos/3shape.png", alt: "3Shape", size: "h-7" },
+                { src: "/logos/medit.png", alt: "Medit", size: "h-10" },
+                { src: "/logos/carestream.webp", alt: "Carestream Dental", size: "h-10" },
               ].map((logo) => (
-                <div key={logo.alt} className="bg-white rounded-md h-12 px-5 border border-[#46aac9]/10 flex items-center justify-center transition-all duration-300 hover:border-[#46aac9]/30 hover:shadow-sm">
-                  <img src={logo.src} alt={logo.alt} className="h-7 w-auto object-contain" />
+                <div key={logo.alt} className="bg-white rounded-md h-14 px-5 border border-[#46aac9]/10 flex items-center justify-center transition-all duration-300 hover:border-[#46aac9]/30 hover:shadow-sm">
+                  <img src={logo.src} alt={logo.alt} className={`${logo.size} w-auto object-contain`} />
                 </div>
               ))}
             </div>
