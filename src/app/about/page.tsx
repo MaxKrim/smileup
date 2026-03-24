@@ -5,12 +5,12 @@ import Link from 'next/link';
 
 export default function AboutPage() {
   const partners = [
-    { name: "Leone", logo: "/logos/leone.svg" },
-    { name: "Dentaurum", logo: "/logos/dentaurum.svg" },
-    { name: "Henry Schein", logo: "/logos/henry-schein.svg" },
+    { name: "Leone", logo: "/logos/leone.png" },
+    { name: "Dentaurum", logo: "/logos/dentaurum.png" },
+    { name: "Henry Schein", logo: "/logos/henry-schein.png" },
     { name: "CAP Dentaire", logo: "/logos/cap-dentaire.svg" },
-    { name: "Pul Concept", logo: "/logos/pul-concept.svg" },
-    { name: "Scheu Dental", logo: "/logos/scheu-dental.svg" },
+    { name: "Pul Concept", logo: "/logos/pul-concept.png" },
+    { name: "Scheu Dental", logo: "/logos/scheu-dental.png" },
   ];
 
   return (
@@ -172,7 +172,7 @@ export default function AboutPage() {
                     key={partner.name}
                     className="bg-white rounded-lg border border-[#46aac9]/15 h-24 flex items-center justify-center px-4 hover:shadow-md hover:-translate-y-0.5 transition-all"
                   >
-                    <span className="text-sm font-semibold text-[#1D5F75] text-center tracking-wide">{partner.name}</span>
+                    <img src={partner.logo} alt={partner.name} className="h-10 w-auto object-contain" />
                   </div>
                 ))}
               </div>
