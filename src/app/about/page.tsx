@@ -5,12 +5,12 @@ import Link from 'next/link';
 
 export default function AboutPage() {
   const partners = [
-    { name: "Leone", logo: "/logos/leone.png" },
-    { name: "Dentaurum", logo: "/logos/dentaurum.png" },
-    { name: "Henry Schein", logo: "/logos/henry-schein.png" },
-    { name: "CAP Dentaire", logo: "/logos/cap-dentaire.svg" },
-    { name: "Pul Concept", logo: "/logos/pul-concept.png" },
-    { name: "Scheu Dental", logo: "/logos/scheu-dental.png" },
+    { name: "Leone", logo: "/logos/leone.png", size: "h-10" },
+    { name: "Dentaurum", logo: "/logos/dentaurum.png", size: "h-20" },
+    { name: "Henry Schein", logo: "/logos/henry-schein.png", size: "h-10" },
+    { name: "CAP Dentaire", logo: "/logos/cap-dentaire.svg", size: "h-10" },
+    { name: "Pul Concept", logo: "/logos/pul-concept.png", size: "h-10" },
+    { name: "Scheu Dental", logo: "/logos/scheu-dental.png", size: "h-10" },
   ];
 
   return (
@@ -172,7 +172,7 @@ export default function AboutPage() {
                     key={partner.name}
                     className="bg-white rounded-lg border border-[#46aac9]/15 h-24 flex items-center justify-center px-4 hover:shadow-md hover:-translate-y-0.5 transition-all"
                   >
-                    <img src={partner.logo} alt={partner.name} className="h-10 w-auto object-contain" />
+                    <img src={partner.logo} alt={partner.name} className={`${partner.size} w-auto object-contain`} />
                   </div>
                 ))}
               </div>
