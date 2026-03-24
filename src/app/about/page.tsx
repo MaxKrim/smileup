@@ -10,7 +10,7 @@ export default function AboutPage() {
     { name: "Henry Schein", logo: "/logos/henry-schein.png", size: "h-10" },
     { name: "CAP Dentaire", logo: "/logos/cap-dentaire.svg", size: "h-10" },
     { name: "Pul Concept", logo: "/logos/pul-concept.png", size: "h-10" },
-    { name: "Scheu Dental", logo: "/logos/scheu-dental.png", size: "h-10" },
+    { name: "Scheu Dental", logo: "/logos/scheu-dental.svg", size: "h-10" },
   ];
 
   return (
