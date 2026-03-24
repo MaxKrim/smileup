@@ -6,8 +6,8 @@ import Link from 'next/link';
 export default function AboutPage() {
   const partners = [
     { name: "Leone", logo: "/logos/leone.png", size: "h-20" },
-    { name: "Dentaurum", logo: "/logos/dentaurum.png", size: "h-20" },
-    { name: "Henry Schein", logo: "/logos/henry-schein.png", size: "h-20" },
+    { name: "Dentaurum", logo: "/logos/dentaurum.png", size: "h-[68px]" },
+    { name: "Henry Schein", logo: "/logos/henry-schein.png", size: "h-[68px]" },
     { name: "CAP Dentaire", logo: "/logos/cap-dentaire.svg", size: "h-20" },
     { name: "Pul Concept", logo: "/logos/pul-concept.png", size: "h-20" },
     { name: "Scheu Dental", logo: "/logos/scheu-dental.svg", size: "h-20" },
