@@ -2,13 +2,13 @@ import React from 'react';
 
 const PRACTITIONER_TYPES = [
   { title: "Orthodontistes", abbr: "ODF" },
-  { title: "Dentistes", abbr: "DDS" },
   { title: "Chirurgiens-Dentistes", abbr: "CD" },
+  { title: "Orthopédie Dento-Faciale", abbr: "ODF" },
+  { title: "Cabinets Numériques", abbr: "NUM" },
+  { title: "Précision Technique", abbr: "PRO" },
+  { title: "Collaboration Durable", abbr: "COL" },
   { title: "Orthodontistes", abbr: "ODF" },
-  { title: "Dentistes", abbr: "DDS" },
   { title: "Chirurgiens-Dentistes", abbr: "CD" },
-  { title: "Orthodontistes", abbr: "ODF" },
-  { title: "Dentistes", abbr: "DDS" },
 ];
 
 const PractitionerTrack = () => (
@@ -42,13 +42,13 @@ const BrandsMarquee = () => {
             <div className="mx-auto px-6 md:px-12 max-w-7xl w-full">
                 <span className="text-xs font-medium tracking-widest uppercase text-[#E8734A] mb-4 block">Confiance</span>
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[-0.03em] leading-none mb-5 font-display text-[#1D5F75]">
-                    Des praticiens qui me font confiance.
+                    Des praticiens qui nous font confiance.
                 </h2>
                 <p className="text-base md:text-lg text-[#3D4F6F] max-w-2xl mb-10">
-                    Je travaille avec des orthodontistes, dentistes et chirurgiens-dentistes exigeants qui recherchent une qualité de travail irréprochable et un partenaire fiable pour leurs patients.
+                    Nous collaborons avec des orthodontistes et chirurgiens-dentistes attentifs à la précision technique, à la fiabilité des dispositifs et à la qualité de prise en charge de leurs patients.
                 </p>
             </div>
-            
+
             <div className="flex animate-marquee">
                 <PractitionerTrack />
                 <PractitionerTrack />

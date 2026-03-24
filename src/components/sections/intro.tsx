@@ -91,7 +91,7 @@ const Intro = () => {
                 Compatible avec les leaders du marché
               </h4>
               <p className="text-[#5A7A8A] text-sm md:text-base">
-                Réception directe de vos empreintes numériques depuis les systèmes les plus utilisés au monde.
+                Réception directe de vos empreintes numériques depuis les principales solutions de scan intraoral.
               </p>
             </div>
             
