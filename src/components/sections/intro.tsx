@@ -95,20 +95,39 @@ const Intro = () => {
               </p>
             </div>
             
-            <div className="flex items-center gap-4 flex-wrap">
-              {[
-                { src: "/logos/3shape.svg", alt: "3Shape" },
-                { src: "/logos/itero.svg", alt: "iTero" },
-                { src: "/logos/medit.svg", alt: "Medit" },
-                { src: "/logos/carestream.svg", alt: "Carestream Dental" }
-              ].map((logo) => (
-                <div key={logo.alt} className="bg-white rounded-md h-12 px-5 border border-[#46aac9]/10 flex items-center justify-center transition-all duration-300 hover:border-[#46aac9]/30 hover:shadow-sm">
-                  <img
-                    src={logo.src}
-                    alt={logo.alt}
-                    className="h-7 w-auto object-contain" />
-                </div>
-              ))}
+            <div className="flex items-center gap-3 flex-wrap">
+              {/* iTero */}
+              <div className="bg-white rounded-md h-12 px-5 border border-[#46aac9]/10 flex items-center justify-center transition-all duration-300 hover:border-[#46aac9]/30 hover:shadow-sm">
+                <svg height="22" viewBox="0 0 120 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="iTero">
+                  <rect x="0" y="4" width="5" height="5" fill="#00BFFF"/>
+                  <text x="10" y="28" fontFamily="Arial, sans-serif" fontSize="26" fontWeight="400" fill="#2b2b2b" letterSpacing="-1">iTero</text>
+                  <text x="108" y="16" fontFamily="Arial, sans-serif" fontSize="10" fill="#2b2b2b">®</text>
+                </svg>
+              </div>
+              {/* 3shape */}
+              <div className="bg-white rounded-md h-12 px-5 border border-[#46aac9]/10 flex items-center justify-center transition-all duration-300 hover:border-[#46aac9]/30 hover:shadow-sm">
+                <svg height="20" viewBox="0 0 130 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="3shape">
+                  <text x="0" y="24" fontFamily="Arial, sans-serif" fontSize="22" fontWeight="300" fill="#1a1a1a" letterSpacing="-0.5">3shape</text>
+                  <polygon points="115,4 125,4 120,12" fill="#e63946"/>
+                </svg>
+              </div>
+              {/* Medit */}
+              <div className="bg-white rounded-md h-12 px-5 border border-[#46aac9]/10 flex items-center justify-center transition-all duration-300 hover:border-[#46aac9]/30 hover:shadow-sm">
+                <svg height="22" viewBox="0 0 100 30" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Medit">
+                  <text x="0" y="24" fontFamily="Arial, sans-serif" fontSize="26" fontWeight="700" fill="#1a1aff" letterSpacing="1">MEDIT</text>
+                </svg>
+              </div>
+              {/* Carestream Dental */}
+              <div className="bg-white rounded-md h-12 px-5 border border-[#46aac9]/10 flex items-center justify-center transition-all duration-300 hover:border-[#46aac9]/30 hover:shadow-sm">
+                <svg height="24" viewBox="0 0 160 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Carestream Dental">
+                  <svg x="0" y="4" width="20" height="20" viewBox="0 0 20 20">
+                    <path d="M10 2 L18 10 L10 18 L2 10 Z" fill="none" stroke="#f0b429" strokeWidth="2"/>
+                    <path d="M10 5 L15 10 L10 15 L5 10 Z" fill="#f0b429"/>
+                  </svg>
+                  <text x="24" y="18" fontFamily="Arial, sans-serif" fontSize="13" fontWeight="600" fill="#2b2b2b">Carestream</text>
+                  <text x="24" y="30" fontFamily="Arial, sans-serif" fontSize="9" fontWeight="400" fill="#2b2b2b" letterSpacing="3">DENTAL</text>
+                </svg>
+              </div>
             </div>
           </div>
           
