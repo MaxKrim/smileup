@@ -7,7 +7,7 @@ export default function AboutPage() {
   const partners = [
     { name: "Leone", logo: "/logos/leone.png", size: "h-[57px]" },
     { name: "Dentaurum", logo: "/logos/dentaurum.png", size: "h-[74px]" },
-    { name: "Henry Schein", logo: "/logos/henry-schein.png", size: "h-[57px]" },
+    { name: "Henry Schein", logo: "/logos/henry-schein.png", size: "h-[74px]" },
     { name: "CAP Dentaire", logo: "/logos/cap-dentaire.svg", size: "h-[57px]" },
     { name: "Pul Concept", logo: "/logos/pul-concept.png", size: "h-[57px]" },
     { name: "Scheu Dental", logo: "/logos/scheu-dental.svg", size: "h-[57px]" },
