@@ -170,19 +170,9 @@ export default function AboutPage() {
                 {partners.map((partner) => (
                   <div
                     key={partner.name}
-                    className="bg-white rounded-lg border border-[#46aac9]/15 h-24 flex flex-col items-center justify-center gap-2 px-4 hover:shadow-md hover:-translate-y-0.5 transition-all"
+                    className="bg-white rounded-lg border border-[#46aac9]/15 h-24 flex items-center justify-center px-4 hover:shadow-md hover:-translate-y-0.5 transition-all"
                   >
-                    <img
-                      src={partner.logo}
-                      alt={partner.name}
-                      className="h-8 w-auto object-contain"
-                      onError={(e) => {
-                        (e.target as HTMLImageElement).style.display = 'none';
-                        (e.target as HTMLImageElement).nextElementSibling?.classList.remove('hidden');
-                      }}
-                    />
-                    <span className="text-xs font-medium text-[#1D5F75] text-center hidden">{partner.name}</span>
-                    <span className="text-[11px] text-[#5A7A8A] text-center font-medium">{partner.name}</span>
+                    <span className="text-sm font-semibold text-[#1D5F75] text-center tracking-wide">{partner.name}</span>
                   </div>
                 ))}
               </div>
