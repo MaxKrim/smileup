@@ -7,20 +7,32 @@ import { ArrowUpRight, ArrowRight } from 'lucide-react';
 type WorkCardProps = {
   title: string;
   label: string;
-  image: string;
+  image?: string;
+  video?: string;
   href: string;
 };
 
-const WorkCard = ({ title, label, image, href }: WorkCardProps) => {
+const WorkCard = ({ title, label, image, video, href }: WorkCardProps) => {
   return (
     <Link href={href} legacyBehavior>
       <a className="group flex flex-col overflow-hidden rounded-lg bg-white border border-[#46aac9]/12 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
         <div className="relative aspect-[3/4] w-full overflow-hidden">
-          <img 
-            src={image} 
-            alt={label}
-            className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-          />
+          {video ? (
+            <video
+              src={video}
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="absolute inset-0 h-full w-full object-cover"
+            />
+          ) : (
+            <img
+              src={image}
+              alt={label}
+              className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+          )}
           <div className="absolute inset-0 bg-gradient-to-t from-[#1D5F75]/40 to-transparent"></div>
           <div className="absolute top-5 right-5 z-10 flex size-10 items-center justify-center rounded-md bg-white text-[#1D5F75] transition-all duration-300 group-hover:bg-[#1D5F75] group-hover:text-white">
             <ArrowUpRight strokeWidth={1.5} className="size-5" />
@@ -39,13 +51,13 @@ const WorkCard = ({ title, label, image, href }: WorkCardProps) => {
 
 const worksData: WorkCardProps[] = [
   {
-    title: "Pr\u00e9cision technique pour r\u00e9sultats optimaux",
+    title: "Précision technique pour résultats optimaux",
     label: "Appareils Fonctionnels",
-    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/1b2e0205-1fa2-45bd-8c45-4d4c1200c30e/generated_images/professional-orthodontic-laboratory-work-00dbade2-20251027142027.jpg",
+    video: "/videos/portfolio-1.mp4",
     href: "#contact"
   },
   {
-    title: "Innovation num\u00e9rique et expertise artisanale",
+    title: "Innovation numérique et expertise artisanale",
     label: "Gamme PUL",
     image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/1b2e0205-1fa2-45bd-8c45-4d4c1200c30e/generated_images/modern-digital-orthodontic-cad-cam-syste-941a755d-20251027142027.jpg",
     href: "#contact"
