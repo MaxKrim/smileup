@@ -75,7 +75,6 @@ const Hero = () => {
                 muted
                 playsInline
                 className="absolute top-0 left-0 w-full h-full object-cover" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
               <div className="absolute bottom-5 left-5 right-5 z-10">
                 <span className="bg-white text-[#1D5F75] text-xs font-medium px-4 py-2 rounded-md inline-block tracking-wide uppercase">
                   Sans sous-traitance
