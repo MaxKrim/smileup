@@ -34,7 +34,7 @@ const expertisesData = [
     title: "Appareils fonctionnels",
     subtitle: "Guidage et r\u00e9\u00e9quilibrage",
     description: "La conception des appareils fonctionnels vise \u00e0 orienter les fonctions et la croissance, en coh\u00e9rence avec le diagnostic et le plan de traitement.",
-    imageSrc: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/8A1B1AAB-82BF-4721-929A-E6D1ADCCE6A8-1761572496300.jpeg?width=8000&height=8000&resize=contain",
+    imageSrc: "/images/labo-2.jpg",
     buttonText: "En savoir plus",
     buttonLink: "#contact",
     badge: "Sur mesure"
