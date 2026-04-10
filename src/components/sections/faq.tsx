@@ -30,7 +30,7 @@ const faqs = [
   },
   {
     question: "Vous travaillez avec quels types de praticiens ?",
-    answer: "Smile Up est un laboratoire exclusivement dédié à l'orthodontie. Nous travaillons avec des orthodontistes, des chirurgiens-dentistes pratiquant l'ODF, et des pédiatres dentaires. Nous n'acceptons pas les commandes de particuliers.",
+    answer: "Smile Up travaille avec les orthodontistes, les chirurgiens-dentistes, les dentistes pratiquant l'orthodontie et les pédiatres dentaires. Nous n'acceptons pas les commandes de particuliers.",
   },
   {
     question: "Pouvez-vous gérer des cas CFAO complexes ?",

@@ -3,12 +3,12 @@ import React from 'react';
 const PRACTITIONER_TYPES = [
   { title: "Orthodontistes", abbr: "ODF" },
   { title: "Chirurgiens-Dentistes", abbr: "CD" },
+  { title: "Dentistes", abbr: "DDS" },
   { title: "Orthopédie Dento-Faciale", abbr: "ODF" },
   { title: "Cabinets Numériques", abbr: "NUM" },
   { title: "Précision Technique", abbr: "PRO" },
   { title: "Collaboration Durable", abbr: "COL" },
   { title: "Orthodontistes", abbr: "ODF" },
-  { title: "Chirurgiens-Dentistes", abbr: "CD" },
 ];
 
 const PractitionerTrack = () => (
@@ -45,7 +45,7 @@ const BrandsMarquee = () => {
                     Des praticiens qui nous font confiance.
                 </h2>
                 <p className="text-base md:text-lg text-[#3D4F6F] max-w-2xl mb-10">
-                    Nous collaborons avec des orthodontistes et chirurgiens-dentistes attentifs à la précision technique, à la fiabilité des dispositifs et à la qualité de prise en charge de leurs patients.
+                    Nous collaborons avec des orthodontistes, chirurgiens-dentistes et dentistes attentifs à la précision technique, à la fiabilité des dispositifs et à la qualité de prise en charge de leurs patients.
                 </p>
             </div>
 

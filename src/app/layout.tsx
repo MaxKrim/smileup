@@ -6,7 +6,7 @@ import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Smile Up — Laboratoire d'Orthodontie | Ingré, Loiret (45)",
-  description: "Smile Up, laboratoire d'orthodontie exclusif à Ingré (45). Appareils fixes, amovibles, fonctionnels, gouttières thermoformées, gamme PUL et CFAO — 100% fabriqués en France. Partenaire des orthodontistes et chirurgiens-dentistes du Loiret et de la région Centre-Val de Loire.",
+  description: "Smile Up, laboratoire d'orthodontie exclusif à Ingré (45). Appareils fixes, amovibles, fonctionnels, gouttières thermoformées, gamme PUL et CFAO — 100% fabriqués en France. Partenaire des orthodontistes, chirurgiens-dentistes et dentistes du Loiret et de la région Centre-Val de Loire.",
   keywords: [
     "smileup45", "smile up orthodontie", "smile up laboratoire",
     "laboratoire orthodontie Ingré", "laboratoire orthodontie Loiret",
@@ -27,6 +27,8 @@ export const metadata: Metadata = {
     "Jessica Lerandy Estevez", "smile.up045",
     "laboratoire sans sous-traitance", "made in France orthodontie",
     "labo orthodontie partenaire praticien",
+    "labo dentaire pour dentiste",
+    "laboratoire orthodontie pour dentiste généraliste",
     "livraison rapide appareils orthodontiques",
   ],
   authors: [{ name: "Smile Up", url: "https://smileup45.fr" }],
@@ -35,7 +37,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://smileup45.fr" },
   openGraph: {
     title: "Smile Up — Laboratoire d'Orthodontie | Ingré, Loiret (45)",
-    description: "Appareils orthodontiques sur mesure, 100% fabriqués en France à Ingré (Loiret). Partenaire de confiance des orthodontistes et chirurgiens-dentistes — livraison J+1.",
+    description: "Appareils orthodontiques sur mesure, 100% fabriqués en France à Ingré (Loiret). Partenaire de confiance des orthodontistes, chirurgiens-dentistes et dentistes — livraison J+1.",
     url: "https://smileup45.fr",
     siteName: "Smile Up",
     locale: "fr_FR",
@@ -45,7 +47,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Smile Up — Laboratoire d'Orthodontie | Ingré (45)",
-    description: "Appareils orthodontiques sur mesure, 100% fabriqués en France. Partenaire des orthodontistes du Loiret.",
+    description: "Appareils orthodontiques sur mesure, 100% fabriqués en France. Partenaire des orthodontistes, dentistes et chirurgiens-dentistes du Loiret.",
     images: ["/images/labo-1.jpg"],
   },
   robots: {
@@ -187,7 +189,7 @@ const jsonLdFAQ = {
       "name": "Vous travaillez avec quels types de praticiens ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Smile Up est exclusivement dédié aux professionnels de l'orthodontie : orthodontistes, chirurgiens-dentistes pratiquant l'ODF et pédiatres dentaires. Nous n'acceptons pas les commandes de particuliers."
+        "text": "Smile Up travaille avec les orthodontistes, chirurgiens-dentistes, dentistes pratiquant l'orthodontie et pédiatres dentaires. Nous n'acceptons pas les commandes de particuliers."
       }
     }
   ]
