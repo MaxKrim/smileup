@@ -5,94 +5,135 @@ import ErrorReporter from "@/components/ErrorReporter";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Smile Up — Laboratoire d'Orthodontie | Ingré (45)",
-  description: "Smile Up, laboratoire orthodontique situé à Ingré dans le Loiret (45). Appareils fixes, amovibles, fonctionnels, gouttières thermoformées et gamme PUL — 100% fabriqués en France. Partenaire des orthodontistes et chirurgiens-dentistes.",
+  title: "Smile Up — Laboratoire d'Orthodontie | Ingré, Loiret (45)",
+  description: "Smile Up, laboratoire d'orthodontie exclusif à Ingré (45). Appareils fixes, amovibles, fonctionnels, gouttières thermoformées, gamme PUL et CFAO — 100% fabriqués en France. Partenaire des orthodontistes et chirurgiens-dentistes du Loiret et de la région Centre-Val de Loire.",
   keywords: [
-    "smileup45",
-    "smile up",
-    "laboratoire orthodontie",
-    "laboratoire dentaire Ingré",
-    "laboratoire dentaire Loiret",
-    "laboratoire dentaire 45",
-    "orthodontie Orléans",
+    "smileup45", "smile up orthodontie", "smile up laboratoire",
+    "laboratoire orthodontie Ingré", "laboratoire orthodontie Loiret",
+    "laboratoire orthodontie 45", "laboratoire orthodontie Orléans",
+    "laboratoire orthodontie Centre-Val de Loire",
+    "laboratoire dentaire orthodontie France",
+    "prothésiste dentaire ODF", "orthésiste dentaire",
+    "orthopédie dento-faciale", "ODF laboratoire",
     "appareils orthodontiques sur mesure",
-    "gouttières thermoformées",
-    "appareil fonctionnel orthodontie",
-    "PUL orthodontie",
-    "CFAO orthodontie",
-    "laboratoire dentaire France",
-    "prothésiste dentaire ODF",
-    "Jessica Lerandy Estevez",
+    "appareils fixes orthodontie", "appareils amovibles orthodontie",
+    "appareils fonctionnels orthodontie",
+    "gouttières thermoformées laboratoire",
+    "contention orthodontique", "gouttière contention",
+    "gamme PUL orthodontie", "propulseur universel light",
+    "CFAO orthodontie", "bagues sur mesure orthodontie",
+    "scan intraoral STL laboratoire", "iTero laboratoire",
+    "3shape laboratoire", "Medit laboratoire",
+    "Jessica Lerandy Estevez", "smile.up045",
+    "laboratoire sans sous-traitance", "made in France orthodontie",
+    "labo orthodontie partenaire praticien",
+    "livraison rapide appareils orthodontiques",
   ],
   authors: [{ name: "Smile Up", url: "https://smileup45.fr" }],
   creator: "Smile Up",
   metadataBase: new URL("https://smileup45.fr"),
-  alternates: {
-    canonical: "https://smileup45.fr",
-  },
+  alternates: { canonical: "https://smileup45.fr" },
   openGraph: {
-    title: "Smile Up — Laboratoire d'Orthodontie | Ingré (45)",
-    description: "Appareils orthodontiques sur mesure, 100% fabriqués en France à Ingré (Loiret). Partenaire de confiance des orthodontistes et chirurgiens-dentistes.",
+    title: "Smile Up — Laboratoire d'Orthodontie | Ingré, Loiret (45)",
+    description: "Appareils orthodontiques sur mesure, 100% fabriqués en France à Ingré (Loiret). Partenaire de confiance des orthodontistes et chirurgiens-dentistes — livraison J+1.",
     url: "https://smileup45.fr",
     siteName: "Smile Up",
     locale: "fr_FR",
     type: "website",
+    images: [{ url: "/images/labo-1.jpg", width: 1200, height: 630, alt: "Smile Up — Laboratoire d'Orthodontie à Ingré" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Smile Up — Laboratoire d'Orthodontie",
-    description: "Appareils orthodontiques sur mesure, 100% fabriqués en France à Ingré (Loiret).",
+    title: "Smile Up — Laboratoire d'Orthodontie | Ingré (45)",
+    description: "Appareils orthodontiques sur mesure, 100% fabriqués en France. Partenaire des orthodontistes du Loiret.",
+    images: ["/images/labo-1.jpg"],
   },
   robots: {
     index: true,
     follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-snippet": -1,
-    },
+    googleBot: { index: true, follow: true, "max-snippet": -1, "max-image-preview": "large", "max-video-preview": -1 },
   },
 };
 
-const jsonLd = {
+const jsonLdOrganization = {
   "@context": "https://schema.org",
-  "@type": "MedicalBusiness",
+  "@type": ["MedicalBusiness", "LocalBusiness"],
+  "@id": "https://smileup45.fr/#organization",
   "name": "Smile Up",
-  "alternateName": "smileup45",
-  "description": "Laboratoire d'orthodontie spécialisé, 100% fabriqué en France. Appareils fixes, amovibles, fonctionnels et gouttières thermoformées.",
+  "alternateName": ["smileup45", "smile up orthodontie", "laboratoire Smile Up"],
+  "description": "Laboratoire d'orthodontie exclusif situé à Ingré dans le Loiret. Spécialisé en orthopédie dento-faciale, Smile Up fabrique 100% en France des appareils fixes, amovibles, fonctionnels, gouttières thermoformées et la gamme PUL.",
   "url": "https://smileup45.fr",
   "telephone": "+33660497925",
   "email": "smile.up045@gmail.com",
+  "image": "https://smileup45.fr/images/labo-1.jpg",
+  "logo": "https://smileup45.fr/icon.svg",
   "address": {
     "@type": "PostalAddress",
+    "streetAddress": "Ingré",
     "addressLocality": "Ingré",
     "postalCode": "45140",
     "addressCountry": "FR",
     "addressRegion": "Loiret"
   },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "addressCountry": "FR"
-  },
-  "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      "opens": "08:00",
-      "closes": "18:00"
-    }
+  "geo": { "@type": "GeoCoordinates", "latitude": 47.9167, "longitude": 1.8333 },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "08:00",
+    "closes": "18:00"
+  }],
+  "priceRange": "Sur devis",
+  "currenciesAccepted": "EUR",
+  "paymentAccepted": "Virement bancaire",
+  "areaServed": [
+    { "@type": "AdministrativeArea", "name": "Loiret" },
+    { "@type": "AdministrativeArea", "name": "Centre-Val de Loire" },
+    { "@type": "Country", "name": "France" }
   ],
   "founder": {
     "@type": "Person",
     "name": "Jessica Lerandy Estevez",
-    "jobTitle": "Orthésiste dentaire spécialisée ODF"
+    "jobTitle": "Orthésiste dentaire spécialisée ODF",
+    "worksFor": { "@id": "https://smileup45.fr/#organization" }
   },
-  "areaServed": {
-    "@type": "Country",
-    "name": "France"
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Gamme Smile Up",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Appareils fixes orthodontiques", "description": "Quad Helix, mainteneurs d'espace, soudure laser — délai 7 à 10 jours" }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Appareils amovibles", "description": "Plaques Hawley, Vaugeois, systèmes d'expansion — personnalisables" }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Appareils fonctionnels", "description": "Chabre, Lautrou, Klammt, PUL, ELN, Bionator, pistes de Planas — délai ~15 jours" }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gamme PUL 2", "description": "Propulseur Universel Light 2 — conception 3D sur mesure — délai 15 à 20 jours" }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "CFAO orthodontique", "description": "Bagues sur mesure modélisées et fabriquées numériquement" }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gouttières thermoformées", "description": "Contentions, éclaircissement, sport — délai 10 jours" }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Urgences", "description": "Traitement prioritaire — nous consulter" }}
+    ]
   },
-  "sameAs": [
-    "https://smileup45.fr"
+  "sameAs": ["https://smileup45.fr", "https://www.smileup45.fr"]
+};
+
+const jsonLdWebSite = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://smileup45.fr/#website",
+  "url": "https://smileup45.fr",
+  "name": "Smile Up — Laboratoire d'Orthodontie",
+  "description": "Site officiel du laboratoire d'orthodontie Smile Up à Ingré (Loiret)",
+  "inLanguage": "fr-FR",
+  "publisher": { "@id": "https://smileup45.fr/#organization" },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://smileup45.fr/?s={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+};
+
+const jsonLdBreadcrumb = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://smileup45.fr" },
+    { "@type": "ListItem", "position": 2, "name": "Le Laboratoire", "item": "https://smileup45.fr/about" }
   ]
 };
 
@@ -104,10 +145,14 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdOrganization) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdWebSite) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumb) }} />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <meta name="geo.region" content="FR-45" />
+        <meta name="geo.placename" content="Ingré, Loiret" />
+        <meta name="geo.position" content="47.9167;1.8333" />
+        <meta name="ICBM" content="47.9167, 1.8333" />
       </head>
       <body className="antialiased overflow-x-hidden">
         <Script

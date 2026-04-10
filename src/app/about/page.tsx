@@ -1,7 +1,30 @@
+import type { Metadata } from 'next';
 import Navigation from '@/components/sections/navigation';
 import Footer from '@/components/sections/footer';
 import { ArrowRight, Award, Shield, Zap } from 'lucide-react';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: "Le Laboratoire Smile Up — Jessica Lerandy Estevez | ODF Ingré (45)",
+  description: "Découvrez Smile Up, laboratoire d'orthodontie fondé par Jessica Lerandy Estevez, spécialisée en Orthopédie Dento-Faciale. Situé à Ingré (Loiret), Smile Up fabrique 100% en France des orthèses sur mesure pour les praticiens exigeants.",
+  keywords: [
+    "Jessica Lerandy Estevez", "fondatrice Smile Up",
+    "orthésiste dentaire ODF", "prothésiste dentaire Loiret",
+    "laboratoire orthodontie Ingré", "orthopédie dento-faciale Loiret",
+    "qui est Smile Up", "laboratoire ODF France",
+    "partenaire orthodontiste", "labo dentaire Centre-Val de Loire",
+    "Leone partenaire", "Dentaurum", "Henry Schein", "Scheu Dental",
+  ],
+  alternates: { canonical: "https://smileup45.fr/about" },
+  openGraph: {
+    title: "Le Laboratoire Smile Up — Jessica Lerandy Estevez",
+    description: "Laboratoire d'orthodontie fondé par Jessica Lerandy Estevez à Ingré (45). Spécialisée ODF, 100% fabriqué en France, sans sous-traitance.",
+    url: "https://smileup45.fr/about",
+    siteName: "Smile Up",
+    locale: "fr_FR",
+    type: "website",
+  },
+};
 
 export default function AboutPage() {
   const partners = [
