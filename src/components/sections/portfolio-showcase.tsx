@@ -59,7 +59,7 @@ const worksData: WorkCardProps[] = [
   {
     title: "Innovation numérique et expertise artisanale",
     label: "Gamme PUL",
-    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/1b2e0205-1fa2-45bd-8c45-4d4c1200c30e/generated_images/modern-digital-orthodontic-cad-cam-syste-941a755d-20251027142027.jpg",
+    video: "/videos/portfolio-2.mp4",
     href: "#contact"
   }
 ];
