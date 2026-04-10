@@ -69,7 +69,7 @@ const Hero = () => {
             {/* Case 4 - Vidéo + Sans sous-traitance */}
             <div className="relative w-full rounded-lg overflow-hidden min-h-[200px] md:min-h-[240px] lg:min-h-[260px] transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
               <video
-                src="/videos/hero-video.mp4"
+                src="/videos/hero-video.mp4?v=2"
                 autoPlay
                 loop
                 muted
