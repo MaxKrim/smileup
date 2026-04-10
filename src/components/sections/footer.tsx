@@ -55,7 +55,7 @@ export default function Footer() {
                   100% Fabriqué en France
                 </span>
                 <span className="border border-[#46aac9]/20 text-[#1D5F75] text-[11px] font-medium px-3 py-1 rounded-md tracking-wide uppercase">
-                  +13 ans d&apos;expérience
+                  +15 ans d&apos;expérience
                 </span>
             </div>
           </div>
