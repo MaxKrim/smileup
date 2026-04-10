@@ -133,7 +133,82 @@ const jsonLdBreadcrumb = {
   "@type": "BreadcrumbList",
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://smileup45.fr" },
-    { "@type": "ListItem", "position": 2, "name": "Le Laboratoire", "item": "https://smileup45.fr/about" }
+    { "@type": "ListItem", "position": 2, "name": "Nos Gammes", "item": "https://smileup45.fr/gammes" },
+    { "@type": "ListItem", "position": 3, "name": "Le Laboratoire", "item": "https://smileup45.fr/about" }
+  ]
+};
+
+const jsonLdFAQ = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Comment passer ma première commande chez Smile Up ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Contactez-nous par email à smile.up045@gmail.com ou par téléphone au 06 60 49 79 25. Nous vous guidons pas à pas : prescription, empreintes physiques ou numériques (STL), et suivi jusqu'à la livraison."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quels formats d'empreintes numériques acceptez-vous ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Smile Up est compatible avec iTero, 3Shape, Medit, Carestream Dental et Planmeca. Envoyez vos fichiers STL directement par email ou via les plateformes partenaires."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quels sont les délais de fabrication ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Contentions et réparations : 3 à 5 jours. Appareils fixes et amovibles : 7 à 10 jours. Gouttières thermoformées : 10 jours. Appareils fonctionnels : environ 15 jours. Gamme PUL : 15 à 20 jours. Urgences : traitement prioritaire, contactez-nous directement."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Est-ce que Smile Up sous-traite la fabrication ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Non. Chaque appareil est intégralement conçu et fabriqué dans notre laboratoire à Ingré (45), sans aucun prestataire extérieur, garantissant un contrôle qualité total."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Livrez-vous partout en France ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui. Livraison en France métropolitaine en J+1 via nos services de transport partenaires."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Vous travaillez avec quels types de praticiens ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Smile Up est exclusivement dédié aux professionnels de l'orthodontie : orthodontistes, chirurgiens-dentistes pratiquant l'ODF et pédiatres dentaires. Nous n'acceptons pas les commandes de particuliers."
+      }
+    }
+  ]
+};
+
+const jsonLdServiceCatalog = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "@id": "https://smileup45.fr/gammes#services",
+  "name": "Gammes Smile Up — Appareils orthodontiques sur mesure",
+  "description": "Catalogue complet des appareils orthodontiques fabriqués par le laboratoire Smile Up à Ingré (Loiret)",
+  "url": "https://smileup45.fr/gammes",
+  "numberOfItems": 7,
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "item": { "@type": "MedicalDevice", "name": "Appareils fixes orthodontiques", "description": "Quad Helix, mainteneurs d'espace, soudure laser — délai 7 à 10 jours", "url": "https://smileup45.fr/gammes#appareils-fixes" } },
+    { "@type": "ListItem", "position": 2, "item": { "@type": "MedicalDevice", "name": "Appareils amovibles orthodontiques", "description": "Plaques Hawley, Vaugeois, systèmes d'expansion — délai 7 à 10 jours", "url": "https://smileup45.fr/gammes#appareils-amovibles" } },
+    { "@type": "ListItem", "position": 3, "item": { "@type": "MedicalDevice", "name": "Appareils fonctionnels orthodontiques", "description": "Chabre, Lautrou, Klammt, ELN, Bionator, pistes de Planas — délai ~15 jours", "url": "https://smileup45.fr/gammes#appareils-fonctionnels" } },
+    { "@type": "ListItem", "position": 4, "item": { "@type": "MedicalDevice", "name": "Propulseur Universel Light (PUL)", "description": "Gamme PUL — conception 3D sur mesure — délai 15 à 20 jours", "url": "https://smileup45.fr/gammes#pul" } },
+    { "@type": "ListItem", "position": 5, "item": { "@type": "MedicalDevice", "name": "Appareils thermoformés", "description": "Contentions, éclaircissement, sport — thermoformage Biostar — délai 10 jours", "url": "https://smileup45.fr/gammes#thermoformes" } },
+    { "@type": "ListItem", "position": 6, "item": { "@type": "MedicalDevice", "name": "CFAO orthodontique", "description": "Bagues sur mesure modélisées et fabriquées numériquement", "url": "https://smileup45.fr/gammes#cfao" } },
+    { "@type": "ListItem", "position": 7, "item": { "@type": "MedicalDevice", "name": "Urgences orthodontiques", "description": "Traitement prioritaire — délai à convenir — contactez le laboratoire", "url": "https://smileup45.fr/#contact" } }
   ]
 };
 
@@ -148,6 +223,8 @@ export default function RootLayout({
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdOrganization) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdWebSite) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumb) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFAQ) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdServiceCatalog) }} />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <meta name="geo.region" content="FR-45" />
         <meta name="geo.placename" content="Ingré, Loiret" />

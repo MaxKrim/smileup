@@ -8,6 +8,7 @@ import ExpertisesSection from '@/components/sections/expertises';
 import PortfolioShowcase from '@/components/sections/portfolio-showcase';
 import BrandsMarquee from '@/components/sections/brands-marquee';
 import CtaFinal from '@/components/sections/cta-final';
+import FaqSection from '@/components/sections/faq';
 import Footer from '@/components/sections/footer';
 import ContactModal from '@/components/modals/contact-modal';
 import Preloader from '@/components/ui/preloader';
@@ -26,6 +27,7 @@ export default function HomePage() {
           <ExpertisesSection />
           <PortfolioShowcase />
           <BrandsMarquee />
+          <FaqSection />
           <CtaFinal />
         </main>
         <Footer />

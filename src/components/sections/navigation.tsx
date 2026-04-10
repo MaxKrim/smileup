@@ -54,7 +54,7 @@ export default function Navigation() {
   }, [isMenuOpen]);
 
   const navItems = [
-    { name: "Nos Gammes", href: "/#expertises" },
+    { name: "Nos Gammes", href: "/gammes" },
     { name: "Réalisations", href: "/#work" },
     { name: "Le Laboratoire", href: "/about" },
     { name: "Contact", href: "/#contact" }
