@@ -54,7 +54,7 @@ const expertisesData = [
     title: "Appareils thermoform\u00e9s",
     subtitle: "Contention / \u00c9claircissement / Sport",
     description: "La technique du thermoformage permet la r\u00e9alisation d\u2019appareils aux usages vari\u00e9s, offrant une grande libert\u00e9 d\u2019association avec d\u2019autres approches orthodontiques.",
-    imageSrc: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/1b2e0205-1fa2-45bd-8c45-4d4c1200c30e/visual-edit-uploads/1761570318948-74luo92m0o5.png",
+    imageSrc: "/images/labo-1.jpg",
     buttonText: "En savoir plus",
     buttonLink: "#contact",
     badge: "Thermoformage Biostar"
