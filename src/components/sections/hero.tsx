@@ -21,8 +21,13 @@ const Hero = () => {
               Votre Laboratoire<br />d&apos;Orthodontie Exclusive.
             </h1>
             <div className="mt-8 max-w-2xl">
-              <p className="text-base md:text-lg text-[#3D5A6A] leading-relaxed">
-                Prothésiste dentaire diplômée en 2011, spécialisée en orthopédie dento-faciale. Un parcours dédié à l&apos;orthodontie, porté par l&apos;exigence et l&apos;engagement autour du traitement.
+              <p className="text-xl md:text-2xl lg:text-3xl font-light tracking-wide text-[#3D5A6A] leading-snug">
+                La qualité n&apos;est pas{' '}
+                <span className="relative inline-block">
+                  <span className="relative z-10 font-semibold text-[#1D5F75]">une question</span>
+                  <span className="absolute bottom-0.5 left-0 w-full h-[3px] bg-[#E8734A] rounded-full"></span>
+                </span>
+                {' '}de chance.
               </p>
             </div>
           </div>
