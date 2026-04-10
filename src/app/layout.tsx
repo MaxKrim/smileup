@@ -34,6 +34,11 @@ export const metadata: Metadata = {
   authors: [{ name: "Smile Up", url: "https://smileup45.fr" }],
   creator: "Smile Up",
   metadataBase: new URL("https://smileup45.fr"),
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
   alternates: { canonical: "https://smileup45.fr" },
   openGraph: {
     title: "Smile Up — Laboratoire d'Orthodontie | Ingré, Loiret (45)",
@@ -227,6 +232,9 @@ export default function RootLayout({
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumb) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFAQ) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdServiceCatalog) }} />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon.svg" />
+        <link rel="apple-touch-icon" href="/favicon.svg" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <meta name="geo.region" content="FR-45" />
         <meta name="geo.placename" content="Ingré, Loiret" />
