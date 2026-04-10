@@ -66,11 +66,14 @@ const Hero = () => {
               </div>
             </div>
 
-            {/* Case 4 - Photo + Sans sous-traitance */}
+            {/* Case 4 - Vidéo + Sans sous-traitance */}
             <div className="relative w-full rounded-lg overflow-hidden min-h-[200px] md:min-h-[240px] lg:min-h-[260px] transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-              <img
-                src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/1b2e0205-1fa2-45bd-8c45-4d4c1200c30e/visual-edit-uploads/1761569985153-11q58kayx5t.png"
-                alt="Laboratoire orthodontique moderne"
+              <video
+                src="/videos/hero-video.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
                 className="absolute top-0 left-0 w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
               <div className="absolute bottom-5 left-5 right-5 z-10">
