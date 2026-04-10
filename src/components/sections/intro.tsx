@@ -32,7 +32,7 @@ const Intro = () => {
                 href="/about"
                 className="group inline-flex items-center justify-center py-3 px-7 bg-[#1D5F75] rounded-md overflow-hidden font-medium text-sm tracking-wide transition-all duration-300 text-white hover:bg-[#2A7A95] shadow-md hover:shadow-lg">
                 <span className="flex items-center gap-2">
-                  <span>En savoir plus sur mon parcours</span>
+                  <span>En savoir plus sur Smile Up</span>
                   <ArrowRight size={14} />
                 </span>
               </Link>
