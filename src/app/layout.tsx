@@ -236,6 +236,8 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/favicon.svg" />
         <link rel="apple-touch-icon" href="/favicon.svg" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preload" as="video" href="/videos/hero-video.mp4" type="video/mp4" />
+        <link rel="dns-prefetch" href="https://slelguoygbfzlpylpxfs.supabase.co" />
         <meta name="geo.region" content="FR-45" />
         <meta name="geo.placename" content="Ingré, Loiret" />
         <meta name="geo.position" content="47.9167;1.8333" />

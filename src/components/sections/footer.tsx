@@ -105,7 +105,7 @@ export default function Footer() {
 
         <div className="border-t border-[#1D5F75]/8 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-[#5A7A8A] gap-4 text-center">
           <p>&copy; {new Date().getFullYear()} Smile UP Orthodontie &ndash; Jessica Lerandy Estevez &ndash; Loiret (45)</p>
-          <Link href="#" className="hover:text-[#E8734A] transition-colors">Mentions légales</Link>
+          <Link href="/mentions-legales" className="hover:text-[#E8734A] transition-colors">Mentions légales</Link>
         </div>
       </div>
     </footer>
