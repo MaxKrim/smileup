@@ -3,6 +3,8 @@ import "./globals.css";
 import VisualEditsMessenger from "../visual-edits/VisualEditsMessenger";
 import ErrorReporter from "@/components/ErrorReporter";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   title: "Smile Up — Laboratoire d'Orthodontie | Ingré, Loiret (45)",
@@ -266,6 +268,8 @@ export default function RootLayout({
           data-custom-data='{"appName": "YourApp", "version": "1.0.0", "greeting": "hi"}'
         />
         {children}
+        <Analytics />
+        <SpeedInsights />
         <VisualEditsMessenger />
       </body>
     </html>
