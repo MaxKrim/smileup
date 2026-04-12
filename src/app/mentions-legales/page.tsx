@@ -26,10 +26,12 @@ export default function MentionsLegalesPage() {
                 <h2 className="text-xl font-semibold text-[#1D5F75] mb-3">1. Éditeur du site</h2>
                 <p className="leading-relaxed">
                   Le site <strong>smileup45.fr</strong> est édité par :<br /><br />
-                  <strong>Smile Up</strong><br />
-                  Laboratoire d&apos;orthodontie<br />
+                  <strong>SMILE UP</strong><br />
+                  Laboratoire d&apos;orthodontie — Fabrication de matériel médico-chirurgical et dentaire<br />
                   Fondatrice : Jessica Lerandy Estevez<br />
                   Adresse : Ingré, 45140 Loiret, France<br />
+                  SIREN : 101 860 807<br />
+                  Code APE/NAF : 32.50A<br />
                   Email : <a href="mailto:smile.up045@gmail.com" className="text-[#46aac9] hover:underline">smile.up045@gmail.com</a><br />
                   Téléphone : 06 60 49 79 25
                 </p>
