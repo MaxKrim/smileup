@@ -33,7 +33,7 @@ export default function MentionsLegalesPage() {
                   SIREN : 101 860 807<br />
                   Code APE/NAF : 32.50A<br />
                   Email : <a href="mailto:smile.up045@gmail.com" className="text-[#46aac9] hover:underline">smile.up045@gmail.com</a><br />
-                  Téléphone : 06 60 49 79 25
+                  Téléphone : 07 77 99 53 15
                 </p>
               </section>
 

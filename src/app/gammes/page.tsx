@@ -253,7 +253,7 @@ export default function GammesPage() {
                 </div>
                 <div className="flex flex-col sm:flex-row gap-3 flex-shrink-0">
                   <a
-                    href="tel:+33660497925"
+                    href="tel:+33777995315"
                     className="inline-flex items-center justify-center gap-2 rounded-md bg-[#E8734A] text-white px-6 py-3 text-sm font-semibold transition-all hover:bg-[#d4623b] hover:shadow-lg whitespace-nowrap">
                     Appeler le labo
                   </a>
@@ -326,9 +326,9 @@ export default function GammesPage() {
                   smile.up045@gmail.com
                 </a>
                 <a
-                  href="tel:+33660497925"
+                  href="tel:+33777995315"
                   className="inline-flex items-center gap-2 rounded-md bg-[#E8734A] px-7 py-3.5 text-sm font-semibold text-white transition-all hover:bg-[#d4623b] hover:shadow-lg">
-                  06 60 49 79 25
+                  07 77 99 53 15
                 </a>
               </div>
             </div>

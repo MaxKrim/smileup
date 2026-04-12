@@ -6,7 +6,7 @@ import { ChevronDown } from 'lucide-react';
 const faqs = [
   {
     question: "Comment passer ma première commande chez Smile Up ?",
-    answer: "Il suffit de nous contacter par email à smile.up045@gmail.com ou par téléphone au 06 60 49 79 25. Nous vous guidons pas à pas : envoi de la prescription, prise d'empreintes (physiques ou numériques via votre scanner intraoral), et suivi du dossier jusqu'à la livraison.",
+    answer: "Il suffit de nous contacter par email à smile.up045@gmail.com ou par téléphone au 07 77 99 53 15. Nous vous guidons pas à pas : envoi de la prescription, prise d'empreintes (physiques ou numériques via votre scanner intraoral), et suivi du dossier jusqu'à la livraison.",
   },
   {
     question: "Quels formats d'empreintes numériques acceptez-vous ?",

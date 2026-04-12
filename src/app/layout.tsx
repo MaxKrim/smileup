@@ -74,7 +74,7 @@ const jsonLdOrganization = {
   "alternateName": ["smileup45", "smile up orthodontie", "laboratoire Smile Up"],
   "description": "Laboratoire d'orthodontie exclusif situé à Ingré dans le Loiret. Spécialisé en orthopédie dento-faciale (NAF 32.50A), Smile Up fabrique 100% en France des appareils fixes, amovibles, fonctionnels, gouttières thermoformées et la gamme PUL.",
   "url": "https://smileup45.fr",
-  "telephone": "+33660497925",
+  "telephone": "+33777995315",
   "email": "smile.up045@gmail.com",
   "image": "https://smileup45.fr/images/labo-1.jpg",
   "logo": "https://smileup45.fr/icon.svg",
@@ -158,7 +158,7 @@ const jsonLdFAQ = {
       "name": "Comment passer ma première commande chez Smile Up ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Contactez-nous par email à smile.up045@gmail.com ou par téléphone au 06 60 49 79 25. Nous vous guidons pas à pas : prescription, empreintes physiques ou numériques (STL), et suivi jusqu'à la livraison."
+        "text": "Contactez-nous par email à smile.up045@gmail.com ou par téléphone au 07 77 99 53 15. Nous vous guidons pas à pas : prescription, empreintes physiques ou numériques (STL), et suivi jusqu'à la livraison."
       }
     },
     {
