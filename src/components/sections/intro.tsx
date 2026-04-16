@@ -115,7 +115,7 @@ const Intro = () => {
                       { src: "/logos/itero.webp", alt: "iTero", size: "h-7" },
                       { src: "/logos/3shape.png", alt: "3Shape", size: "h-7" },
                       { src: "/logos/medit.png", alt: "Medit", size: "h-12" },
-                      { src: "/logos/shining3d.png", alt: "Shining 3D Dental", size: "h-12" },
+                      { src: "/logos/shining3d.webp", alt: "Shining 3D Dental", size: "h-12" },
                     ].map((logo) => (
                       <div key={`${repeat}-${logo.alt}`} className="bg-white rounded-md h-14 px-5 border border-[#46aac9]/10 flex items-center justify-center flex-shrink-0">
                         <img src={logo.src} alt={logo.alt} className={`${logo.size} w-auto object-contain`} />
