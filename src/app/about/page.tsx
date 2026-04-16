@@ -35,9 +35,9 @@ export default function AboutPage() {
     { name: "Pul Concept", logo: "/logos/pul-concept.png", size: "h-[57px]" },
     { name: "Scheu Dental", logo: "/logos/scheu-dental.svg", size: "h-[57px]" },
     { name: "3D Dental Store", logo: "/logos/3d-dental-store.png", size: "h-[50px]" },
-    { name: "DeltaFace", logo: "/logos/deltaface.webp", size: "h-[50px]" },
+    { name: "DeltaFace", logo: "/logos/deltaface.webp", size: "h-[100px]" },
     { name: "Labodent", logo: "/logos/labodent.png", size: "h-[50px]" },
-    { name: "Ai4Dental", logo: "/logos/ai4dental.png", size: "h-[50px]" },
+    { name: "Ai4Dental", logo: "/logos/ai4dental.png", size: "h-[100px]" },
   ];
 
   return (
