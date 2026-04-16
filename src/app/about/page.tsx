@@ -34,6 +34,10 @@ export default function AboutPage() {
     { name: "CAP Dentaire", logo: "/logos/cap-dentaire.svg", size: "h-[57px]" },
     { name: "Pul Concept", logo: "/logos/pul-concept.png", size: "h-[57px]" },
     { name: "Scheu Dental", logo: "/logos/scheu-dental.svg", size: "h-[57px]" },
+    { name: "3D Dental Store", logo: "/logos/3d-dental-store.png", size: "h-[50px]" },
+    { name: "DeltaFace", logo: "/logos/deltaface.webp", size: "h-[50px]" },
+    { name: "Labodent", logo: "/logos/labodent.png", size: "h-[50px]" },
+    { name: "Ai4Dental", logo: "/logos/ai4dental.png", size: "h-[50px]" },
   ];
 
   return (
@@ -189,7 +193,7 @@ export default function AboutPage() {
                 Smile Up travaille exclusivement avec des fournisseurs reconnus pour la qualité et la fiabilité de leurs matériaux, garantissant des dispositifs à la hauteur des exigences cliniques.
               </p>
 
-              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
                 {partners.map((partner) => (
                   <div
                     key={partner.name}
