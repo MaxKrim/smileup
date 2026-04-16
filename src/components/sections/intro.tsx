@@ -95,17 +95,35 @@ const Intro = () => {
               </p>
             </div>
             
-            <div className="flex items-center gap-3 flex-wrap">
-              {[
-                { src: "/logos/itero.webp", alt: "iTero", size: "h-7" },
-                { src: "/logos/3shape.png", alt: "3Shape", size: "h-7" },
-                { src: "/logos/medit.png", alt: "Medit", size: "h-12" },
-                { src: "/logos/carestream.webp", alt: "Carestream Dental", size: "h-12" },
-              ].map((logo) => (
-                <div key={logo.alt} className="bg-white rounded-md h-14 px-5 border border-[#46aac9]/10 flex items-center justify-center transition-all duration-300 hover:border-[#46aac9]/30 hover:shadow-sm">
-                  <img src={logo.src} alt={logo.alt} className={`${logo.size} w-auto object-contain`} />
-                </div>
-              ))}
+            <div className="relative overflow-hidden md:w-[400px] w-full">
+              <style>{`
+                @keyframes scrollLogos {
+                  0% { transform: translateX(0); }
+                  100% { transform: translateX(-50%); }
+                }
+                .animate-scroll-logos {
+                  animation: scrollLogos 12s linear infinite;
+                }
+                .animate-scroll-logos:hover {
+                  animation-play-state: paused;
+                }
+              `}</style>
+              <div className="flex animate-scroll-logos" style={{ width: 'max-content' }}>
+                {[...Array(2)].map((_, repeat) => (
+                  <div key={repeat} className="flex items-center gap-3 px-1.5">
+                    {[
+                      { src: "/logos/itero.webp", alt: "iTero", size: "h-7" },
+                      { src: "/logos/3shape.png", alt: "3Shape", size: "h-7" },
+                      { src: "/logos/medit.png", alt: "Medit", size: "h-12" },
+                      { src: "/logos/shining3d.png", alt: "Shining 3D Dental", size: "h-12" },
+                    ].map((logo) => (
+                      <div key={`${repeat}-${logo.alt}`} className="bg-white rounded-md h-14 px-5 border border-[#46aac9]/10 flex items-center justify-center flex-shrink-0">
+                        <img src={logo.src} alt={logo.alt} className={`${logo.size} w-auto object-contain`} />
+                      </div>
+                    ))}
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
           
@@ -116,7 +134,7 @@ const Intro = () => {
             </div>
             <div className="flex items-center gap-3 text-sm text-[#3D5A6A]">
               <Mail className="w-4 h-4 text-[#46aac9] flex-shrink-0" strokeWidth={1.5} />
-              <span>Pôle numérique : <a href="mailto:smile.up045@gmail.com" className="font-medium text-[#1D5F75] hover:text-[#E8734A] transition-colors">smile.up045@gmail.com</a></span>
+              <span>Pôle numérique : <a href="mailto:smile.up45numerique@gmail.com" className="font-medium text-[#1D5F75] hover:text-[#E8734A] transition-colors">smile.up45numerique@gmail.com</a></span>
             </div>
           </div>
         </div>

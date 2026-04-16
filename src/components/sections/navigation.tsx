@@ -9,7 +9,7 @@ const Logo = () =>
     width="180"
     height="50"
     viewBox="0 0 982.52 270.95"
-    className="text-black w-auto h-9 md:h-11"
+    className="text-black w-auto h-11 md:h-14"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     role="img"
@@ -87,7 +87,7 @@ export default function Navigation() {
                 <Link
                   href="/#contact"
                     className="inline-flex items-center gap-2 text-sm font-medium text-white bg-[#E8734A] py-2.5 px-6 rounded-md transition-all duration-300 hover:bg-[#D4633E] tracking-wide shadow-md">
-                  <span>Travailler Ensemble</span>
+                  <span>Travaillons Ensemble</span>
                 </Link>
             </div>
 
@@ -125,7 +125,7 @@ export default function Navigation() {
                   href="/#contact"
                   onClick={() => setIsMenuOpen(false)}
                   className="inline-flex items-center gap-2 text-sm font-medium text-white bg-[#E8734A] py-3 px-8 rounded-md tracking-wide shadow-md">
-                <span>Travailler Ensemble</span>
+                <span>Travaillons Ensemble</span>
               </Link>
           </div>
         </div>

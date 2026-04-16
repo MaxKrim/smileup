@@ -83,14 +83,20 @@ export default function Footer() {
                 href="tel:+33777995315"
                 className="flex items-center justify-center lg:justify-end gap-2 text-[#3D5A6A] hover:text-[#1D5F75] transition-colors mb-2">
                 <Phone size={16} className="flex-shrink-0" strokeWidth={1.5} />
-                <span className="text-sm">+33 7 77 99 53 15</span>
+                <span className="text-sm">07.77.99.53.15</span>
+              </a>
+              <a
+                href="tel:+33950298733"
+                className="flex items-center justify-center lg:justify-end gap-2 text-[#3D5A6A] hover:text-[#1D5F75] transition-colors mb-2">
+                <Phone size={16} className="flex-shrink-0" strokeWidth={1.5} />
+                <span className="text-sm">09.50.29.87.33</span>
               </a>
               <p className="text-xs text-[#5A7A8A] mt-3">Loiret (45) &ndash; Centre-Val de Loire</p>
             </div>
             
             <div className="pt-4 border-t border-[#1D5F75]/8">
               <p className="text-xs font-medium text-[#1D5F75] mb-1 tracking-wide uppercase">Horaires</p>
-              <p className="text-xs text-[#5A7A8A]">Lundi - Vendredi : 8h00 - 18h00</p>
+              <p className="text-xs text-[#5A7A8A]">Lundi - Vendredi : 8h – 12H30 / 13h30 – 18h30</p>
             </div>
           
             <div>

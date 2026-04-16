@@ -4,11 +4,11 @@ const PRACTITIONER_TYPES = [
   { title: "Orthodontistes", abbr: "ODF" },
   { title: "Chirurgiens-Dentistes", abbr: "CD" },
   { title: "Dentistes", abbr: "DDS" },
-  { title: "Orthopédie Dento-Faciale", abbr: "ODF" },
+  { title: "Orthopédie Dento-Faciale", abbr: "ORTHO" },
   { title: "Cabinets Numériques", abbr: "NUM" },
   { title: "Précision Technique", abbr: "PRO" },
   { title: "Collaboration Durable", abbr: "COL" },
-  { title: "Orthodontistes", abbr: "ODF" },
+  { title: "Pédodontistes", abbr: "PED" },
 ];
 
 const PractitionerTrack = () => (

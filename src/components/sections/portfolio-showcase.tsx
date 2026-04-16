@@ -57,7 +57,7 @@ const worksData: WorkCardProps[] = [
     href: "#contact"
   },
   {
-    title: "Innovation numérique et expertise artisanale",
+    title: "Agrément et expertise artisanale",
     label: "Gamme PUL",
     video: "/videos/portfolio-2.mp4",
     href: "#contact"

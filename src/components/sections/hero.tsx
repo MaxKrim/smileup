@@ -18,7 +18,7 @@ const Hero = () => {
               </span>
             </div>
             <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold leading-[1.05] tracking-[-0.02em] text-[#1D5F75]">
-              Votre Laboratoire<br />d&apos;Orthodontie Exclusive.
+              Laboratoire<br />d&apos;Orthodontie Exclusive.
             </h1>
             <div className="mt-8 max-w-2xl">
               <p className="text-xl md:text-2xl lg:text-3xl font-light tracking-wide text-[#3D5A6A] leading-snug">
@@ -69,7 +69,7 @@ const Hero = () => {
                 <p className="text-sm text-white/80 leading-relaxed">Un laboratoire accessible et disponible pour faciliter les échanges avec le cabinet.</p>
                 <div className="mt-4 bg-white/15 backdrop-blur-sm rounded-md px-4 py-3">
                   <p className="text-white font-medium text-sm tracking-wide">Lundi – Vendredi</p>
-                  <p className="text-white/70 text-xs mt-0.5">8h00 / 18h00</p>
+                  <p className="text-white/70 text-xs mt-0.5">8h – 12H30 / 13h30 – 18h30</p>
                 </div>
               </div>
             </div>

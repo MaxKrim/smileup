@@ -89,12 +89,20 @@ const jsonLdOrganization = {
     "addressRegion": "Loiret"
   },
   "geo": { "@type": "GeoCoordinates", "latitude": 47.9167, "longitude": 1.8333 },
-  "openingHoursSpecification": [{
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-    "opens": "08:00",
-    "closes": "18:00"
-  }],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "08:00",
+      "closes": "12:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "13:30",
+      "closes": "18:30"
+    }
+  ],
   "priceRange": "Sur devis",
   "currenciesAccepted": "EUR",
   "paymentAccepted": "Virement bancaire",
@@ -168,7 +176,7 @@ const jsonLdFAQ = {
       "name": "Quels formats d'empreintes numériques acceptez-vous ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Smile Up est compatible avec iTero, 3Shape, Medit, Carestream Dental et Planmeca. Envoyez vos fichiers STL directement par email ou via les plateformes partenaires."
+        "text": "Smile Up est compatible avec iTero, 3Shape, Medit et Shining 3D Dental. Envoyez vos fichiers STL directement par email ou via les plateformes partenaires."
       }
     },
     {
@@ -200,7 +208,7 @@ const jsonLdFAQ = {
       "name": "Vous travaillez avec quels types de praticiens ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Smile Up travaille avec les orthodontistes, chirurgiens-dentistes, dentistes pratiquant l'orthodontie et pédiatres dentaires. Nous n'acceptons pas les commandes de particuliers."
+        "text": "Smile Up travaille avec les orthodontistes, chirurgiens-dentistes, dentistes pratiquant l'orthodontie et pédodontistes. Nous n'acceptons pas les commandes de particuliers."
       }
     }
   ]

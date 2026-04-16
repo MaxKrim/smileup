@@ -33,10 +33,17 @@ const CtaFinal = () => {
               className="group inline-flex w-full items-center justify-center gap-2 bg-[#E8734A] px-7 py-3 rounded-md text-sm font-medium text-white transition-all duration-300 hover:bg-[#D4633E] sm:w-auto tracking-wide shadow-lg"
             >
               <Phone className="h-4 w-4" strokeWidth={1.5} />
-              <span>Appelez-moi</span>
+              <span>07.77.99.53.15</span>
+            </a>
+            <a
+              href="tel:+33950298733"
+              className="group inline-flex w-full items-center justify-center gap-2 bg-[#E8734A] px-7 py-3 rounded-md text-sm font-medium text-white transition-all duration-300 hover:bg-[#D4633E] sm:w-auto tracking-wide shadow-lg"
+            >
+              <Phone className="h-4 w-4" strokeWidth={1.5} />
+              <span>09.50.29.87.33</span>
             </a>
           </div>
-          
+
           <div className="mt-6">
             <p className="text-sm text-white/60">
               Je me déplace également dans votre cabinet pour faire un point sur vos besoins spécifiques.

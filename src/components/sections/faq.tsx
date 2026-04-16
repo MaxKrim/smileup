@@ -6,15 +6,15 @@ import { ChevronDown } from 'lucide-react';
 const faqs = [
   {
     question: "Comment passer ma première commande chez Smile Up ?",
-    answer: "Il suffit de nous contacter par email à smile.up045@gmail.com ou par téléphone au 07 77 99 53 15. Nous vous guidons pas à pas : envoi de la prescription, prise d'empreintes (physiques ou numériques via votre scanner intraoral), et suivi du dossier jusqu'à la livraison.",
+    answer: "Il suffit de nous contacter par email à smile.up045@gmail.com ou par téléphone au 07.77.99.53.15 / 09.50.29.87.33. Nous vous guidons pas à pas : envoi de la prescription, prise d'empreintes (physiques ou numériques via votre scanner intraoral), et suivi du dossier jusqu'à la livraison.",
   },
   {
     question: "Quels formats d'empreintes numériques acceptez-vous ?",
-    answer: "Smile Up est compatible avec les principaux scanners intraoraux du marché : iTero, 3Shape, Medit, Carestream Dental et Planmeca. Vous pouvez nous envoyer vos fichiers STL directement par email ou via les plateformes partenaires.",
+    answer: "Smile Up est compatible avec les principaux scanners intraoraux du marché : iTero, 3Shape, Medit et Shining 3D Dental. Vous pouvez nous envoyer vos fichiers STL directement par email ou via les plateformes partenaires.",
   },
   {
     question: "Quels sont les délais de fabrication ?",
-    answer: "Les délais varient selon le type d'appareil : 3 à 5 jours pour les contentions et réparations, 7 à 10 jours pour les appareils fixes et amovibles, 10 jours pour les thermoformés, environ 15 jours pour les appareils fonctionnels, et 15 à 20 jours pour la gamme PUL. Les urgences sont traitées en priorité — contactez-nous directement.",
+    answer: "Les délais varient selon le type d'appareil : 3 à 5 jours pour les contentions et réparations, 7 à 10 jours pour les appareils fixes et amovibles, 10 jours pour les thermoformés, environ 15 jours pour les appareils fonctionnels, et 15 à 20 jours pour la gamme PUL. Les urgences sont traitées en priorité, contactez-nous directement.",
   },
   {
     question: "Est-ce que Smile Up sous-traite la fabrication ?",
@@ -30,11 +30,11 @@ const faqs = [
   },
   {
     question: "Vous travaillez avec quels types de praticiens ?",
-    answer: "Smile Up travaille avec les orthodontistes, les chirurgiens-dentistes, les dentistes pratiquant l'orthodontie et les pédiatres dentaires. Nous n'acceptons pas les commandes de particuliers.",
+    answer: "Smile Up travaille avec les orthodontistes, les chirurgiens-dentistes, les dentistes pratiquant l'orthodontie et les pédodontistes. Nous n'acceptons pas les commandes de particuliers.",
   },
   {
     question: "Pouvez-vous gérer des cas CFAO complexes ?",
-    answer: "Oui. Nous disposons d'une chaîne CFAO complète pour la conception et la fabrication numérique : modélisation CAD, impression 3D haute résolution, et bagues sur mesure. Contactez-nous pour discuter de votre cas spécifique.",
+    answer: "Oui. Nous disposons d'une chaîne CFAO complète pour la conception et la fabrication numérique : modélisation CAD, impression 3D haute résolution, et bagues sur mesure. Contactez-nous pour discuter de vos besoins.",
   },
 ];
 
