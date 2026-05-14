@@ -23,10 +23,7 @@ const Hero = () => {
             <div className="mt-8 max-w-2xl">
               <p className="text-xl md:text-2xl lg:text-3xl font-light tracking-wide text-[#3D5A6A] leading-snug">
                 La qualité n&apos;est pas{' '}
-                <span className="relative inline-block">
-                  <span className="relative z-10 font-semibold text-[#1D5F75]">une question</span>
-                  <span className="absolute bottom-0.5 left-0 w-full h-[3px] bg-[#E8734A] rounded-full"></span>
-                </span>
+                <span className="font-semibold text-[#1D5F75]">une question</span>
                 {' '}de chance.
               </p>
             </div>
