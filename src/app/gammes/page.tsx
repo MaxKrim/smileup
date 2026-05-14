@@ -176,7 +176,7 @@ export default function GammesPage() {
                 Nos Gammes
               </h1>
               <p className="text-lg text-[#3D5A6A] leading-relaxed max-w-3xl mb-4">
-                Smile Up fabrique l&apos;ensemble des dispositifs orthodontiques dont vous avez besoin, des appareils les plus classiques aux conceptions les plus complexes. Chaque appareil est réalisé dans notre laboratoire à <strong className="text-[#1D5F75]">Ingré (45)</strong>, sans sous-traitance, avec des matériaux certifiés. Partenaire de référence des orthodontistes et dentistes du Loiret — notamment à <strong className="text-[#1D5F75]">Chaingy</strong>, Orléans et environs.
+                Smile Up fabrique l&apos;ensemble des dispositifs orthodontiques dont vous avez besoin, des appareils les plus classiques aux conceptions les plus complexes. Chaque appareil est réalisé dans notre laboratoire à <strong className="text-[#1D5F75]">Ingré (45)</strong>, sans sous-traitance, avec des matériaux certifiés. Partenaire de référence des orthodontistes et dentistes du Loiret notamment à Chaingy, <strong className="text-[#1D5F75]">Orléans</strong> et environs.
               </p>
               <div className="flex flex-wrap gap-3 mt-6">
                 <span className="bg-[#1D5F75] text-white text-xs font-medium px-4 py-1.5 rounded-md tracking-wide uppercase">100% Fabriqué en France</span>
