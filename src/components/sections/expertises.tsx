@@ -45,7 +45,7 @@ const expertisesData = [
     title: "Propulseur Universal Light",
     subtitle: "Harmoniseur 4D",
     description: "La gamme P.U.L s\u2019appuie sur une approche th\u00e9rapeutique multidimensionnelle, permettant d\u2019agir simultan\u00e9ment sur les axes sagittal, transversal, vertical et fonctionnel.",
-    imageSrc: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/IMG_7183-1761572553570.jpeg?width=8000&height=8000&resize=contain",
+    imageSrc: "/images/pul-harmoniseur.png",
     buttonText: "En savoir plus",
     buttonLink: "#contact",
     badge: "Configurations multiples"
