@@ -25,7 +25,7 @@ const expertisesData = [
     title: "Appareils amovibles",
     subtitle: "Flexibilit\u00e9 et confort au quotidien",
     description: "Chaque appareil mobile est \u00e9labor\u00e9 \u00e0 partir de l\u2019indication, avec une attention particuli\u00e8re port\u00e9e \u00e0 la conception, aux finitions et \u00e0 l\u2019adaptation au patient.",
-    imageSrc: "/images/appareil-amovible.png",
+    imageSrc: "/images/appareil-amovible-v2.png",
     buttonText: "En savoir plus",
     buttonLink: "#contact",
     badge: "Personnalisable"
