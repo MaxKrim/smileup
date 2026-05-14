@@ -145,7 +145,7 @@ const ExpertiseCard = ({ card }: { card: typeof expertisesData[0] }) => (
         {card.id}
       </div>
 
-      <div className="relative h-48 md:h-56 overflow-hidden">
+      <div className="relative h-72 md:h-80 overflow-hidden">
         <Image
           className="object-cover transition-transform duration-700 group-hover:scale-105"
           src={card.imageSrc}
