@@ -47,7 +47,7 @@ export default function Footer() {
                 <div className="w-[140px] md:w-[160px] h-[40px] md:h-[45px]">
                   <Logo />
                 </div>
-                <span className="text-xs text-[#5A7A8A] tracking-wide">Laboratoire d&apos;Orthodontie exclusive</span>
+                <span className="text-xs text-[#5A7A8A] tracking-wide">Laboratoire d&apos;Orthodontie Exclusive</span>
               </div>
             </Link>
             <div className="mt-5 flex flex-wrap gap-3">
