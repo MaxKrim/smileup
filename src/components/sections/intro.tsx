@@ -63,7 +63,7 @@ const Intro = () => {
               { step: "01", icon: Package, title: "Commande", desc: "Réception de votre prescription" },
               { step: "02", icon: Mail, title: "Réception", desc: "Empreintes numériques (STL) ou physiques" },
               { step: "03", icon: FileSearch, title: "Vérification", desc: "Contrôle du dossier complet" },
-              { step: "04", icon: Wrench, title: "Conception & Fabrication", desc: "CFAO, impression 3D, travail manuel" },
+              { step: "04", icon: Wrench, title: "Conception & Fabrication", desc: "CFAO, impression 3D, savoir-faire artisanal" },
               { step: "05", icon: CheckCircle, title: "Contrôle & Envoi", desc: "Vérification finale et expédition" }
             ].map((item) => (
               <div key={item.step} className="relative group">
@@ -112,12 +112,12 @@ const Intro = () => {
                 {[...Array(2)].map((_, repeat) => (
                   <div key={repeat} className="flex items-center gap-3 px-1.5">
                     {[
-                      { src: "/logos/itero.webp", alt: "iTero", size: "h-7" },
-                      { src: "/logos/3shape.png", alt: "3Shape", size: "h-7" },
-                      { src: "/logos/medit.png", alt: "Medit", size: "h-12" },
-                      { src: "/logos/shining3d.webp", alt: "Shining 3D Dental", size: "h-3.5" },
+                      { src: "/logos/itero.webp", alt: "iTero", size: "h-10" },
+                      { src: "/logos/3shape.png", alt: "3Shape", size: "h-10" },
+                      { src: "/logos/medit.png", alt: "Medit", size: "h-14" },
+                      { src: "/logos/shining3d.webp", alt: "Shining 3D Dental", size: "h-6" },
                     ].map((logo) => (
-                      <div key={`${repeat}-${logo.alt}`} className="bg-white rounded-md h-14 px-5 border border-[#46aac9]/10 flex items-center justify-center flex-shrink-0">
+                      <div key={`${repeat}-${logo.alt}`} className="bg-white rounded-md h-20 px-6 border border-[#46aac9]/10 flex items-center justify-center flex-shrink-0">
                         <img src={logo.src} alt={logo.alt} className={`${logo.size} w-auto object-contain`} />
                       </div>
                     ))}

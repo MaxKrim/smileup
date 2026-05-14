@@ -13,6 +13,8 @@ export const metadata: Metadata = {
     "laboratoire orthodontie Ingré", "orthopédie dento-faciale Loiret",
     "qui est Smile Up", "laboratoire ODF France",
     "partenaire orthodontiste", "labo dentaire Centre-Val de Loire",
+    "orthodontiste Chaingy laboratoire", "dentiste Chaingy gouttière",
+    "gouttières dentaires Chaingy", "laboratoire orthodontie Chaingy",
     "Leone partenaire", "Dentaurum", "Henry Schein", "Scheu Dental",
   ],
   alternates: { canonical: "https://smileup45.fr/about" },
@@ -28,6 +30,7 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   const partners = [
+    { name: "Labodent", logo: "/logos/labodent.png", size: "h-[60px]" },
     { name: "Leone", logo: "/logos/leone.png", size: "h-[57px]" },
     { name: "Dentaurum", logo: "/logos/dentaurum.png", size: "h-[74px]" },
     { name: "Henry Schein", logo: "/logos/henry-schein.png", size: "h-[74px]" },
@@ -36,7 +39,6 @@ export default function AboutPage() {
     { name: "Scheu Dental", logo: "/logos/scheu-dental.svg", size: "h-[57px]" },
     { name: "3D Dental Store", logo: "/logos/3d-dental-store.png", size: "h-[50px]" },
     { name: "DeltaFace", logo: "/logos/deltaface.webp", size: "h-[70px]" },
-    { name: "Labodent", logo: "/logos/labodent.png", size: "h-[50px]" },
     { name: "Ai4Dental", logo: "/logos/ai4dental.png", size: "h-[70px]" },
   ];
 
@@ -58,7 +60,7 @@ export default function AboutPage() {
                     Le Laboratoire
                   </h1>
                   <p className="text-lg text-[#3D5A6A] leading-relaxed mb-5">
-                    Smile Up est un laboratoire dédié exclusivement à l&apos;orthodontie. Né d&apos;une véritable passion pour les appareils sur mesure et la précision du geste technique, le laboratoire s&apos;est construit autour d&apos;une idée simple : chaque dispositif compte dans la réussite d&apos;un traitement. Cette vision est portée par sa fondatrice, <strong className="text-[#1D5F75]">Jessica Lerandy Estevez</strong>, spécialisée en Orthopédie Dento-Faciale.
+                    Smile Up est un laboratoire dédié exclusivement à l&apos;orthodontie. Né d&apos;une véritable passion pour les appareils sur mesure et la précision du geste technique, le laboratoire s&apos;est construit autour d&apos;une idée simple : chaque dispositif compte dans la réussite d&apos;un traitement. Cette vision est portée par sa fondatrice, <strong className="text-[#1D5F75]">Jessica Lerandy Estevez</strong>, spécialisée en Orthopédie Dento-Faciale. Partenaire des orthodontistes et dentistes de <strong className="text-[#1D5F75]">Chaingy</strong>, Ingré, Orléans et du Loiret.
                   </p>
                   <p className="text-[#3D5A6A] leading-relaxed mb-5">
                     Implanté à Ingré, Smile Up conçoit et fabrique des orthèses personnalisées, en accordant une attention particulière au détail, au confort et à la fiabilité dans le temps. Chaque cas est abordé avec sérieux, comme une pièce unique qui doit s&apos;intégrer naturellement à votre façon de travailler et aux attentes de vos patients.
@@ -194,12 +196,12 @@ export default function AboutPage() {
               </p>
 
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-                {partners.map((partner) => (
+                {partners.map((partner, idx) => (
                   <div
                     key={partner.name}
-                    className="bg-white rounded-lg border border-[#46aac9]/15 h-24 flex items-center justify-center px-4 hover:shadow-md hover:-translate-y-0.5 transition-all"
+                    className={`bg-white rounded-lg border h-24 flex items-center justify-center px-4 hover:shadow-md hover:-translate-y-0.5 transition-all ${idx === 0 ? 'border-[#E8734A]/40 shadow-sm ring-1 ring-[#E8734A]/10' : 'border-[#46aac9]/15'}`}
                   >
-                    <img src={partner.logo} alt={partner.name} className={`${partner.size} w-auto object-contain`} />
+                    <img src={partner.logo} alt={partner.name} className={`${partner.size} w-auto object-contain`} style={{ imageRendering: 'auto' }} />
                   </div>
                 ))}
               </div>

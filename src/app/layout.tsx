@@ -81,7 +81,7 @@ const jsonLdOrganization = {
   "identifier": { "@type": "PropertyValue", "name": "SIREN", "value": "101860807" },
   "naics": "3250",
   "alternateName": ["smileup45", "smile up orthodontie", "laboratoire Smile Up"],
-  "description": "Laboratoire d'orthodontie et gouttières dentaires sur mesure, situé à Ingré près d'Orléans dans le Loiret (45). Spécialisé en orthopédie dento-faciale (NAF 32.50A), Smile Up fabrique 100% en France des appareils fixes, amovibles, fonctionnels, gouttières thermoformées, gouttières de contention, gouttières d'éclaircissement et la gamme PUL. Partenaire des orthodontistes et dentistes à Orléans, Chaingy, Saint-Jean-de-la-Ruelle et tout le Loiret.",
+  "description": "Laboratoire d'orthodontie et gouttières dentaires sur mesure, situé à Ingré près d'Orléans dans le Loiret (45). Spécialisé en orthopédie dento-faciale (NAF 32.50A), Smile Up fabrique 100% en France des appareils fixes, amovibles, fonctionnels, gouttières dentaires thermoformées, gouttières de contention pour dentiste, gouttières d'éclaircissement et la gamme PUL. Partenaire des orthodontistes et dentistes à Chaingy, Orléans, Saint-Jean-de-la-Ruelle et tout le Loiret.",
   "url": "https://smileup45.fr",
   "telephone": "+33777995315",
   "email": "smile.up045@gmail.com",

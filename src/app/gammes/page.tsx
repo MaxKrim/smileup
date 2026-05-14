@@ -5,22 +5,24 @@ import { ArrowRight, Clock, CheckCircle } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: "Gouttières Dentaires & Appareils Orthodontiques sur Mesure | Smile Up Ingré, Orléans (45)",
-  description: "Gouttières dentaires sur mesure (contention, éclaircissement, bruxisme, sport), appareils orthodontiques fixes, amovibles, fonctionnels, PUL et CFAO. Laboratoire d'orthodontie Smile Up à Ingré près d'Orléans — partenaire des orthodontistes et dentistes du Loiret. 100% fabriqué en France, livraison J+1.",
+  title: "Gouttière Dentaire & Appareils Orthodontiques sur Mesure | Smile Up — Orthodontiste Chaingy, Orléans (45)",
+  description: "Gouttière dentaire sur mesure pour dentiste (contention, éclaircissement, bruxisme, sport), appareils orthodontiques fixes, amovibles, fonctionnels, PUL et CFAO. Laboratoire partenaire orthodontiste Chaingy, Ingré, Orléans — 100% fabriqué en France, livraison J+1.",
   keywords: [
-    "gouttière dentaire sur mesure", "gouttières dentaires",
+    "gouttière dentaire sur mesure", "gouttières dentaires", "gouttières dentaire",
     "gouttière contention", "gouttière éclaircissement dentaire",
     "gouttière bruxisme", "gouttière sport dentaire",
     "gouttière thermoformée", "gouttières thermoformées laboratoire",
     "dentiste gouttière", "dentiste gouttiere",
+    "gouttière dentaire dentiste", "gouttières pour dentiste",
     "appareils orthodontiques fixes laboratoire",
     "appareils amovibles orthodontie sur mesure",
     "appareils fonctionnels orthodontie laboratoire",
     "Propulseur Universel Light PUL laboratoire",
     "CFAO orthodontie bagues sur mesure",
     "contention orthodontique laboratoire", "contention dentaire",
-    "orthodontiste Orléans appareils", "orthodontiste Loiret",
     "orthodontiste Chaingy", "orthodontiste Ingré",
+    "orthodontiste Orléans appareils", "orthodontiste Loiret",
+    "labo orthodontie Chaingy", "laboratoire orthodontie Chaingy",
     "Quad Helix laboratoire Loiret",
     "plaque Hawley laboratoire orthodontie",
     "thermoformage Biostar laboratoire",
@@ -30,8 +32,8 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://smileup45.fr/gammes" },
   openGraph: {
-    title: "Gammes Smile Up — Tous nos appareils orthodontiques sur mesure",
-    description: "Appareils fixes, amovibles, fonctionnels, PUL, gouttières thermoformées et CFAO — 100% fabriqués en France à Ingré (45). Délais garantis, sans sous-traitance.",
+    title: "Gouttière Dentaire & Appareils Orthodontiques — Smile Up, partenaire dentiste & orthodontiste Chaingy",
+    description: "Gouttières dentaires sur mesure pour dentiste et orthodontiste (Chaingy, Ingré, Orléans). Appareils fixes, amovibles, fonctionnels, PUL, CFAO — 100% fabriqués en France. Livraison J+1.",
     url: "https://smileup45.fr/gammes",
     siteName: "Smile Up",
     locale: "fr_FR",
@@ -53,8 +55,9 @@ const gammes = [
       "Mainteneurs d'espace",
       "Arcs palatins / linguaux",
       "Grilles anti-pouce",
-      "Soudure laser",
+      "Disjoncteurs",
       "Tubes et crochets sur mesure",
+      "Ancrage squelettique",
     ],
     detail: "Fabriqués en alliages biocompatibles et adaptés à chaque prescription, les appareils fixes Smile Up bénéficient d'un contrôle qualité rigoureux avant expédition. La soudure laser assure une robustesse optimale et une précision de positionnement irréprochable.",
     color: "from-[#46aac9] to-[#1D5F75]",
@@ -70,12 +73,13 @@ const gammes = [
     items: [
       "Plaque Hawley",
       "Plaque de Vaugeois",
-      "Systèmes d'expansion (vis, ressorts)",
-      "Contentions thermoformées",
-      "Plaques palatines de Schwarz",
+      "Systèmes d'expansion (vérins, ressorts…)",
+      "Plaques de Schwartz",
       "Appareils de rétention sur mesure",
+      "Spring Retainer",
+      "Contentions thermoformées",
     ],
-    detail: "Les plaques amovibles sont réalisées en résine acrylique biocompatible, colorée ou transparente selon la préférence du praticien et du patient. Les crochets Adams, triangulaires et de ballesta sont façonnés manuellement avec soin.",
+    detail: "Les plaques amovibles sont réalisées en résine acrylique biocompatible, colorée ou transparente selon la préférence du praticien et du patient. Les crochets Adams, Flèches, crochets Boules sont façonnés manuellement avec soin.",
     color: "from-[#E8734A] to-[#C05535]",
   },
   {
@@ -90,12 +94,11 @@ const gammes = [
       "Appareil de Chabre",
       "Appareil de Lautrou",
       "Klammt",
-      "ELN (Éducateur Labio-Nasal)",
+      "ELN (Enveloppe Lingual Nocturne)",
       "Bionator",
-      "Pistes de Planas",
-      "Propulseur mandibulaire amovible",
+      "Bielle de Herbst",
     ],
-    detail: "Chaque appareil fonctionnel est conçu selon des cires de construction précises fournies par le praticien. Une attention particulière est portée à la liberté de mouvement mandibulaire, au confort d'occlusion et à la durabilité de la résine.",
+    detail: "Chaque appareil fonctionnel est conçu selon des cires de construction précises fournies par le praticien. Une attention particulière est portée à la liberté de mouvement, au confort d'occlusion et à la durabilité de la résine.",
     color: "from-[#46aac9] to-[#2A7A95]",
   },
   {
@@ -107,13 +110,14 @@ const gammes = [
     delay: "15 à 20 jours",
     description: "La gamme P.U.L s'appuie sur une approche thérapeutique multidimensionnelle, permettant d'agir simultanément sur les axes sagittal, transversal, vertical et fonctionnel.",
     items: [
-      "PUL 2 — modèle standard",
-      "PUL avec expansion transversale",
-      "PUL avec ancrage squelettique",
-      "Configurations multi-vecteurs",
-      "Modélisation 3D sur mesure",
+      "PUL 1 télescopique Vérin / TMA",
+      "PUL 2 réglable Vérin / TMA",
+      "PUL 3",
+      "PUL Contention ou W",
+      "Snorlight",
+      "PUL Piste de planas",
     ],
-    detail: "Le Propulseur Universel Light est conçu numériquement et fabriqué en résine haute performance avec des composants métalliques de précision. Chaque PUL est personnalisé selon les paramètres occlusaux et fonctionnels fournis par le praticien.",
+    detail: "Le Propulseur Universel Light est fabriqué à partir de plaques thermoformées haute qualité sur BioStar, associées à des armatures pré-soudées. Chaque appareil est personnalisé selon les paramètres occlusaux et fonctionnels du praticien afin d'optimiser confort et efficacité.",
     color: "from-[#1D5F75] to-[#46aac9]",
   },
   {
@@ -123,8 +127,9 @@ const gammes = [
     subtitle: "Contention / Éclaircissement / Sport",
     badge: "Thermoformage Biostar",
     delay: "10 jours",
-    description: "Le thermoformage permet la réalisation d'appareils aux usages variés, offrant une grande liberté d'association avec d'autres approches orthodontiques.",
+    description: "Le thermoformage permet la réalisation de gouttières dentaires aux usages variés — contention, alignement, bruxisme, sport —, offrant une grande liberté d'association avec d'autres approches orthodontiques.",
     items: [
+      "Gouttières d'alignement",
       "Gouttières de contention (rigide, semi-rigide, souple)",
       "Gouttières d'éclaircissement",
       "Gouttières de sport (protection)",
@@ -171,7 +176,7 @@ export default function GammesPage() {
                 Nos Gammes
               </h1>
               <p className="text-lg text-[#3D5A6A] leading-relaxed max-w-3xl mb-4">
-                Smile Up fabrique l&apos;ensemble des dispositifs orthodontiques dont vous avez besoin — des appareils les plus classiques aux conceptions les plus complexes. Chaque appareil est réalisé dans notre laboratoire à <strong className="text-[#1D5F75]">Ingré (45)</strong>, sans sous-traitance, avec des matériaux certifiés.
+                Smile Up fabrique l&apos;ensemble des dispositifs orthodontiques dont vous avez besoin, des appareils les plus classiques aux conceptions les plus complexes. Chaque appareil est réalisé dans notre laboratoire à <strong className="text-[#1D5F75]">Ingré (45)</strong>, sans sous-traitance, avec des matériaux certifiés. Partenaire de référence des orthodontistes et dentistes du Loiret — notamment à <strong className="text-[#1D5F75]">Chaingy</strong>, Orléans et environs.
               </p>
               <div className="flex flex-wrap gap-3 mt-6">
                 <span className="bg-[#1D5F75] text-white text-xs font-medium px-4 py-1.5 rounded-md tracking-wide uppercase">100% Fabriqué en France</span>
